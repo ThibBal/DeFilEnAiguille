@@ -2,7 +2,9 @@
 
 Les questionnaires sont dans `Sources/Resources/quizzes.json` (clés AAAA-MM-JJ, plus un questionnaire de repli utilisé pour aujourd'hui quand la date n'a pas le sien).
 
-Format d'un questionnaire : `thread` (le « fil du jour », révélé à la fin) et 5 `questions`, chacune avec `question`, `options` (4), `answer` (index de la bonne réponse), `short` (mot affiché dans le fil récapitulatif) et `explanation`. Les 5 questions s'enchaînent par association d'idées, de la plus simple à la plus difficile.
+Format d'un questionnaire : `thread` (le « fil du jour », révélé à la fin) et 5 `questions`, chacune avec `question`, `options` (4), `answer` (index de la bonne réponse), `short` (mot affiché dans le fil récapitulatif), `explanation` et, à partir de la 2e question, `link`. Les 5 questions s'enchaînent par association d'idées, de la plus simple à la plus difficile.
+
+**Règle du fil :** chaque question (à partir de la 2e) reprend explicitement la bonne réponse de la précédente dans son texte, et `link` est l'extrait exact de la question qui la reprend (par exemple « Louxor » ou « Cette année-là »). C'est le mot que la bonne réponse rejoint dans l'animation « le fil passe ». Une question ne doit jamais contenir sa propre réponse.
 
 ## Octobre 2026
 

@@ -42,6 +42,7 @@ docs/questionnaires.md              format des questionnaires et page Wikipédia
 - **Historique** (`HistoryView`) : tous les jours qui ont un questionnaire, par mois, jusqu'à aujourd'hui. Un jour joué ouvre sa revue (`ReviewView`, avec « Rejouer »), un jour « À jouer » ouvre le questionnaire (`QuizView` avec retour vers l'historique).
 - **Parties** : modèle SwiftData `Play`, une par date (`date` unique). Rejouer remplace la partie précédente.
 - **Questionnaires** : `QuizCatalog` lit `quizzes.json`. Pour une date absente, seul aujourd'hui reçoit le questionnaire de repli.
+- **Animation « le fil passe »** (`QuizView.next` / `runFlight`, `Components/QuestionText.swift`) : au passage à la question suivante, la bonne réponse devient une pastille qui suit un fil vert jusqu'au mot repris (`link`), qui s'allume puis reste souligné. Durée ≈ 1,2 s (constante `flightSpeed` pour la ralentir en test). Sans `link`, ou avec « Réduire les animations », transition simple. Les questions sont affichées mot par mot (`FlowLayout`) pour pouvoir viser le mot repris.
 - **Hauteur de ligne exacte** (`exactLineHeight`) : disponible à partir d'iOS 26, sinon interligne par défaut.
 
 ## Design (à respecter)

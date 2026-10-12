@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		15736C1C4DE65C852BB9E169 /* HankenGrotesk_600SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF16EE773A2A5BAED45EB79 /* HankenGrotesk_600SemiBold.ttf */; };
+		1A5E89F05D187CFFB05AD51F /* QuestionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E7F5E65FB1FC8C193A2C6 /* QuestionText.swift */; };
 		297D17676FDDFA4A297E00E9 /* DeFilEnAiguilleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3D4ABE00BD6B5FA69FCEE /* DeFilEnAiguilleApp.swift */; };
 		2FD7A06F86406B35305178B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3184CAC4CBDD77794E503F31 /* Assets.xcassets */; };
 		3C486B4ABD386682894F926B /* HankenGrotesk_400Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7201EB22A96EA267A388461 /* HankenGrotesk_400Regular.ttf */; };
@@ -36,6 +37,7 @@
 		2FF16EE773A2A5BAED45EB79 /* HankenGrotesk_600SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HankenGrotesk_600SemiBold.ttf; sourceTree = "<group>"; };
 		3184CAC4CBDD77794E503F31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		374BFEBDB85C1F92F9F9E9D7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		3B9E7F5E65FB1FC8C193A2C6 /* QuestionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionText.swift; sourceTree = "<group>"; };
 		5F58BE65649CC5EF6AC7308E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		74F3398A56AAE00C542E2CD1 /* DeFilEnAiguille.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DeFilEnAiguille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF3D4ABE00BD6B5FA69FCEE /* DeFilEnAiguilleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeFilEnAiguilleApp.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 		84CF5F29D5BFEA02B49042E5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				3B9E7F5E65FB1FC8C193A2C6 /* QuestionText.swift */,
 				DEC5ACAD9CDF819FF105B6F7 /* Thread.swift */,
 				E6CAA657A94B6C5A921C1296 /* UI.swift */,
 			);
@@ -217,6 +220,7 @@
 				297D17676FDDFA4A297E00E9 /* DeFilEnAiguilleApp.swift in Sources */,
 				E482B003A2A5B0CE8E9753B7 /* HistoryView.swift in Sources */,
 				547C95830F7B3753443958F7 /* Play.swift in Sources */,
+				1A5E89F05D187CFFB05AD51F /* QuestionText.swift in Sources */,
 				3F15AF2565771FB99D5D9867 /* Quiz.swift in Sources */,
 				5AC4D5286DA1C710BB521EFF /* QuizView.swift in Sources */,
 				AC6600AFDD29F1BFAB6CEEEF /* ReviewView.swift in Sources */,

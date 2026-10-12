@@ -8,6 +8,9 @@ struct Question: Codable, Hashable {
     /// Réponse courte, affichée dans le fil récapitulatif.
     let short: String
     let explanation: String
+    /// Passage de la question qui reprend la réponse précédente (absent pour la première question).
+    /// C'est le mot que la bonne réponse rejoint dans l'animation.
+    let link: String?
 }
 
 struct DailyQuiz: Codable, Hashable {
