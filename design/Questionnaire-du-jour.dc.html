@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Questionnaire du jour</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+[data-theme]{--paper:#F6F3EC;--ink:#1D1B18;--muted:#6B665C;--card:#FBF9F4;--border:#D9D3C6;--hair:#E2DCCF;--accent:#B5371F;--accent-soft:#F6E3DB;--ring:#F0D9D0;--wrong-bg:#ECE7DC;--wrong-ink:#4F4B43;--dim-border:#E5E0D4;--dot-off:#8A8477;--seg:#CFC8B9;--body:#3A372F}
+[data-theme="dark"]{--paper:#171612;--ink:#F2EEE5;--muted:#A39D90;--card:#201E19;--border:#3A362E;--hair:#2B2923;--accent:#E4694F;--accent-soft:#3A211B;--ring:#4A2A22;--wrong-bg:#2A2822;--wrong-ink:#C9C3B6;--dim-border:#2B2923;--dot-off:#7C7669;--seg:#4A463D;--body:#D8D3C7}
+body{margin:0}
+button{font-family:inherit}
+.opt{display:flex;align-items:center;gap:14px;width:100%;box-sizing:border-box;min-height:54px;padding:8px 16px;border-radius:16px;border:1.5px solid var(--border);background:var(--card);color:var(--ink);font-size:17px;line-height:1.3;text-align:left;cursor:pointer}
+.opt:disabled{cursor:default;color:var(--ink)}
+.opt:focus-visible,.cta:focus-visible,.tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.opt[data-state="correct"]{border-color:var(--accent);background:var(--accent-soft)}
+.opt[data-state="wrong"]{border-style:dashed;border-color:var(--muted);background:var(--wrong-bg);color:var(--wrong-ink)}
+.opt[data-state="dim"]{color:var(--muted);background:transparent;border-color:var(--dim-border)}
+.knot{width:14px;height:14px;border-radius:50%;box-sizing:border-box;flex:none}
+.knot[data-state="todo"]{border:1.5px solid var(--dot-off);background:var(--paper)}
+.knot[data-state="current"]{border:2px solid var(--accent);background:var(--paper);box-shadow:0 0 0 4px var(--ring)}
+.knot[data-state="right"]{background:var(--accent);border:2px solid var(--accent)}
+.knot[data-state="wrong"]{background:var(--muted);border:2px solid var(--muted)}
+.seg{flex:1;height:0;border-top:2px dashed var(--seg)}
+.seg[data-state="done"]{border-top:2px solid var(--accent)}
+.vseg{flex:1;width:0;min-height:22px;border-left:2px solid var(--accent);margin:4px 0}
+.cta{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;box-sizing:border-box;height:56px;border:0;border-radius:16px;background:var(--ink);color:var(--paper);font-size:17px;font-weight:600;text-decoration:none;cursor:pointer}
+.tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;flex:1;min-height:60px;text-decoration:none;font-size:12px;font-weight:500;color:var(--muted)}
+.tab[aria-current="page"]{color:var(--ink);font-weight:600}
+</style>
+</helmet>
+<div data-theme="{{ theme }}" style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); font-family: 'Hanken Grotesk', system-ui, sans-serif; overflow: hidden">
+
+  <div style="flex: 1; min-height: 0; overflow-y: auto; padding: 24px 24px 16px; display: flex; flex-direction: column">
+
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 24px; line-height: 1">De fil en aiguille</span>
+      <span style="font-size: 13px; color: var(--muted)">dim. 11 octobre</span>
+    </div>
+
+    <sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column">
+        <div role="img" aria-label="{{ progressLabel }}" style="display: flex; align-items: center; gap: 6px; margin-top: 28px">
+          <sc-for list="{{ knots }}" as="k" hint-placeholder-count="5">
+            <div style="display: contents">
+              <span class="knot" data-state="{{ k.state }}"></span>
+              <sc-if value="{{ k.hasSeg }}" hint-placeholder-val="{{ true }}">
+                <span class="seg" data-state="{{ k.segState }}"></span>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+
+        <p style="margin: 28px 0 0; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted)">{{ counter }}</p>
+        <h1 style="margin: 10px 0 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 32px; line-height: 1.12; text-wrap: balance">{{ question }}</h1>
+
+        <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 26px">
+          <sc-for list="{{ options }}" as="o" hint-placeholder-count="4">
+            <button class="opt" data-state="{{ o.state }}" onClick="{{ o.pick }}" disabled="{{ o.disabled }}">
+              <span style="width: 18px; flex: none; font-family: 'Instrument Serif', Georgia, serif; font-size: 20px; color: var(--muted)">{{ o.letter }}</span>
+              <span style="flex: 1">{{ o.text }}</span>
+              <sc-if value="{{ o.isCorrect }}" hint-placeholder-val="{{ false }}">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Bonne réponse"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+              </sc-if>
+              <sc-if value="{{ o.isWrong }}" hint-placeholder-val="{{ false }}">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--wrong-ink)" stroke-width="2.2" stroke-linecap="round" role="img" aria-label="Mauvaise réponse"><path d="M7 7l10 10M17 7L7 17"/></svg>
+              </sc-if>
+            </button>
+          </sc-for>
+        </div>
+
+        <sc-if value="{{ answered }}" hint-placeholder-val="{{ false }}">
+          <p style="margin: 20px 0 0; font-size: 15px; line-height: 1.5; color: var(--body); text-wrap: pretty">{{ explanation }}</p>
+        </sc-if>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column">
+        <p style="margin: 40px 0 0; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted)">Questionnaire terminé</p>
+        <div style="display: flex; align-items: baseline; gap: 10px; margin-top: 8px">
+          <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 88px; line-height: 1">{{ score }}</span>
+          <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 32px; color: var(--muted)">sur 5</span>
+        </div>
+        <h1 style="margin: 28px 0 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-style: italic; font-size: 28px; line-height: 1.15">De l'obélisque à l'Etna</h1>
+        <p style="margin: 6px 0 0; font-size: 15px; color: var(--muted)">Le fil du jour</p>
+
+        <div style="display: flex; flex-direction: column; margin-top: 24px">
+          <sc-for list="{{ chain }}" as="c" hint-placeholder-count="5">
+            <div style="display: flex; align-items: stretch; gap: 16px">
+              <div style="display: flex; flex-direction: column; align-items: center; width: 14px; flex: none; padding-top: 5px">
+                <span class="knot" data-state="{{ c.state }}"></span>
+                <sc-if value="{{ c.hasSeg }}" hint-placeholder-val="{{ true }}">
+                  <span class="vseg"></span>
+                </sc-if>
+              </div>
+              <div style="flex: 1; padding-bottom: 14px; font-size: 18px; line-height: 1.3">{{ c.word }}<span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">{{ c.sr }}</span></div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </sc-if>
+
+  </div>
+
+  <sc-if value="{{ answered }}" hint-placeholder-val="{{ false }}">
+    <div style="flex: none; padding: 0 24px 16px">
+      <sc-if value="{{ inQuiz }}" hint-placeholder-val="{{ true }}">
+        <button class="cta" onClick="{{ next }}">{{ nextLabel }}</button>
+      </sc-if>
+    </div>
+  </sc-if>
+  <sc-if value="{{ done }}" hint-placeholder-val="{{ false }}">
+    <div style="flex: none; padding: 0 24px 16px; display: flex; flex-direction: column; gap: 10px">
+      <a class="cta" href="Historique.dc.html">Voir l'historique</a>
+    </div>
+  </sc-if>
+
+  <nav aria-label="Navigation principale" style="flex: none; display: flex; border-top: 1px solid var(--hair); background: var(--paper); padding-bottom: 6px">
+    <a class="tab" href="Main.dc.html" aria-current="page">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+      <span>Aujourd'hui</span>
+    </a>
+    <a class="tab" href="Historique.dc.html">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg>
+      <span>Historique</span>
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"dark":{"editor":"boolean","default":false},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { idx: 0, picked: null, results: [] };
+  }
+
+  renderVals() {
+    const Q = [
+      { q: "L'obélisque de la place de la Concorde, à Paris, vient d'une ville d'Égypte. Laquelle ?", o: ["Louxor", "Alexandrie", "Assouan", "Gizeh"], a: 0, short: "Louxor", e: "Offert à la France par l'Égypte, il se dressait à l'entrée du temple de Louxor. Il a été érigé à Paris en 1836." },
+      { q: "Louxor est bâtie sur les rives de quel fleuve ?", o: ["Le Tigre", "Le Nil", "Le Niger", "Le Congo"], a: 1, short: "Le Nil", e: "Le Nil traverse l'Égypte du sud au nord. Louxor se trouve sur sa rive orientale." },
+      { q: "Dans quelle mer le Nil se jette-t-il ?", o: ["La mer Rouge", "La mer Noire", "La Méditerranée", "La mer Caspienne"], a: 2, short: "La Méditerranée", e: "Il forme un vaste delta avant de rejoindre la Méditerranée." },
+      { q: "Quelle est la plus grande île de la Méditerranée ?", o: ["La Crète", "La Sardaigne", "Chypre", "La Sicile"], a: 3, short: "La Sicile", e: "La Sicile devance la Sardaigne. Elle est séparée de l'Italie continentale par le détroit de Messine." },
+      { q: "Quel volcan domine l'est de la Sicile ?", o: ["L'Etna", "Le Vésuve", "Le Stromboli", "Santorin"], a: 0, short: "L'Etna", e: "L'Etna est l'un des volcans les plus actifs du monde." }
+    ];
+    const s = this.state;
+    const done = s.idx >= 5;
+    const i = Math.min(s.idx, 4);
+    const q = Q[i];
+    const answered = s.picked !== null && !done;
+    const letters = ["A", "B", "C", "D"];
+
+    const options = q.o.map((text, k) => {
+      let st = "idle";
+      if (answered) st = k === q.a ? "correct" : (k === s.picked ? "wrong" : "dim");
+      return {
+        text, letter: letters[k], state: st,
+        isCorrect: st === "correct", isWrong: st === "wrong",
+        disabled: answered,
+        pick: () => {
+          if (this.state.picked !== null) return;
+          this.setState({ picked: k, results: [...this.state.results, k === q.a] });
+        }
+      };
+    });
+
+    const knots = Q.map((_, n) => {
+      let st = "todo";
+      if (n < s.results.length) st = s.results[n] ? "right" : "wrong";
+      else if (n === s.idx) st = "current";
+      return { state: st, hasSeg: n < 4, segState: n < s.results.length ? "done" : "todo" };
+    });
+
+    const chain = Q.map((c, n) => ({
+      word: c.short,
+      state: s.results[n] ? "right" : "wrong",
+      hasSeg: n < 4,
+      sr: s.results[n] ? " (bonne réponse)" : " (mauvaise réponse)"
+    }));
+
+    const score = s.results.filter(Boolean).length;
+
+    return {
+      theme: this.props.dark ? "dark" : "light",
+      inQuiz: !done, done, answered,
+      knots, options, chain, score,
+      progressLabel: "Question " + (i + 1) + " sur 5",
+      counter: "Question " + (i + 1) + " sur 5",
+      question: q.q,
+      explanation: q.e,
+      nextLabel: s.idx === 4 ? "Voir mon fil" : "Question suivante",
+      next: () => this.setState({ idx: this.state.idx + 1, picked: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

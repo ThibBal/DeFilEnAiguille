@@ -1,0 +1,784 @@
+{
+  "fallback": {
+    "thread": "De l'obélisque à l'Etna",
+    "questions": [
+      {
+        "question": "L'obélisque de la place de la Concorde, à Paris, vient d'une ville d'Égypte. Laquelle ?",
+        "options": [
+          "Louxor",
+          "Alexandrie",
+          "Assouan",
+          "Gizeh"
+        ],
+        "answer": 0,
+        "short": "Louxor",
+        "explanation": "Offert à la France par l'Égypte, il se dressait à l'entrée du temple de Louxor. Il a été érigé à Paris en 1836."
+      },
+      {
+        "question": "Louxor est bâtie sur les rives de quel fleuve ?",
+        "options": [
+          "Le Tigre",
+          "Le Nil",
+          "Le Niger",
+          "Le Congo"
+        ],
+        "answer": 1,
+        "short": "Le Nil",
+        "explanation": "Le Nil traverse l'Égypte du sud au nord. Louxor se trouve sur sa rive orientale."
+      },
+      {
+        "question": "Dans quelle mer le Nil se jette-t-il ?",
+        "options": [
+          "La mer Rouge",
+          "La mer Noire",
+          "La Méditerranée",
+          "La mer Caspienne"
+        ],
+        "answer": 2,
+        "short": "La Méditerranée",
+        "explanation": "Il forme un vaste delta avant de rejoindre la Méditerranée."
+      },
+      {
+        "question": "Quelle est la plus grande île de la Méditerranée ?",
+        "options": [
+          "La Crète",
+          "La Sardaigne",
+          "Chypre",
+          "La Sicile"
+        ],
+        "answer": 3,
+        "short": "La Sicile",
+        "explanation": "La Sicile devance la Sardaigne. Elle est séparée de l'Italie continentale par le détroit de Messine."
+      },
+      {
+        "question": "Quel volcan domine l'est de la Sicile ?",
+        "options": [
+          "L'Etna",
+          "Le Vésuve",
+          "Le Stromboli",
+          "Santorin"
+        ],
+        "answer": 0,
+        "short": "L'Etna",
+        "explanation": "L'Etna est l'un des volcans les plus actifs du monde."
+      }
+    ]
+  },
+  "quizzes": {
+    "2026-10-01": {
+      "thread": "De Ronaldo au Greco",
+      "questions": [
+        {
+          "question": "Cristiano Ronaldo, capitaine de sa sélection depuis 2008, joue pour quel pays ?",
+          "options": [
+            "Le Portugal",
+            "L'Espagne",
+            "Le Brésil",
+            "L'Argentine"
+          ],
+          "answer": 0,
+          "short": "Le Portugal",
+          "explanation": "Il est né à Funchal, sur l’île de Madère, et capitaine de la sélection portugaise depuis 2008."
+        },
+        {
+          "question": "Quelle est la capitale du Portugal ?",
+          "options": [
+            "Porto",
+            "Lisbonne",
+            "Faro",
+            "Coimbra"
+          ],
+          "answer": 1,
+          "short": "Lisbonne",
+          "explanation": "Lisbonne est la capitale et la plus grande ville du pays, au bord de l’océan Atlantique."
+        },
+        {
+          "question": "Lisbonne est bâtie sur l’estuaire de quel fleuve ?",
+          "options": [
+            "Le Tage",
+            "Le Douro",
+            "L'Èbre",
+            "Le Guadiana"
+          ],
+          "answer": 0,
+          "short": "Le Tage",
+          "explanation": "Le Tage, le plus long fleuve de la péninsule Ibérique, se jette dans l’Atlantique à Lisbonne."
+        },
+        {
+          "question": "En Espagne, le Tage contourne une ville perchée sur un éperon rocheux, ancienne capitale royale. Laquelle ?",
+          "options": [
+            "Séville",
+            "Salamanque",
+            "Grenade",
+            "Tolède"
+          ],
+          "answer": 3,
+          "short": "Tolède",
+          "explanation": "Tolède est enserrée dans un méandre du Tage. Elle fut le siège de la cour royale jusqu’en 1561."
+        },
+        {
+          "question": "Tolède a inspiré le peintre le Greco, auteur d’une célèbre « Vue de Tolède ». Sur quelle île est-il né ?",
+          "options": [
+            "Chypre",
+            "Rhodes",
+            "La Crète",
+            "Corfou"
+          ],
+          "answer": 2,
+          "short": "La Crète",
+          "explanation": "Domínikos Theotokópoulos, dit le Greco, est né à Candie (Héraklion), en Crète, vers 1541."
+        }
+      ]
+    },
+    "2026-10-02": {
+      "thread": "De Zidane à Thulé",
+      "questions": [
+        {
+          "question": "Dans quelle ville est né Zinédine Zidane, en 1972 ?",
+          "options": [
+            "Cannes",
+            "Bordeaux",
+            "Marseille",
+            "Toulon"
+          ],
+          "answer": 2,
+          "short": "Marseille",
+          "explanation": "Il a grandi dans les quartiers nord de Marseille avant de faire ses débuts à l’AS Cannes."
+        },
+        {
+          "question": "Quel nom les Grecs ont-ils donné à Marseille lors de sa fondation ?",
+          "options": [
+            "Nikaia",
+            "Massalia",
+            "Antipolis",
+            "Narbo"
+          ],
+          "answer": 1,
+          "short": "Massalia",
+          "explanation": "Massalia est fondée vers 600 av. J.-C., ce qui fait de Marseille la plus ancienne ville de France."
+        },
+        {
+          "question": "Les fondateurs de Massalia venaient de Phocée. Dans quel pays actuel se trouvait cette cité grecque ?",
+          "options": [
+            "L’Italie",
+            "La Grèce",
+            "Chypre",
+            "La Turquie"
+          ],
+          "answer": 3,
+          "short": "La Turquie",
+          "explanation": "Phocée était sur la côte d’Asie Mineure, en Turquie actuelle. D’où le surnom de « cité phocéenne »."
+        },
+        {
+          "question": "Quel navigateur marseillais est parti explorer l’Atlantique nord vers 325 av. J.-C. ?",
+          "options": [
+            "Pythéas",
+            "Hannon",
+            "Hérodote",
+            "Néarque"
+          ],
+          "answer": 0,
+          "short": "Pythéas",
+          "explanation": "Pythéas de Marseille a longé les côtes de l’Europe de l’Ouest et atteint les îles Britanniques."
+        },
+        {
+          "question": "Il rapporte l’existence d’une terre à six jours de navigation au nord de la Bretagne, où le soleil se couche à peine. Son nom ?",
+          "options": [
+            "L’Atlantide",
+            "Thulé",
+            "Ogygie",
+            "L’Hyperborée"
+          ],
+          "answer": 1,
+          "short": "Thulé",
+          "explanation": "Thulé, « la plus septentrionale des terres », a nourri l’imaginaire pendant des siècles."
+        }
+      ]
+    },
+    "2026-10-03": {
+      "thread": "De Usual Suspects au Masque de fer",
+      "questions": [
+        {
+          "question": "Usual Suspects, film policier de Bryan Singer, est sorti en quelle année ?",
+          "options": [
+            "1985",
+            "1995",
+            "2005",
+            "1975"
+          ],
+          "answer": 1,
+          "short": "1995",
+          "explanation": "Sorti en 1995, il met en scène la légende du criminel Keyser Söze."
+        },
+        {
+          "question": "Cette année-là, il a été présenté hors compétition dans quel festival ?",
+          "options": [
+            "Venise",
+            "Berlin",
+            "Deauville",
+            "Cannes"
+          ],
+          "answer": 3,
+          "short": "Cannes",
+          "explanation": "Il a été montré hors compétition au festival de Cannes en 1995."
+        },
+        {
+          "question": "Dans quel département se trouve Cannes ?",
+          "options": [
+            "Les Alpes-Maritimes",
+            "Le Var",
+            "L’Hérault",
+            "Les Bouches-du-Rhône"
+          ],
+          "answer": 0,
+          "short": "Alpes-Maritimes",
+          "explanation": "Cannes est une commune des Alpes-Maritimes, sur la Côte d’Azur."
+        },
+        {
+          "question": "Au large de Cannes, quelle île abrite le fort où fut enfermé le célèbre Masque de fer ?",
+          "options": [
+            "L’île d’If",
+            "Porquerolles",
+            "Sainte-Marguerite",
+            "Saint-Honorat"
+          ],
+          "answer": 2,
+          "short": "Sainte-Marguerite",
+          "explanation": "Le prisonnier masqué a été détenu au fort Royal de l’île Sainte-Marguerite de 1687 à 1698."
+        },
+        {
+          "question": "Quel philosophe a rendu public le mystère du Masque de fer dans un ouvrage de 1751 ?",
+          "options": [
+            "Diderot",
+            "Montesquieu",
+            "Rousseau",
+            "Voltaire"
+          ],
+          "answer": 3,
+          "short": "Voltaire",
+          "explanation": "Voltaire en parle dans « Le Siècle de Louis XIV » (1751) et a lancé les spéculations sur son identité."
+        }
+      ]
+    },
+    "2026-10-04": {
+      "thread": "De la rivière Kwaï à la Planète des singes",
+      "questions": [
+        {
+          "question": "Le Pont de la rivière Kwaï, film de David Lean (1957), se déroule pendant quelle guerre ?",
+          "options": [
+            "La Première Guerre mondiale",
+            "La Seconde Guerre mondiale",
+            "La guerre de Corée",
+            "La guerre du Vietnam"
+          ],
+          "answer": 1,
+          "short": "La Seconde Guerre mondiale",
+          "explanation": "L’histoire se passe dans un camp japonais de prisonniers de guerre britanniques pendant la Seconde Guerre mondiale."
+        },
+        {
+          "question": "Dans quel pays se trouve le camp de prisonniers du film ?",
+          "options": [
+            "La Thaïlande",
+            "Le Vietnam",
+            "Les Philippines",
+            "L’Inde"
+          ],
+          "answer": 0,
+          "short": "La Thaïlande",
+          "explanation": "Le pont est construit au-dessus de la rivière Kwaï, en pleine jungle thaïlandaise."
+        },
+        {
+          "question": "La voie ferrée construite par les prisonniers relie Bangkok à Rangoun, ville de quel pays ?",
+          "options": [
+            "Le Laos",
+            "Le Cambodge",
+            "La Malaisie",
+            "La Birmanie"
+          ],
+          "answer": 3,
+          "short": "La Birmanie",
+          "explanation": "Rangoun (aujourd’hui Yangon) est en Birmanie. Cette ligne est surnommée la « voie ferrée de la mort »."
+        },
+        {
+          "question": "Le film est adapté d’un roman de 1952 signé de quel écrivain français ?",
+          "options": [
+            "Romain Gary",
+            "Pierre Boulle",
+            "Joseph Kessel",
+            "Henri Troyat"
+          ],
+          "answer": 1,
+          "short": "Pierre Boulle",
+          "explanation": "Pierre Boulle a écrit « Le Pont de la rivière Kwaï » en 1952, à partir de son expérience en Asie du Sud-Est."
+        },
+        {
+          "question": "Quel autre roman de Pierre Boulle, paru en 1963, a été adapté au cinéma en 1968 ?",
+          "options": [
+            "La Planète des singes",
+            "Fahrenheit 451",
+            "Le Meilleur des mondes",
+            "Soleil vert"
+          ],
+          "answer": 0,
+          "short": "La Planète des singes",
+          "explanation": "Le film de 1968 avec Charlton Heston est tiré du roman de Pierre Boulle, qui a aussi inspiré toute une saga."
+        }
+      ]
+    },
+    "2026-10-05": {
+      "thread": "D’Orléans à Castillon",
+      "questions": [
+        {
+          "question": "Dans quelle ville française se déroule l’intrigue de Police Python 357, film d’Alain Corneau (1976) ?",
+          "options": [
+            "Lille",
+            "Lyon",
+            "Orléans",
+            "Nantes"
+          ],
+          "answer": 2,
+          "short": "Orléans",
+          "explanation": "Le film suit l’inspecteur Ferrot (Yves Montand) dans la police d’Orléans, en 1975."
+        },
+        {
+          "question": "Orléans a été libérée des Anglais en 1429 par quelle héroïne ?",
+          "options": [
+            "Jeanne d’Arc",
+            "Aliénor d’Aquitaine",
+            "Catherine de Médicis",
+            "Blanche de Castille"
+          ],
+          "answer": 0,
+          "short": "Jeanne d’Arc",
+          "explanation": "Jeanne d’Arc lève le siège d’Orléans en mai 1429 : on la surnomme « la Pucelle d’Orléans »."
+        },
+        {
+          "question": "Dans quelle ville Jeanne d’Arc a-t-elle été brûlée vive en 1431 ?",
+          "options": [
+            "Reims",
+            "Rouen",
+            "Compiègne",
+            "Domrémy"
+          ],
+          "answer": 1,
+          "short": "Rouen",
+          "explanation": "Condamnée par un tribunal d’Église, elle est brûlée sur la place du Vieux-Marché, à Rouen."
+        },
+        {
+          "question": "Quel roi Jeanne d’Arc a-t-elle fait sacrer à Reims en juillet 1429 ?",
+          "options": [
+            "Charles V",
+            "Louis XI",
+            "Charles VI",
+            "Charles VII"
+          ],
+          "answer": 3,
+          "short": "Charles VII",
+          "explanation": "Le dauphin Charles est sacré roi de France à Reims, ce qui renforce sa légitimité face aux Anglais."
+        },
+        {
+          "question": "La guerre de Cent Ans s’achève en 1453 par la victoire française dans quelle bataille ?",
+          "options": [
+            "Azincourt",
+            "Poitiers",
+            "Castillon",
+            "Formigny"
+          ],
+          "answer": 2,
+          "short": "Castillon",
+          "explanation": "La bataille de Castillon, en Guyenne, le 17 juillet 1453, met fin aux combats de la guerre de Cent Ans."
+        }
+      ]
+    },
+    "2026-10-06": {
+      "thread": "Du Québec au lac Michigan",
+      "questions": [
+        {
+          "question": "Le Parti québécois défend l’indépendance du Québec. De quel pays le Québec est-il aujourd’hui une province ?",
+          "options": [
+            "Des États-Unis",
+            "Du Canada",
+            "De la France",
+            "De la Belgique"
+          ],
+          "answer": 1,
+          "short": "Le Canada",
+          "explanation": "Le Québec est l’une des dix provinces du Canada. Le PQ a été fondé en 1968 par René Lévesque."
+        },
+        {
+          "question": "Quelle est la capitale du Québec ?",
+          "options": [
+            "Montréal",
+            "Ottawa",
+            "Québec",
+            "Trois-Rivières"
+          ],
+          "answer": 2,
+          "short": "Québec",
+          "explanation": "Montréal est la plus grande ville, mais la capitale est Québec. Ottawa est la capitale du Canada."
+        },
+        {
+          "question": "La ville de Québec domine un grand fleuve. Lequel ?",
+          "options": [
+            "Le Saint-Laurent",
+            "Le Mississippi",
+            "L’Hudson",
+            "Le Columbia"
+          ],
+          "answer": 0,
+          "short": "Le Saint-Laurent",
+          "explanation": "Le Saint-Laurent traverse le Québec jusqu’à l’océan Atlantique."
+        },
+        {
+          "question": "Le Saint-Laurent est l’exutoire des Grands Lacs. Lequel est le plus étendu par sa superficie ?",
+          "options": [
+            "Le lac Huron",
+            "Le lac Michigan",
+            "Le lac Érié",
+            "Le lac Supérieur"
+          ],
+          "answer": 3,
+          "short": "Le lac Supérieur",
+          "explanation": "Avec plus de 80 000 km², le lac Supérieur est le plus grand lac d’eau douce du monde par sa surface."
+        },
+        {
+          "question": "Lequel des cinq Grands Lacs se trouve entièrement aux États-Unis ?",
+          "options": [
+            "Le lac Michigan",
+            "Le lac Ontario",
+            "Le lac Érié",
+            "Le lac Huron"
+          ],
+          "answer": 0,
+          "short": "Le lac Michigan",
+          "explanation": "Les quatre autres sont partagés entre le Canada et les États-Unis. Le Michigan baigne Chicago."
+        }
+      ]
+    },
+    "2026-10-07": {
+      "thread": "De Charles X à Guernesey",
+      "questions": [
+        {
+          "question": "Charles X est le frère de deux rois de France. Lequel a été guillotiné en 1793 ?",
+          "options": [
+            "Louis XVI",
+            "Louis XVIII",
+            "Louis XV",
+            "Louis XIV"
+          ],
+          "answer": 0,
+          "short": "Louis XVI",
+          "explanation": "Louis XVI est exécuté en 1793. Charles X est le dernier frère à régner, de 1824 à 1830."
+        },
+        {
+          "question": "En juillet 1830, une révolution renverse Charles X. Comment l’appelle-t-on ?",
+          "options": [
+            "Les Cent-Jours",
+            "La Semaine sanglante",
+            "Les Trois Glorieuses",
+            "La Fronde"
+          ],
+          "answer": 2,
+          "short": "Les Trois Glorieuses",
+          "explanation": "Les journées des 27, 28 et 29 juillet 1830 mènent à l’abdication de Charles X."
+        },
+        {
+          "question": "Quel peintre a immortalisé ces journées dans « La Liberté guidant le peuple » ?",
+          "options": [
+            "Géricault",
+            "Delacroix",
+            "Ingres",
+            "David"
+          ],
+          "answer": 1,
+          "short": "Delacroix",
+          "explanation": "Eugène Delacroix a peint ce tableau en 1830. Il est conservé au musée du Louvre."
+        },
+        {
+          "question": "Sur le tableau, un jeune garçon armé de pistolets passe pour avoir inspiré quel personnage ?",
+          "options": [
+            "Cosette",
+            "Quasimodo",
+            "Jean Valjean",
+            "Gavroche"
+          ],
+          "answer": 3,
+          "short": "Gavroche",
+          "explanation": "On le rapproche de Gavroche, le gamin de Paris des « Misérables » de Victor Hugo."
+        },
+        {
+          "question": "Pendant son exil, Victor Hugo a vécu quinze ans sur une île anglo-normande, à Hauteville House. Laquelle ?",
+          "options": [
+            "Guernesey",
+            "Jersey",
+            "Aurigny",
+            "Sercq"
+          ],
+          "answer": 0,
+          "short": "Guernesey",
+          "explanation": "Après un premier séjour à Jersey, Hugo s’installe à Guernesey en 1855 et y écrit « Les Misérables »."
+        }
+      ]
+    },
+    "2026-10-08": {
+      "thread": "Du Havre à Nadar",
+      "questions": [
+        {
+          "question": "Édouard Philippe a été élu maire en 2010 de quelle ville portuaire normande ?",
+          "options": [
+            "Rouen",
+            "Cherbourg",
+            "Dieppe",
+            "Le Havre"
+          ],
+          "answer": 3,
+          "short": "Le Havre",
+          "explanation": "Il est maire du Havre de 2010 à 2017, puis à nouveau à partir de 2020."
+        },
+        {
+          "question": "Le centre du Havre, reconstruit après 1945 et classé à l’UNESCO en 2005, est l’œuvre de quel architecte ?",
+          "options": [
+            "Le Corbusier",
+            "Auguste Perret",
+            "Haussmann",
+            "Mansart"
+          ],
+          "answer": 1,
+          "short": "Auguste Perret",
+          "explanation": "Auguste Perret a dirigé la reconstruction de la ville en béton armé."
+        },
+        {
+          "question": "Le port du Havre a inspiré à Monet « Impression, soleil levant ». Quel mouvement en tire son nom ?",
+          "options": [
+            "Le fauvisme",
+            "Le cubisme",
+            "L’impressionnisme",
+            "Le symbolisme"
+          ],
+          "answer": 2,
+          "short": "L’impressionnisme",
+          "explanation": "Le tableau de 1872 donne son nom au mouvement, d’après une critique moqueuse parue en 1874."
+        },
+        {
+          "question": "Dans quel musée parisien est conservé « Impression, soleil levant » ?",
+          "options": [
+            "Le musée Marmottan Monet",
+            "Le musée d’Orsay",
+            "L’Orangerie",
+            "Le Petit Palais"
+          ],
+          "answer": 0,
+          "short": "Marmottan Monet",
+          "explanation": "Le tableau est au musée Marmottan Monet, à Paris, qui possède la plus grande collection de Monet."
+        },
+        {
+          "question": "En 1874, la première exposition impressionniste s’est tenue dans l’atelier de quel photographe ?",
+          "options": [
+            "Niépce",
+            "Atget",
+            "Daguerre",
+            "Nadar"
+          ],
+          "answer": 3,
+          "short": "Nadar",
+          "explanation": "Nadar prête ses anciens ateliers du boulevard des Capucines, à Paris, aux artistes refusés au Salon."
+        }
+      ]
+    },
+    "2026-10-09": {
+      "thread": "De Rosario à Montevideo",
+      "questions": [
+        {
+          "question": "Lionel Messi est né à Rosario, ville argentine bâtie au bord de quel fleuve ?",
+          "options": [
+            "L’Orénoque",
+            "L’Amazone",
+            "Le Paraná",
+            "Le Magdalena"
+          ],
+          "answer": 2,
+          "short": "Le Paraná",
+          "explanation": "Rosario s’étend sur la rive ouest du Paraná, l’un des plus grands fleuves d’Amérique du Sud."
+        },
+        {
+          "question": "Le Paraná et l’Uruguay forment ensemble un vaste estuaire. Lequel ?",
+          "options": [
+            "Le Río de la Plata",
+            "Le Río Grande",
+            "Le Río Negro",
+            "Le Río Colorado"
+          ],
+          "answer": 0,
+          "short": "Le Río de la Plata",
+          "explanation": "Le Río de la Plata sépare l’Argentine de l’Uruguay et s’ouvre sur l’océan Atlantique."
+        },
+        {
+          "question": "Sur la rive nord du Río de la Plata se trouve la capitale de l’Uruguay. Laquelle ?",
+          "options": [
+            "Asunción",
+            "Montevideo",
+            "La Paz",
+            "Santiago"
+          ],
+          "answer": 1,
+          "short": "Montevideo",
+          "explanation": "Montevideo est la capitale de l’Uruguay et son principal port."
+        },
+        {
+          "question": "Quel pays a remporté en 1930, à Montevideo, la première Coupe du monde de football ?",
+          "options": [
+            "L’Argentine",
+            "Le Brésil",
+            "L’Italie",
+            "L’Uruguay"
+          ],
+          "answer": 3,
+          "short": "L’Uruguay",
+          "explanation": "L’Uruguay, pays organisateur, bat l’Argentine 4 à 2 en finale."
+        },
+        {
+          "question": "Quel stade de Montevideo a accueilli cette finale de 1930 ?",
+          "options": [
+            "Le Maracanã",
+            "L’Estadio Centenario",
+            "La Bombonera",
+            "Le Monumental"
+          ],
+          "answer": 1,
+          "short": "L’Estadio Centenario",
+          "explanation": "Inauguré pour la compétition, il a été construit pour le centenaire de la Constitution uruguayenne de 1830."
+        }
+      ]
+    },
+    "2026-10-10": {
+      "thread": "De la Suède à la dynamite",
+      "questions": [
+        {
+          "question": "Le groupe de hard rock Europe, auteur de « The Final Countdown », est originaire de quel pays ?",
+          "options": [
+            "De Norvège",
+            "De Finlande",
+            "De Suède",
+            "Du Danemark"
+          ],
+          "answer": 2,
+          "short": "La Suède",
+          "explanation": "Europe est né en 1979 à Upplands Väsby, en Suède."
+        },
+        {
+          "question": "Quelle est la capitale de la Suède ?",
+          "options": [
+            "Stockholm",
+            "Göteborg",
+            "Malmö",
+            "Uppsala"
+          ],
+          "answer": 0,
+          "short": "Stockholm",
+          "explanation": "Stockholm est la capitale et la plus grande ville de Suède."
+        },
+        {
+          "question": "Chaque 10 décembre, quel prestigieux prix y est remis (sauf celui de la paix, remis à Oslo) ?",
+          "options": [
+            "Le prix Pulitzer",
+            "La Palme d’or",
+            "Le prix Turner",
+            "Le prix Nobel"
+          ],
+          "answer": 3,
+          "short": "Le prix Nobel",
+          "explanation": "La cérémonie a lieu le 10 décembre, jour anniversaire de la mort d’Alfred Nobel, en 1896."
+        },
+        {
+          "question": "Alfred Nobel, dont la fortune finance ces prix, a fait la sienne en inventant quel explosif ?",
+          "options": [
+            "La poudre noire",
+            "La dynamite",
+            "La mélinite",
+            "Le napalm"
+          ],
+          "answer": 1,
+          "short": "La dynamite",
+          "explanation": "Il a breveté la dynamite en 1867 : une manière plus sûre de manier la nitroglycérine."
+        },
+        {
+          "question": "La dynamite est de la nitroglycérine stabilisée par quelle substance absorbante ?",
+          "options": [
+            "La craie",
+            "Le sable fin",
+            "La kieselguhr",
+            "La cendre"
+          ],
+          "answer": 2,
+          "short": "La kieselguhr",
+          "explanation": "La kieselguhr, ou terre de diatomées, absorbe la nitroglycérine et la rend bien moins instable."
+        }
+      ]
+    },
+    "2026-10-11": {
+      "thread": "De l'obélisque à l'Etna",
+      "questions": [
+        {
+          "question": "L'obélisque de la place de la Concorde, à Paris, vient d'une ville d'Égypte. Laquelle ?",
+          "options": [
+            "Louxor",
+            "Alexandrie",
+            "Assouan",
+            "Gizeh"
+          ],
+          "answer": 0,
+          "short": "Louxor",
+          "explanation": "Offert à la France par l'Égypte, il se dressait à l'entrée du temple de Louxor. Il a été érigé à Paris en 1836."
+        },
+        {
+          "question": "Louxor est bâtie sur les rives de quel fleuve ?",
+          "options": [
+            "Le Tigre",
+            "Le Nil",
+            "Le Niger",
+            "Le Congo"
+          ],
+          "answer": 1,
+          "short": "Le Nil",
+          "explanation": "Le Nil traverse l'Égypte du sud au nord. Louxor se trouve sur sa rive orientale."
+        },
+        {
+          "question": "Dans quelle mer le Nil se jette-t-il ?",
+          "options": [
+            "La mer Rouge",
+            "La mer Noire",
+            "La Méditerranée",
+            "La mer Caspienne"
+          ],
+          "answer": 2,
+          "short": "La Méditerranée",
+          "explanation": "Il forme un vaste delta avant de rejoindre la Méditerranée."
+        },
+        {
+          "question": "Quelle est la plus grande île de la Méditerranée ?",
+          "options": [
+            "La Crète",
+            "La Sardaigne",
+            "Chypre",
+            "La Sicile"
+          ],
+          "answer": 3,
+          "short": "La Sicile",
+          "explanation": "La Sicile devance la Sardaigne. Elle est séparée de l'Italie continentale par le détroit de Messine."
+        },
+        {
+          "question": "Quel volcan domine l'est de la Sicile ?",
+          "options": [
+            "L'Etna",
+            "Le Vésuve",
+            "Le Stromboli",
+            "Santorin"
+          ],
+          "answer": 0,
+          "short": "L'Etna",
+          "explanation": "L'Etna est l'un des volcans les plus actifs du monde."
+        }
+      ]
+    }
+  }
+}

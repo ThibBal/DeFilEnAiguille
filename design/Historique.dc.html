@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Historique</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+[data-theme]{--paper:#F6F3EC;--ink:#1D1B18;--muted:#6B665C;--card:#FBF9F4;--border:#D9D3C6;--hair:#E2DCCF;--accent:#B5371F;--accent-soft:#F6E3DB;--ring:#F0D9D0;--wrong-bg:#ECE7DC;--wrong-ink:#4F4B43;--dim-border:#E5E0D4;--dot-off:#8A8477;--seg:#CFC8B9;--body:#3A372F}
+[data-theme="dark"]{--paper:#171612;--ink:#F2EEE5;--muted:#A39D90;--card:#201E19;--border:#3A362E;--hair:#2B2923;--accent:#E4694F;--accent-soft:#3A211B;--ring:#4A2A22;--wrong-bg:#2A2822;--wrong-ink:#C9C3B6;--dim-border:#2B2923;--dot-off:#7C7669;--seg:#4A463D;--body:#D8D3C7}
+body{margin:0}
+.row{display:flex;align-items:center;gap:16px;min-height:72px;box-sizing:border-box;padding:12px 0;border-bottom:1px solid var(--hair);color:var(--ink);text-decoration:none}
+.row:focus-visible,.cta:focus-visible,.tab:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.dot{width:9px;height:9px;border-radius:50%;box-sizing:border-box;border:1.5px solid var(--dot-off);background:transparent}
+.dot[data-on="yes"]{background:var(--accent);border-color:var(--accent)}
+.cta{display:flex;align-items:center;justify-content:center;width:100%;box-sizing:border-box;height:56px;border:0;border-radius:16px;background:var(--ink);color:var(--paper);font-size:17px;font-weight:600;text-decoration:none}
+.tab{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;flex:1;min-height:60px;text-decoration:none;font-size:12px;font-weight:500;color:var(--muted)}
+.tab[aria-current="page"]{color:var(--ink);font-weight:600}
+</style>
+</helmet>
+<div data-theme="{{ theme }}" style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: var(--paper); color: var(--ink); font-family: 'Hanken Grotesk', system-ui, sans-serif; overflow: hidden">
+
+  <div style="flex: 1; min-height: 0; overflow-y: auto; padding: 24px 24px 24px">
+
+    <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 12px">
+      <span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 24px; line-height: 1">De fil en aiguille</span>
+    </div>
+
+    <h1 style="margin: 28px 0 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 44px; line-height: 1">Historique</h1>
+    <p style="margin: 8px 0 0; font-size: 15px; color: var(--muted)">Tous vos questionnaires, du plus récent au plus ancien.</p>
+
+    <div style="display: flex; margin-top: 20px; border-top: 1px solid var(--hair); border-bottom: 1px solid var(--hair)">
+      <div style="flex: 1; padding: 14px 0">
+        <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1">3 <span style="font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 14px; color: var(--muted)">jours</span></div>
+        <div style="margin-top: 4px; font-size: 12px; color: var(--muted)">Série en cours</div>
+      </div>
+      <div style="flex: 1; padding: 14px 0 14px 16px; border-left: 1px solid var(--hair)">
+        <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1">9</div>
+        <div style="margin-top: 4px; font-size: 12px; color: var(--muted)">Questionnaires joués</div>
+      </div>
+      <div style="flex: 1; padding: 14px 0 14px 16px; border-left: 1px solid var(--hair)">
+        <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 34px; line-height: 1">3,8 <span style="font-family: 'Hanken Grotesk', system-ui, sans-serif; font-size: 14px; color: var(--muted)">/ 5</span></div>
+        <div style="margin-top: 4px; font-size: 12px; color: var(--muted)">Moyenne</div>
+      </div>
+    </div>
+
+    <div style="margin-top: 24px; padding: 20px; box-sizing: border-box; border: 1.5px solid var(--border); border-radius: 20px; background: var(--card); display: flex; flex-direction: column; gap: 16px">
+      <div>
+        <p style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent)">Aujourd'hui · dim. 11 oct.</p>
+        <p style="margin: 8px 0 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 28px; line-height: 1.12">5 questions à relier, du premier fil au dernier.</p>
+      </div>
+      <a class="cta" href="Main.dc.html">Commencer</a>
+    </div>
+
+    <sc-for list="{{ groups }}" as="g" hint-placeholder-count="2">
+      <section style="margin-top: 32px">
+        <h2 style="margin: 0; padding-bottom: 8px; border-bottom: 1px solid var(--ink); font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase">{{ g.label }}</h2>
+        <sc-for list="{{ g.days }}" as="d" hint-placeholder-count="3">
+          <a class="row" href="{{ d.href }}">
+            <div style="width: 44px; flex: none; text-align: center">
+              <div style="font-family: 'Instrument Serif', Georgia, serif; font-size: 32px; line-height: 1">{{ d.n }}</div>
+              <div style="margin-top: 2px; font-size: 12px; color: var(--muted)">{{ d.dow }}</div>
+            </div>
+            <div style="flex: 1; min-width: 0">
+              <div style="font-size: 16px; font-weight: 500; line-height: 1.3; text-wrap: balance">{{ d.title }}</div>
+              <div style="margin-top: 3px; font-size: 13px; color: var(--muted)">{{ d.sub }}</div>
+            </div>
+            <div role="img" aria-label="{{ d.sub }}" style="display: flex; gap: 5px; flex: none">
+              <sc-for list="{{ d.dots }}" as="p" hint-placeholder-count="5">
+                <span class="dot" data-on="{{ p }}"></span>
+              </sc-for>
+            </div>
+          </a>
+        </sc-for>
+      </section>
+    </sc-for>
+
+  </div>
+
+  <nav aria-label="Navigation principale" style="flex: none; display: flex; border-top: 1px solid var(--hair); background: var(--paper); padding-bottom: 6px">
+    <a class="tab" href="Main.dc.html">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+      <span>Aujourd'hui</span>
+    </a>
+    <a class="tab" href="Historique.dc.html" aria-current="page">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h14M5 12h14M5 17h9"/></svg>
+      <span>Historique</span>
+    </a>
+  </nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;dark&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true},&quot;$preview&quot;:{&quot;width&quot;:390,&quot;height&quot;:844}}">
+class Component extends DCLogic {
+  renderVals() {
+    const mk = (n, dow, title, score) => {
+      const missed = score === null;
+      return {
+        n, dow,
+        href: n === "10" ? "Revue.dc.html" : "#",
+        title: missed ? "Non joué" : title,
+        sub: missed ? "Aucune réponse" : score + " sur 5",
+        dots: [0, 1, 2, 3, 4].map((k) => (!missed && k < score ? "yes" : "no"))
+      };
+    };
+    const groups = [
+      {
+        label: "Octobre 2026",
+        days: [
+          mk("10", "sam.", "De la soie à Marco Polo", 4),
+          mk("9", "ven.", "Du métro à Hector Guimard", 3),
+          mk("8", "jeu.", "Du piano à Chopin", 5),
+          mk("7", "mer.", "", null),
+          mk("6", "mar.", "Des Alpes au mont Blanc", 4),
+          mk("5", "lun.", "Du ballon ovale à Twickenham", 2),
+          mk("4", "dim.", "Du cidre à la Normandie", 3)
+        ]
+      },
+      {
+        label: "Septembre 2026",
+        days: [
+          mk("30", "mer.", "De l'encre à Victor Hugo", 5),
+          mk("29", "mar.", "Du thé à l'Himalaya", 4),
+          mk("28", "lun.", "Du sel à Guérande", 4)
+        ]
+      }
+    ];
+    return { groups, theme: this.props.dark ? "dark" : "light" };
+  }
+}
+</script>
+</body>
+</html>
