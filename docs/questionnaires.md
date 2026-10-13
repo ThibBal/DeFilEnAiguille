@@ -10,9 +10,11 @@ Les questionnaires sont dans `content/quizzes/`, un fichier par jour (`AAAA-MM-J
 - Mise en place unique : dans les réglages du dépôt GitHub, Pages → Source : « GitHub Actions ».
 - Ajouter un jour : créer `content/quizzes/AAAA-MM-JJ.json`, valider, commit, push.
 
-Format d'un questionnaire : `thread` (le « fil du jour », révélé à la fin) et 5 `questions`, chacune avec `question`, `options` (4), `answer` (index de la bonne réponse, à varier), `short` (mot affiché dans le fil récapitulatif), `hint` (indice sur la réponse, qui ne la donne pas), `explanation` et, à partir de la 2e question, `link`. Les 5 questions s'enchaînent par association d'idées, de plus en plus difficiles : la dernière est la plus difficile, mais reste à la portée d'un joueur cultivé aidé de son indice (pas de question d'érudit).
+Format d'un questionnaire : `thread` (le « fil du jour », révélé à la fin) et 5 `questions`, chacune avec `question`, `options` (4), `answer` (index de la bonne réponse, à varier), `short` (mot affiché dans le fil récapitulatif), `accept` (facultatif : autres écritures acceptées en saisie libre), `hint` (indice sur la réponse, qui ne la donne pas), `explanation` et, à partir de la 2e question, `link`. Les 5 questions s'enchaînent par association d'idées, de plus en plus difficiles : la dernière est la plus difficile, mais reste à la portée d'un joueur cultivé aidé de son indice (pas de question d'érudit).
 
 **Règle du fil :** chaque question (à partir de la 2e) reprend explicitement la bonne réponse de la précédente dans son texte, et `link` est l'extrait exact de la question qui la reprend (par exemple « Louxor » ou « Cette année-là »). C'est le mot que la bonne réponse rejoint dans l'animation « le fil passe ». Une question ne doit jamais contenir sa propre réponse.
+
+**Saisie libre.** Le joueur tape sa réponse. Sont acceptés `options[answer]`, `short` et les entrées de `accept`, sans tenir compte des accents, de la casse, de la ponctuation ni des articles, avec 1 faute de frappe (mots de 4 à 8 lettres) ou 2 (9 lettres et plus). Une saisie plus proche d'une mauvaise proposition que de la bonne est refusée. Ajouter dans `accept` les écritures courantes que la tolérance ne couvre pas : le nom de famille seul (« Simenon »), un chiffre arabe (« Louis 18 »), un autre nom (« Myanmar »). `scripts/tester_reponses.sh` vérifie tous les questionnaires : variantes acceptées, mauvaises propositions refusées.
 
 ## Choix du thème
 

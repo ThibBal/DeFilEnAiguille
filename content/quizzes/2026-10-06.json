@@ -66,6 +66,9 @@
       ],
       "answer": 1,
       "short": "L’île de la Cité",
+      "accept": [
+        "Cité"
+      ],
       "hint": "Son nom évoque le noyau d’une ville ancienne.",
       "explanation": "Les Parisii s’y étaient établis avant les Romains. La construction de Notre-Dame y commence en 1163.",
       "link": "Paris"

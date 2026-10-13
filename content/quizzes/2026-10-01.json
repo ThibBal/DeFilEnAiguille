@@ -11,6 +11,10 @@
       ],
       "answer": 0,
       "short": "Les États-Unis",
+      "accept": [
+        "USA",
+        "États-Unis d’Amérique"
+      ],
       "hint": "Une comptine américaine raconte son histoire.",
       "explanation": "Elle a été jugée en 1893 et acquittée. L’affaire est restée l’un des faits divers les plus célèbres du pays."
     },

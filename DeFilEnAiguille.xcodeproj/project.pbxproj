@@ -26,6 +26,7 @@
 		B0A6C9FE75C64E0CA9E404D3 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBED91664589793F7BF36E /* TodayView.swift */; };
 		DC031F046F5F99012E0364AE /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F58BE65649CC5EF6AC7308E /* RootView.swift */; };
 		E482B003A2A5B0CE8E9753B7 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFC7C1704951D8450DDCB2C4 /* HistoryView.swift */; };
+		E5AD9DD25B94C9E68DC19BEB /* AnswerMatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 834A61A50092A7DA18A84C21 /* AnswerMatcher.swift */; };
 		E65605198A23B2E8E10EE044 /* InstrumentSerif_400Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85A1FC6665C880F8FBCC8962 /* InstrumentSerif_400Regular.ttf */; };
 		EEA2668FDAED3B4CFEE25845 /* quizzes.json in Resources */ = {isa = PBXBuildFile; fileRef = D66D91464E9B1D1B834FA282 /* quizzes.json */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		74F3398A56AAE00C542E2CD1 /* DeFilEnAiguille.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DeFilEnAiguille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF3D4ABE00BD6B5FA69FCEE /* DeFilEnAiguilleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeFilEnAiguilleApp.swift; sourceTree = "<group>"; };
 		7D505143E31C80BCFE0E529E /* HankenGrotesk_500Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HankenGrotesk_500Medium.ttf; sourceTree = "<group>"; };
+		834A61A50092A7DA18A84C21 /* AnswerMatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerMatcher.swift; sourceTree = "<group>"; };
 		85A1FC6665C880F8FBCC8962 /* InstrumentSerif_400Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = InstrumentSerif_400Regular.ttf; sourceTree = "<group>"; };
 		AFC7C1704951D8450DDCB2C4 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		B7201EB22A96EA267A388461 /* HankenGrotesk_400Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HankenGrotesk_400Regular.ttf; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 		A37BC5CCDBF0A2F3C034BF0A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				834A61A50092A7DA18A84C21 /* AnswerMatcher.swift */,
 				0C2CA0F0A657D2A8B98B82F1 /* DateKey.swift */,
 				1DF31CE33D2CCB33BB8B869F /* Play.swift */,
 				C7CC07C1A301B0A72A8DE566 /* Quiz.swift */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5AD9DD25B94C9E68DC19BEB /* AnswerMatcher.swift in Sources */,
 				95B01B750CE9721EE6BA4FFC /* DateKey.swift in Sources */,
 				297D17676FDDFA4A297E00E9 /* DeFilEnAiguilleApp.swift in Sources */,
 				E482B003A2A5B0CE8E9753B7 /* HistoryView.swift in Sources */,

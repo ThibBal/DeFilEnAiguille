@@ -66,6 +66,9 @@
       ],
       "answer": 0,
       "short": "La Floride",
+      "accept": [
+        "Floride"
+      ],
       "hint": "Son nom signifie « pays fleuri » en espagnol.",
       "explanation": "Jules Verne situe le site de lancement près de Tampa. Les fusées Apollo décolleront de Cap Canaveral un siècle plus tard.",
       "link": "De la Terre à la Lune"

@@ -24,6 +24,9 @@
       ],
       "answer": 0,
       "short": "Copenhague",
+      "accept": [
+        "Copenhagen"
+      ],
       "hint": "Une série policière scandinave s’appelle « Le Pont » à cause de lui.",
       "explanation": "Le pont de l’Øresund traverse le détroit du même nom. Il a inspiré la série « Bron/Broen ».",
       "link": "Suède"
@@ -38,6 +41,9 @@
       ],
       "answer": 2,
       "short": "Niels Bohr",
+      "accept": [
+        "Bohr"
+      ],
       "hint": "Un élément chimique lui rend hommage.",
       "explanation": "Niels Bohr a dirigé à Copenhague un institut de physique théorique qui a attiré les plus grands noms de la mécanique quantique.",
       "link": "Copenhague"
@@ -52,6 +58,9 @@
       ],
       "answer": 3,
       "short": "Werner Heisenberg",
+      "accept": [
+        "Heisenberg"
+      ],
       "hint": "Son nom est lié à un principe d’incertitude.",
       "explanation": "Heisenberg dirigeait alors le programme nucléaire allemand. La pièce explore ce qui a été dit lors de cette visite, restée mystérieuse.",
       "link": "Niels Bohr"
@@ -66,6 +75,9 @@
       ],
       "answer": 0,
       "short": "Erwin Schrödinger",
+      "accept": [
+        "Schrödinger"
+      ],
       "hint": "Il a reçu le prix Nobel de physique en 1933.",
       "explanation": "Le chat de Schrödinger est une expérience de pensée qui visait à critiquer l’interprétation de Copenhague défendue par Bohr.",
       "link": "Heisenberg"

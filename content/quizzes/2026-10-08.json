@@ -11,6 +11,9 @@
       ],
       "answer": 0,
       "short": "Louis XVIII",
+      "accept": [
+        "Louis 18"
+      ],
       "hint": "Il est monté sur le trône en 1814, après la chute de l’Empire.",
       "explanation": "Louis XVIII a régné de 1814 à 1824, avec une interruption pendant les Cent-Jours. Charles X, son frère cadet, lui succède."
     },
@@ -38,6 +41,10 @@
       ],
       "answer": 1,
       "short": "Charles Quint",
+      "accept": [
+        "Charles V",
+        "Charles 5"
+      ],
       "hint": "Il partage son prénom avec Charles X.",
       "explanation": "Charles Quint est né à Gand le 24 février 1500. Il hérite des Pays-Bas, de l’Espagne et de ses colonies, puis de l’Empire.",
       "link": "Gand"
@@ -52,6 +59,9 @@
       ],
       "answer": 0,
       "short": "Philippe II",
+      "accept": [
+        "Philippe 2"
+      ],
       "hint": "Il a fait bâtir l’Escurial, près de Madrid.",
       "explanation": "Charles Quint cède les Pays-Bas puis l’Espagne à son fils en 1555-1556, et le titre impérial à son frère Ferdinand.",
       "link": "Charles Quint"

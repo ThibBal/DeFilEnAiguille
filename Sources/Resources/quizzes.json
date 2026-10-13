@@ -13,6 +13,10 @@
           ],
           "answer": 0,
           "short": "Les États-Unis",
+          "accept": [
+            "USA",
+            "États-Unis d’Amérique"
+          ],
           "hint": "Une comptine américaine raconte son histoire.",
           "explanation": "Elle a été jugée en 1893 et acquittée. L’affaire est restée l’un des faits divers les plus célèbres du pays."
         },
@@ -87,6 +91,9 @@
           ],
           "answer": 0,
           "short": "Madère",
+          "accept": [
+            "Madeira"
+          ],
           "hint": "L’aéroport de l’île porte son nom depuis 2017.",
           "explanation": "Il est né à Funchal, sur l’île de Madère, le 5 février 1985. L’aéroport de l’île s’appelle « Cristiano Ronaldo » depuis 2017."
         },
@@ -142,6 +149,9 @@
           ],
           "answer": 1,
           "short": "Edgar Degas",
+          "accept": [
+            "Degas"
+          ],
           "hint": "Il est surtout connu pour ses danseuses.",
           "explanation": "« Dans un café (L’Absinthe) » a été peint par Edgar Degas vers 1875-1876. Manet avait peint « Le Buveur d’absinthe » dès 1859.",
           "link": "absinthe"
@@ -161,6 +171,9 @@
           ],
           "answer": 1,
           "short": "Georges Simenon",
+          "accept": [
+            "Simenon"
+          ],
           "hint": "Son commissaire fume la pipe.",
           "explanation": "Le film adapte « Les Fiançailles de M. Hire » (1933). Georges Simenon a écrit 75 romans mettant en scène Maigret."
         },
@@ -202,6 +215,9 @@
           ],
           "answer": 0,
           "short": "La bataille des Ardennes",
+          "accept": [
+            "Ardennes"
+          ],
           "hint": "Hitler y a lancé sa dernière grande offensive à l’ouest.",
           "explanation": "L’offensive allemande de décembre 1944 visait à atteindre le port d’Anvers. Bastogne, nœud routier, fut encerclée pendant plusieurs jours.",
           "link": "Liège-Bastogne-Liège"
@@ -216,6 +232,9 @@
           ],
           "answer": 3,
           "short": "Anthony McAuliffe",
+          "accept": [
+            "McAuliffe"
+          ],
           "hint": "Ce n’est pas Patton, qui est venu le délivrer.",
           "explanation": "Le général McAuliffe commandait par intérim la 101e division aéroportée. « Nuts ! » (« des noix ! ») fut sa réponse à la demande de reddition.",
           "link": "bataille des Ardennes"
@@ -235,6 +254,9 @@
           ],
           "answer": 2,
           "short": "Salvador Dalí",
+          "accept": [
+            "Dalí"
+          ],
           "hint": "Il a peint des montres molles.",
           "explanation": "Amanda Lear a fréquenté Salvador Dalí dès les années 1960 et fut l’une de ses muses. Il est l’auteur de « La Persistance de la mémoire »."
         },
@@ -262,6 +284,9 @@
           ],
           "answer": 1,
           "short": "Antoni Gaudí",
+          "accept": [
+            "Gaudí"
+          ],
           "hint": "Il a aussi dessiné le parc Güell.",
           "explanation": "Gaudí a repris le chantier de la Sagrada Família en 1883 et y a consacré la fin de sa vie. Elle n’est toujours pas terminée.",
           "link": "Catalogne"
@@ -276,6 +301,9 @@
           ],
           "answer": 0,
           "short": "Un tramway",
+          "accept": [
+            "Tram"
+          ],
           "hint": "Il roulait sur des rails.",
           "explanation": "Gaudí, vêtu simplement, ne fut pas reconnu tout de suite par les passants. Il est mort trois jours plus tard, le 10 juin 1926.",
           "link": "Gaudí"
@@ -309,6 +337,10 @@
           ],
           "answer": 1,
           "short": "La Seconde Guerre mondiale",
+          "accept": [
+            "Deuxième Guerre mondiale",
+            "2nde Guerre mondiale"
+          ],
           "hint": "Le Japon y est l’un des belligérants.",
           "explanation": "Le film s’inspire du roman de Pierre Boulle et de la construction de la voie ferrée Thaïlande-Birmanie par les Japonais."
         },
@@ -322,6 +354,9 @@
           ],
           "answer": 3,
           "short": "La Birmanie",
+          "accept": [
+            "Myanmar"
+          ],
           "hint": "Elle borde le golfe du Bengale.",
           "explanation": "La « voie ferrée de la mort » reliait Bangkok à Rangoun sur environ 415 kilomètres. Des dizaines de milliers de prisonniers et de travailleurs forcés y sont morts.",
           "link": "Seconde Guerre mondiale"
@@ -336,6 +371,9 @@
           ],
           "answer": 2,
           "short": "Aung San Suu Kyi",
+          "accept": [
+            "Suu Kyi"
+          ],
           "hint": "Elle a passé une quinzaine d’années assignée à résidence.",
           "explanation": "Cheffe de la Ligue nationale pour la démocratie, elle a appris l’attribution du prix alors qu’elle était assignée à résidence.",
           "link": "Birmanie"
@@ -364,6 +402,9 @@
           ],
           "answer": 2,
           "short": "The Boat Race",
+          "accept": [
+            "Boat Race"
+          ],
           "hint": "Son nom en anglais signifie littéralement « la course de bateaux ».",
           "explanation": "Disputée depuis 1829, elle oppose les équipages des deux universités sur environ 6,8 kilomètres, entre Putney et Mortlake.",
           "link": "Oxford"
@@ -438,6 +479,9 @@
           ],
           "answer": 1,
           "short": "L’île de la Cité",
+          "accept": [
+            "Cité"
+          ],
           "hint": "Son nom évoque le noyau d’une ville ancienne.",
           "explanation": "Les Parisii s’y étaient établis avant les Romains. La construction de Notre-Dame y commence en 1163.",
           "link": "Paris"
@@ -457,6 +501,9 @@
           ],
           "answer": 0,
           "short": "Le Saint-Laurent",
+          "accept": [
+            "Fleuve Saint-Laurent"
+          ],
           "hint": "Jacques Cartier l’a remonté dès 1535.",
           "explanation": "Le Saint-Laurent relie les Grands Lacs à l’océan Atlantique. Québec et Montréal se sont développées sur ses rives."
         },
@@ -470,6 +517,9 @@
           ],
           "answer": 3,
           "short": "Le lac Michigan",
+          "accept": [
+            "Michigan"
+          ],
           "hint": "Chicago est sur ses rives.",
           "explanation": "Les quatre autres sont partagés entre le Canada et les États-Unis. Le Michigan est relié au lac Huron par le détroit de Mackinac.",
           "link": "Saint-Laurent"
@@ -484,6 +534,10 @@
           ],
           "answer": 2,
           "short": "La Sears Tower",
+          "accept": [
+            "Sears",
+            "Willis Tower"
+          ],
           "hint": "Une chaîne de grands magasins lui a donné son nom.",
           "explanation": "Haute de 442 mètres, elle est rebaptisée Willis Tower en 2009. C’est aujourd’hui l’un des plus hauts bâtiments des États-Unis.",
           "link": "Michigan"
@@ -498,6 +552,9 @@
           ],
           "answer": 1,
           "short": "Le Loop",
+          "accept": [
+            "Loop"
+          ],
           "hint": "Son nom évoque une forme circulaire.",
           "explanation": "Le Loop (« la boucle ») est ceinturé par la ligne de métro aérien « L » depuis 1897.",
           "link": "Sears Tower"
@@ -512,6 +569,9 @@
           ],
           "answer": 1,
           "short": "Anish Kapoor",
+          "accept": [
+            "Kapoor"
+          ],
           "hint": "Il a présenté « Leviathan » au Grand Palais en 2011.",
           "explanation": "Cette sculpture en acier poli de 110 tonnes a été inaugurée en 2006. Anish Kapoor est un artiste britannique d’origine indienne.",
           "link": "Loop"
@@ -531,6 +591,9 @@
           ],
           "answer": 0,
           "short": "Louis XVIII",
+          "accept": [
+            "Louis 18"
+          ],
           "hint": "Il est monté sur le trône en 1814, après la chute de l’Empire.",
           "explanation": "Louis XVIII a régné de 1814 à 1824, avec une interruption pendant les Cent-Jours. Charles X, son frère cadet, lui succède."
         },
@@ -558,6 +621,10 @@
           ],
           "answer": 1,
           "short": "Charles Quint",
+          "accept": [
+            "Charles V",
+            "Charles 5"
+          ],
           "hint": "Il partage son prénom avec Charles X.",
           "explanation": "Charles Quint est né à Gand le 24 février 1500. Il hérite des Pays-Bas, de l’Espagne et de ses colonies, puis de l’Empire.",
           "link": "Gand"
@@ -572,6 +639,9 @@
           ],
           "answer": 0,
           "short": "Philippe II",
+          "accept": [
+            "Philippe 2"
+          ],
           "hint": "Il a fait bâtir l’Escurial, près de Madrid.",
           "explanation": "Charles Quint cède les Pays-Bas puis l’Espagne à son fils en 1555-1556, et le titre impérial à son frère Ferdinand.",
           "link": "Charles Quint"
@@ -660,6 +730,9 @@
           ],
           "answer": 0,
           "short": "La Floride",
+          "accept": [
+            "Floride"
+          ],
           "hint": "Son nom signifie « pays fleuri » en espagnol.",
           "explanation": "Jules Verne situe le site de lancement près de Tampa. Les fusées Apollo décolleront de Cap Canaveral un siècle plus tard.",
           "link": "De la Terre à la Lune"
@@ -706,6 +779,9 @@
           ],
           "answer": 0,
           "short": "J. R. R. Tolkien",
+          "accept": [
+            "Tolkien"
+          ],
           "hint": "Il a inventé la Terre du Milieu.",
           "explanation": "Tolkien est né de parents anglais installés en Afrique du Sud. Il est rentré en Angleterre avec sa mère à l’âge de trois ans.",
           "link": "Bloemfontein"
@@ -766,6 +842,9 @@
           ],
           "answer": 0,
           "short": "Copenhague",
+          "accept": [
+            "Copenhagen"
+          ],
           "hint": "Une série policière scandinave s’appelle « Le Pont » à cause de lui.",
           "explanation": "Le pont de l’Øresund traverse le détroit du même nom. Il a inspiré la série « Bron/Broen ».",
           "link": "Suède"
@@ -780,6 +859,9 @@
           ],
           "answer": 2,
           "short": "Niels Bohr",
+          "accept": [
+            "Bohr"
+          ],
           "hint": "Un élément chimique lui rend hommage.",
           "explanation": "Niels Bohr a dirigé à Copenhague un institut de physique théorique qui a attiré les plus grands noms de la mécanique quantique.",
           "link": "Copenhague"
@@ -794,6 +876,9 @@
           ],
           "answer": 3,
           "short": "Werner Heisenberg",
+          "accept": [
+            "Heisenberg"
+          ],
           "hint": "Son nom est lié à un principe d’incertitude.",
           "explanation": "Heisenberg dirigeait alors le programme nucléaire allemand. La pièce explore ce qui a été dit lors de cette visite, restée mystérieuse.",
           "link": "Niels Bohr"
@@ -808,6 +893,9 @@
           ],
           "answer": 0,
           "short": "Erwin Schrödinger",
+          "accept": [
+            "Schrödinger"
+          ],
           "hint": "Il a reçu le prix Nobel de physique en 1933.",
           "explanation": "Le chat de Schrödinger est une expérience de pensée qui visait à critiquer l’interprétation de Copenhague défendue par Bohr.",
           "link": "Heisenberg"
@@ -827,6 +915,10 @@
           ],
           "answer": 1,
           "short": "Leonardo DiCaprio",
+          "accept": [
+            "DiCaprio",
+            "Leo DiCaprio"
+          ],
           "hint": "Il a joué Jack dans « Titanic ».",
           "explanation": "Leonardo DiCaprio tient le rôle de Teddy Daniels. C’est la quatrième collaboration avec Martin Scorsese, après « Gangs of New York », « Aviator » et « Les Infiltrés »."
         },
@@ -854,6 +946,10 @@
           ],
           "answer": 0,
           "short": "Alejandro González Iñárritu",
+          "accept": [
+            "Iñárritu",
+            "González Iñárritu"
+          ],
           "hint": "Il a aussi réalisé « Birdman ».",
           "explanation": "Il avait obtenu le même Oscar l’année précédente pour « Birdman ».",
           "link": "The Revenant"
@@ -882,6 +978,11 @@
           ],
           "answer": 0,
           "short": "Moctezuma II",
+          "accept": [
+            "Moctezuma",
+            "Montezuma",
+            "Moctezuma 2"
+          ],
           "hint": "Il est mort en 1520, pendant l’occupation espagnole de la ville.",
           "explanation": "Moctezuma II accueille Cortés en novembre 1519 et meurt en juin 1520. Cuauhtémoc lui succède puis capitule en 1521.",
           "link": "Tenochtitlan"
@@ -901,6 +1002,10 @@
           ],
           "answer": 0,
           "short": "François Ier",
+          "accept": [
+            "François 1er",
+            "François 1"
+          ],
           "hint": "Il a fait construire le château de Chambord.",
           "explanation": "L’orphelinat a été fondé par Marguerite de Navarre, sœur de François Ier. Le marché, ouvert en 1615, est le plus ancien marché couvert de Paris encore en activité."
         },
@@ -914,6 +1019,10 @@
           ],
           "answer": 3,
           "short": "Léonard de Vinci",
+          "accept": [
+            "Vinci",
+            "Leonardo da Vinci"
+          ],
           "hint": "Il avait la Joconde dans ses bagages.",
           "explanation": "Le roi l’a installé au manoir du Clos Lucé, près de son château d’Amboise. Léonard y a passé les trois dernières années de sa vie.",
           "link": "François Ier"
@@ -928,6 +1037,9 @@
           ],
           "answer": 2,
           "short": "Florence",
+          "accept": [
+            "Firenze"
+          ],
           "hint": "Elle est la capitale de la Toscane.",
           "explanation": "Son mari, Francesco del Giocondo, a commandé le portrait vers 1503. En italien, le tableau s’appelle « La Gioconda ».",
           "link": "Léonard de Vinci"
@@ -956,6 +1068,11 @@
           ],
           "answer": 0,
           "short": "Les Offices",
+          "accept": [
+            "Uffizi",
+            "Galerie des Offices",
+            "Galerie des Uffizi"
+          ],
           "hint": "Son nom signifie « les bureaux ».",
           "explanation": "Le corridor de Vasari fut bâti en cinq mois pour permettre aux Médicis de circuler à l’abri des regards entre leurs bureaux et leur palais.",
           "link": "Ponte Vecchio"
@@ -988,6 +1105,9 @@
           ],
           "answer": 0,
           "short": "Le Nouveau-Mexique",
+          "accept": [
+            "New Mexico"
+          ],
           "hint": "Sa capitale est Santa Fe.",
           "explanation": "La série a été tournée sur place, ce qui a profité à l’économie d’Albuquerque.",
           "link": "Breaking Bad"
@@ -1016,6 +1136,10 @@
           ],
           "answer": 2,
           "short": "Robert Oppenheimer",
+          "accept": [
+            "Oppenheimer",
+            "J. Robert Oppenheimer"
+          ],
           "hint": "Un film de Christopher Nolan, sorti en 2023, porte son nom.",
           "explanation": "Oppenheimer l’a rapporté lui-même longtemps après, en évoquant un sonnet de John Donne où figure un « Dieu en trois personnes ».",
           "link": "Trinity"

@@ -11,6 +11,10 @@
       ],
       "answer": 0,
       "short": "François Ier",
+      "accept": [
+        "François 1er",
+        "François 1"
+      ],
       "hint": "Il a fait construire le château de Chambord.",
       "explanation": "L’orphelinat a été fondé par Marguerite de Navarre, sœur de François Ier. Le marché, ouvert en 1615, est le plus ancien marché couvert de Paris encore en activité."
     },
@@ -24,6 +28,10 @@
       ],
       "answer": 3,
       "short": "Léonard de Vinci",
+      "accept": [
+        "Vinci",
+        "Leonardo da Vinci"
+      ],
       "hint": "Il avait la Joconde dans ses bagages.",
       "explanation": "Le roi l’a installé au manoir du Clos Lucé, près de son château d’Amboise. Léonard y a passé les trois dernières années de sa vie.",
       "link": "François Ier"
@@ -38,6 +46,9 @@
       ],
       "answer": 2,
       "short": "Florence",
+      "accept": [
+        "Firenze"
+      ],
       "hint": "Elle est la capitale de la Toscane.",
       "explanation": "Son mari, Francesco del Giocondo, a commandé le portrait vers 1503. En italien, le tableau s’appelle « La Gioconda ».",
       "link": "Léonard de Vinci"
@@ -66,6 +77,11 @@
       ],
       "answer": 0,
       "short": "Les Offices",
+      "accept": [
+        "Uffizi",
+        "Galerie des Offices",
+        "Galerie des Uffizi"
+      ],
       "hint": "Son nom signifie « les bureaux ».",
       "explanation": "Le corridor de Vasari fut bâti en cinq mois pour permettre aux Médicis de circuler à l’abri des regards entre leurs bureaux et leur palais.",
       "link": "Ponte Vecchio"

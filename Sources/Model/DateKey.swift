@@ -11,6 +11,12 @@ enum DateKey {
 
     static var today: String { formatter("yyyy-MM-dd", french: false).string(from: Date()) }
 
+    /// La date d'aujourd'hui décalée de `days` jours (négatif : dans le passé), au format AAAA-MM-JJ.
+    static func offset(days: Int) -> String {
+        let shifted = Calendar.current.date(byAdding: .day, value: days, to: Date()) ?? Date()
+        return formatter("yyyy-MM-dd", french: false).string(from: shifted)
+    }
+
     static func date(_ key: String) -> Date {
         formatter("yyyy-MM-dd", french: false).date(from: key) ?? Date()
     }

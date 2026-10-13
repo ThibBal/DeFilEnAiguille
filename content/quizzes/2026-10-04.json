@@ -11,6 +11,9 @@
       ],
       "answer": 2,
       "short": "Salvador Dalí",
+      "accept": [
+        "Dalí"
+      ],
       "hint": "Il a peint des montres molles.",
       "explanation": "Amanda Lear a fréquenté Salvador Dalí dès les années 1960 et fut l’une de ses muses. Il est l’auteur de « La Persistance de la mémoire »."
     },
@@ -38,6 +41,9 @@
       ],
       "answer": 1,
       "short": "Antoni Gaudí",
+      "accept": [
+        "Gaudí"
+      ],
       "hint": "Il a aussi dessiné le parc Güell.",
       "explanation": "Gaudí a repris le chantier de la Sagrada Família en 1883 et y a consacré la fin de sa vie. Elle n’est toujours pas terminée.",
       "link": "Catalogne"
@@ -52,6 +58,9 @@
       ],
       "answer": 0,
       "short": "Un tramway",
+      "accept": [
+        "Tram"
+      ],
       "hint": "Il roulait sur des rails.",
       "explanation": "Gaudí, vêtu simplement, ne fut pas reconnu tout de suite par les passants. Il est mort trois jours plus tard, le 10 juin 1926.",
       "link": "Gaudí"

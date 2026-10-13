@@ -24,6 +24,9 @@
       ],
       "answer": 0,
       "short": "Le Nouveau-Mexique",
+      "accept": [
+        "New Mexico"
+      ],
       "hint": "Sa capitale est Santa Fe.",
       "explanation": "La série a été tournée sur place, ce qui a profité à l’économie d’Albuquerque.",
       "link": "Breaking Bad"
@@ -52,6 +55,10 @@
       ],
       "answer": 2,
       "short": "Robert Oppenheimer",
+      "accept": [
+        "Oppenheimer",
+        "J. Robert Oppenheimer"
+      ],
       "hint": "Un film de Christopher Nolan, sorti en 2023, porte son nom.",
       "explanation": "Oppenheimer l’a rapporté lui-même longtemps après, en évoquant un sonnet de John Donne où figure un « Dieu en trois personnes ».",
       "link": "Trinity"

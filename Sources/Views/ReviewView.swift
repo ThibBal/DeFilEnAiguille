@@ -41,7 +41,7 @@ struct ReviewView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .padding(.top, 8).accessibilityAddTraits(.isHeader)
                 HStack(spacing: 12) {
-                    Text("\(play.score) sur \(items.count)").font(AppFont.serif(28)).foregroundStyle(Palette.ink)
+                    Text("\(play.points) sur \(play.maxPoints)").font(AppFont.serif(28)).foregroundStyle(Palette.ink)
                     ScoreDots(score: play.score, total: items.count)
                 }
                 .padding(.top, 16)
@@ -55,7 +55,7 @@ struct ReviewView: View {
                                 Text(item.question)
                                     .font(AppFont.serif(23)).exactLineHeight(28).foregroundStyle(Palette.ink)
                                     .fixedSize(horizontal: false, vertical: true).padding(.top, 6)
-                                answer(item).padding(.top, 10)
+                                answer(item, points: i < play.pointsList.count ? play.pointsList[i] : 0).padding(.top, 10)
                             }
                             .padding(.bottom, 28)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -77,7 +77,7 @@ struct ReviewView: View {
     }
 
     @ViewBuilder
-    private func answer(_ item: ReviewItem) -> some View {
+    private func answer(_ item: ReviewItem, points: Int) -> some View {
         if let mine = item.mine {
             VStack(alignment: .leading, spacing: 4) {
                 (Text("Votre réponse · ").font(AppFont.sans(14)).foregroundColor(Palette.muted)
@@ -86,8 +86,14 @@ struct ReviewView: View {
                     + Text(item.right).font(AppFont.sans(16)).foregroundColor(Palette.ink))
             }
         } else {
-            (Text(item.right).font(AppFont.sans(16)).foregroundColor(Palette.ink)
-                + Text(" · bonne réponse").font(AppFont.sans(14)).foregroundColor(Palette.muted))
+            VStack(alignment: .leading, spacing: 4) {
+                (Text(item.right).font(AppFont.sans(16)).foregroundColor(Palette.ink)
+                    + Text(" · bonne réponse").font(AppFont.sans(14)).foregroundColor(Palette.muted))
+                if let method = Scoring.method(points: points) {
+                    Text("\(points) point\(points > 1 ? "s" : "") · \(method)")
+                        .font(AppFont.sans(14)).foregroundColor(Palette.muted)
+                }
+            }
         }
     }
 }

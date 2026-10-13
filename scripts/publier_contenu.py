@@ -44,6 +44,11 @@ def verifier(nom, quiz):
         if not isinstance(reponse, int) or not 0 <= reponse < 4:
             erreurs.append(p + "answer doit être un index entre 0 et 3")
             continue
+        accept = q.get("accept")
+        if accept is not None and (
+                not isinstance(accept, list)
+                or not all(isinstance(a, str) and a.strip() for a in accept)):
+            erreurs.append(p + "accept doit être une liste de textes non vides")
         link = q.get("link")
         if i == 1:
             if link:

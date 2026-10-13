@@ -11,6 +11,9 @@
       ],
       "answer": 0,
       "short": "Madère",
+      "accept": [
+        "Madeira"
+      ],
       "hint": "L’aéroport de l’île porte son nom depuis 2017.",
       "explanation": "Il est né à Funchal, sur l’île de Madère, le 5 février 1985. L’aéroport de l’île s’appelle « Cristiano Ronaldo » depuis 2017."
     },
@@ -66,6 +69,9 @@
       ],
       "answer": 1,
       "short": "Edgar Degas",
+      "accept": [
+        "Degas"
+      ],
       "hint": "Il est surtout connu pour ses danseuses.",
       "explanation": "« Dans un café (L’Absinthe) » a été peint par Edgar Degas vers 1875-1876. Manet avait peint « Le Buveur d’absinthe » dès 1859.",
       "link": "absinthe"

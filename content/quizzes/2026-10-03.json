@@ -11,6 +11,9 @@
       ],
       "answer": 1,
       "short": "Georges Simenon",
+      "accept": [
+        "Simenon"
+      ],
       "hint": "Son commissaire fume la pipe.",
       "explanation": "Le film adapte « Les Fiançailles de M. Hire » (1933). Georges Simenon a écrit 75 romans mettant en scène Maigret."
     },
@@ -52,6 +55,9 @@
       ],
       "answer": 0,
       "short": "La bataille des Ardennes",
+      "accept": [
+        "Ardennes"
+      ],
       "hint": "Hitler y a lancé sa dernière grande offensive à l’ouest.",
       "explanation": "L’offensive allemande de décembre 1944 visait à atteindre le port d’Anvers. Bastogne, nœud routier, fut encerclée pendant plusieurs jours.",
       "link": "Liège-Bastogne-Liège"
@@ -66,6 +72,9 @@
       ],
       "answer": 3,
       "short": "Anthony McAuliffe",
+      "accept": [
+        "McAuliffe"
+      ],
       "hint": "Ce n’est pas Patton, qui est venu le délivrer.",
       "explanation": "Le général McAuliffe commandait par intérim la 101e division aéroportée. « Nuts ! » (« des noix ! ») fut sa réponse à la demande de reddition.",
       "link": "bataille des Ardennes"

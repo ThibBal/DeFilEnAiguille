@@ -21,6 +21,7 @@ final class QuizStore {
         cacheDirectory = support.appendingPathComponent("Quizzes", isDirectory: true)
         try? FileManager.default.createDirectory(at: cacheDirectory, withIntermediateDirectories: true)
 
+        Self.resetCacheIfAppUpdated(cacheDirectory)
         var all = Self.bundled()
         let files = (try? FileManager.default.contentsOfDirectory(at: cacheDirectory, includingPropertiesForKeys: nil)) ?? []
         for file in files where file.pathExtension == "json" {
@@ -40,8 +41,8 @@ final class QuizStore {
         quizzes.keys.filter { $0 <= DateKey.today }.sorted()
     }
 
-    /// Télécharge l'index, puis les questionnaires qu'on n'a pas encore et ceux d'aujourd'hui ou à venir
-    /// (pour qu'une correction publiée avant la partie soit prise en compte).
+    /// Télécharge l'index, puis les questionnaires qu'on n'a pas encore et ceux des 7 derniers jours,
+    /// d'aujourd'hui et à venir (pour qu'une correction publiée récemment soit prise en compte).
     @MainActor
     func refresh() async {
         guard !isRefreshing else { return }
@@ -49,8 +50,8 @@ final class QuizStore {
         defer { isRefreshing = false }
         do {
             let index = try JSONDecoder().decode(Index.self, from: await Self.download("index.json"))
-            let today = DateKey.today
-            let wanted = index.dates.filter { Self.isDateKey($0) && (quizzes[$0] == nil || $0 >= today) }
+            let recent = DateKey.offset(days: -7)
+            let wanted = index.dates.filter { Self.isDateKey($0) && (quizzes[$0] == nil || $0 >= recent) }
             let downloaded = await withTaskGroup(of: (String, Data)?.self) { group in
                 for date in wanted {
                     group.addTask {
@@ -90,9 +91,22 @@ final class QuizStore {
         s.range(of: #"^\d{4}-\d{2}-\d{2}$"#, options: .regularExpression) != nil
     }
 
+    /// Une nouvelle version de l'app embarque des questionnaires plus récents que le cache : on le vide.
+    private static func resetCacheIfAppUpdated(_ directory: URL) {
+        let info = Bundle.main.infoDictionary
+        let version = "\(info?["CFBundleShortVersionString"] ?? "")-\(info?["CFBundleVersion"] ?? "")"
+        let key = "quizCacheAppVersion"
+        guard UserDefaults.standard.string(forKey: key) != version else { return }
+        let files = (try? FileManager.default.contentsOfDirectory(at: directory, includingPropertiesForKeys: nil)) ?? []
+        files.forEach { try? FileManager.default.removeItem(at: $0) }
+        UserDefaults.standard.set(version, forKey: key)
+    }
+
+    /// L'index est toujours redemandé au serveur ; les questionnaires suivent le cache HTTP (10 minutes).
     private static func download(_ path: String) async throws -> Data {
         let request = URLRequest(url: baseURL.appendingPathComponent(path),
-                                 cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+                                 cachePolicy: path == "index.json" ? .reloadIgnoringLocalCacheData : .useProtocolCachePolicy,
+                                 timeoutInterval: 10)
         let (data, response) = try await URLSession.shared.data(for: request)
         guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
         return data

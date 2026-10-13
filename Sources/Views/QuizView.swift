@@ -3,6 +3,17 @@ import SwiftUI
 
 private enum OptionState { case idle, correct, wrong, dim }
 
+/// Où en est le joueur sur la question affichée : texte saisi, indice et propositions affichés, résultat.
+private struct Attempt {
+    var typed = ""
+    var hintShown = false
+    var choicesShown = false
+    var wrongTries = 0
+    /// Dernier texte refusé, affiché sous le champ.
+    var lastWrong: String?
+    var outcome: Outcome?
+}
+
 /// Facteur de durée de l'animation « le fil passe » (1 = vitesse normale).
 private let flightSpeed = 1.0
 
@@ -22,11 +33,12 @@ struct QuizView: View {
     @State private var saved: Play?
     @State private var loaded = false
     @State private var index = 0
-    @State private var picked: Int?
-    @State private var choices: [Int] = []
+    @State private var attempt = Attempt()
+    @State private var outcomes: [Outcome] = []
+    @FocusState private var focused: Bool
 
     // Animation « le fil passe »
-    @State private var outgoing: (index: Int, picked: Int)?
+    @State private var outgoing: (index: Int, attempt: Attempt)?
     @State private var outgoingOpacity = 1.0
     @State private var incomingOpacity = 1.0
     @State private var flight: (src: CGRect, dst: CGRect, text: String)?
@@ -59,7 +71,7 @@ struct QuizView: View {
 
     /// Charge le questionnaire et la partie enregistrée, sauf si une partie est en cours dans cet écran.
     private func load() {
-        guard choices.isEmpty else { return }
+        guard outcomes.isEmpty else { return }
         quiz = store.quiz(for: date)
         let existing = try? context.fetch(FetchDescriptor<Play>(predicate: #Predicate { $0.date == date }))
         saved = replay ? nil : existing?.first
@@ -72,11 +84,12 @@ struct QuizView: View {
     private func content(_ quiz: DailyQuiz) -> some View {
         let total = quiz.questions.count
         let sessionDone = index >= total
-        let showsResult = sessionDone || (choices.isEmpty && saved != nil)
-        let results: [Bool] = choices.isEmpty
-            ? (saved?.detail.map { $0.mine == nil } ?? [])
-            : choices.enumerated().map { $1 == quiz.questions[$0].answer }
-        let answered = picked != nil && !showsResult
+        let showsResult = sessionDone || (outcomes.isEmpty && saved != nil)
+        let pointsList: [Int] = outcomes.isEmpty ? (saved?.pointsList ?? []) : outcomes.map(\.points)
+        let results = pointsList.map { $0 > 0 }
+        let answered = attempt.outcome != nil && !showsResult
+        let typing = attempt.outcome == nil && !attempt.choicesShown && !showsResult
+        let canSubmit = !attempt.typed.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
 
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
@@ -87,17 +100,17 @@ struct QuizView: View {
                     Text(DateKey.long(date)).font(AppFont.sans(13)).foregroundStyle(Palette.muted)
                 }
                 if showsResult {
-                    resultView(quiz, results: results)
+                    resultView(quiz, pointsList: pointsList)
                 } else {
                     let states: [KnotState] = (0..<total).map { n in
                         n < results.count ? (results[n] ? .right : .wrong) : (n == index ? .current : .todo)
                     }
                     ProgressThread(states: states, label: "Question \(index + 1) sur \(total)").padding(.top, 28)
                     ZStack(alignment: .top) {
-                        questionBlock(quiz, index: min(index, total - 1), picked: picked, isOutgoing: false)
+                        questionBlock(quiz, index: min(index, total - 1), attempt: attempt, isOutgoing: false)
                             .opacity(incomingOpacity)
                         if let outgoing {
-                            questionBlock(quiz, index: outgoing.index, picked: outgoing.picked, isOutgoing: true)
+                            questionBlock(quiz, index: outgoing.index, attempt: outgoing.attempt, isOutgoing: true)
                                 .opacity(outgoingOpacity)
                                 .allowsHitTesting(false)
                         }
@@ -117,13 +130,19 @@ struct QuizView: View {
             .onPreferenceChange(AnchorFrames.self) { frames = $0 }
         }
         .scrollBounceBehavior(.basedOnSize)
+        .scrollDismissesKeyboard(.interactively)
         .safeAreaInset(edge: .bottom) {
-            if (answered && !animating) || showsResult {
+            if showsResult || (answered && !animating) || (typing && !animating) {
                 Group {
                     if showsResult {
                         CtaButton(title: "Voir l'historique", action: onFinish)
-                    } else {
+                    } else if answered {
                         CtaButton(title: index == total - 1 ? "Voir mon fil" : "Question suivante") { next(quiz) }
+                    } else {
+                        Button(action: submit) { CtaLabel(title: "Valider") }
+                            .buttonStyle(PressableStyle())
+                            .disabled(!canSubmit)
+                            .opacity(canSubmit ? 1 : 0.4)
                     }
                 }
                 .padding(.horizontal, 24)
@@ -133,11 +152,10 @@ struct QuizView: View {
         }
     }
 
-    /// Une question : étiquette, texte, options et explication une fois répondue.
-    private func questionBlock(_ quiz: DailyQuiz, index i: Int, picked p: Int?, isOutgoing: Bool) -> some View {
+    /// Une question : étiquette, texte, zone de réponse, puis points et explication une fois répondue.
+    private func questionBlock(_ quiz: DailyQuiz, index i: Int, attempt a: Attempt, isOutgoing: Bool) -> some View {
         let total = quiz.questions.count
         let q = quiz.questions[i]
-        let answered = p != nil
         return VStack(alignment: .leading, spacing: 0) {
             LabelText("Question \(i + 1) sur \(total)").padding(.top, 28)
             QuestionText(
@@ -147,55 +165,118 @@ struct QuizView: View {
                 reportsDestination: !isOutgoing
             )
             .padding(.top, 10)
-            VStack(spacing: 10) {
-                ForEach(Array(q.options.enumerated()), id: \.offset) { k, text in
-                    let state: OptionState = !answered ? .idle : (k == q.answer ? .correct : (k == p ? .wrong : .dim))
-                    OptionRow(
-                        letter: String("ABCD".map { $0 }[k]),
-                        text: text,
-                        state: state,
-                        reportsSource: isOutgoing && k == q.answer
-                    ) { pick(k) }
-                    .opacity(isOutgoing || k < shownOptions ? 1 : 0)
-                    .allowsHitTesting(!isOutgoing && !animating)
-                }
-            }
-            .padding(.top, 26)
-            if answered {
+            answerArea(q, attempt: a, isOutgoing: isOutgoing).padding(.top, 26)
+            if let outcome = a.outcome {
+                Text(pointsText(outcome))
+                    .font(AppFont.sansSemi(15))
+                    .foregroundStyle(outcome.isRight ? Palette.accent : Palette.muted)
+                    .padding(.top, 20)
                 Text(q.explanation)
                     .font(AppFont.sans(15)).exactLineHeight(22)
                     .foregroundStyle(Palette.body)
                     .fixedSize(horizontal: false, vertical: true)
-                    .padding(.top, 20)
+                    .padding(.top, 8)
             }
         }
     }
 
-    private func resultView(_ quiz: DailyQuiz, results: [Bool]) -> some View {
+    private func pointsText(_ outcome: Outcome) -> String {
+        guard outcome.isRight, let method = Scoring.method(points: outcome.points) else { return "0 point · mauvaise réponse" }
+        return "+\(outcome.points) point\(outcome.points > 1 ? "s" : "") · \(method)"
+    }
+
+    @ViewBuilder
+    private func answerArea(_ q: Question, attempt a: Attempt, isOutgoing: Bool) -> some View {
+        if let outcome = a.outcome {
+            if outcome.viaChoices {
+                optionList(q, picked: outcome.picked, isOutgoing: isOutgoing)
+            } else {
+                OptionRow(letter: nil, text: q.options[q.answer], state: .correct, reportsSource: isOutgoing) {}
+            }
+        } else if a.choicesShown {
+            VStack(alignment: .leading, spacing: 16) {
+                HintCard(text: q.hint)
+                optionList(q, picked: nil, isOutgoing: false)
+            }
+        } else {
+            VStack(alignment: .leading, spacing: 14) {
+                TextField("Votre réponse", text: $attempt.typed, prompt: Text("Votre réponse").foregroundColor(Palette.muted))
+                    .font(AppFont.sans(18)).foregroundStyle(Palette.ink)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                    .submitLabel(.done)
+                    .focused($focused)
+                    .onSubmit(submit)
+                    .padding(.horizontal, 16)
+                    .frame(minHeight: 56)
+                    .background(Palette.card, in: RoundedRectangle(cornerRadius: 16))
+                    .overlay(RoundedRectangle(cornerRadius: 16).strokeBorder(focused ? Palette.ink : Palette.border, lineWidth: 1.5))
+                    .accessibilityLabel("Votre réponse")
+                if let wrong = a.lastWrong {
+                    HStack(alignment: .firstTextBaseline, spacing: 8) {
+                        Image(systemName: "xmark").font(.system(size: 14, weight: .semibold))
+                        Text("« \(wrong) » n'est pas la bonne réponse.").font(AppFont.sans(15))
+                    }
+                    .foregroundStyle(Palette.wrongInk)
+                    .accessibilityElement(children: .combine)
+                }
+                if a.hintShown {
+                    HintCard(text: q.hint)
+                    OutlineButton(title: "Afficher les propositions", systemImage: "list.bullet", action: showChoices)
+                } else {
+                    OutlineButton(title: "Indice", systemImage: "lightbulb", action: showHint)
+                }
+            }
+            .opacity(shownOptions > 0 ? 1 : 0)
+            .allowsHitTesting(!animating)
+        }
+    }
+
+    private func optionList(_ q: Question, picked p: Int?, isOutgoing: Bool) -> some View {
+        let answered = p != nil
+        return VStack(spacing: 10) {
+            ForEach(Array(q.options.enumerated()), id: \.offset) { k, text in
+                let state: OptionState = !answered ? .idle : (k == q.answer ? .correct : (k == p ? .wrong : .dim))
+                OptionRow(
+                    letter: String("ABCD".map { $0 }[k]),
+                    text: text,
+                    state: state,
+                    reportsSource: isOutgoing && k == q.answer
+                ) { pick(k) }
+                .opacity(isOutgoing || k < shownOptions ? 1 : 0)
+                .allowsHitTesting(!isOutgoing && !animating)
+            }
+        }
+    }
+
+    private func resultView(_ quiz: DailyQuiz, pointsList: [Int]) -> some View {
         let total = quiz.questions.count
-        let score = results.filter { $0 }.count
+        let points = pointsList.reduce(0, +)
         let thread = saved?.title ?? quiz.thread
         return VStack(alignment: .leading, spacing: 0) {
             LabelText("Questionnaire terminé").padding(.top, 40)
             HStack(alignment: .firstTextBaseline, spacing: 10) {
-                Text("\(score)").font(AppFont.serif(88)).foregroundStyle(Palette.ink)
-                Text("sur \(total)").font(AppFont.serif(32)).foregroundStyle(Palette.muted)
+                Text("\(points)").font(AppFont.serif(88)).foregroundStyle(Palette.ink)
+                Text("sur \(Scoring.maxPoints(questions: total))").font(AppFont.serif(32)).foregroundStyle(Palette.muted)
             }
             .padding(.top, 8)
             Text(thread).font(AppFont.serifItalic(28)).foregroundStyle(Palette.ink).padding(.top, 28)
             Text("Le fil du jour").font(AppFont.sans(15)).foregroundStyle(Palette.muted).padding(.top, 6)
             VStack(alignment: .leading, spacing: 0) {
                 ForEach(Array(quiz.questions.enumerated()), id: \.offset) { n, item in
-                    let right = n < results.count ? results[n] : false
+                    let earned = n < pointsList.count ? pointsList[n] : 0
                     HStack(alignment: .top, spacing: 16) {
-                        VerticalThread(state: right ? .right : .wrong, last: n == total - 1)
+                        VerticalThread(state: earned > 0 ? .right : .wrong, last: n == total - 1)
                         Text(item.short)
                             .font(AppFont.sans(18)).foregroundStyle(Palette.ink)
                             .padding(.bottom, 14)
                             .frame(maxWidth: .infinity, alignment: .leading)
+                        Text("\(earned) pt\(earned > 1 ? "s" : "")")
+                            .font(AppFont.sans(14)).foregroundStyle(Palette.muted)
+                            .padding(.top, 3)
                     }
                     .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("\(item.short), \(right ? "bonne" : "mauvaise") réponse")
+                    .accessibilityLabel("\(item.short), \(earned > 0 ? "bonne" : "mauvaise") réponse, \(earned) point\(earned > 1 ? "s" : "")")
                 }
             }
             .padding(.top, 24)
@@ -204,28 +285,69 @@ struct QuizView: View {
 
     // MARK: - Actions
 
+    private var currentQuestion: Question? {
+        quiz.map { $0.questions[min(index, $0.questions.count - 1)] }
+    }
+
+    /// Valide le texte saisi : bonne réponse (5 points, ou 3 si l'indice a été vu), sinon l'indice s'affiche,
+    /// et au deuxième échec les propositions.
+    private func submit() {
+        guard let q = currentQuestion, attempt.outcome == nil, !animating else { return }
+        let text = attempt.typed.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !text.isEmpty else { return }
+        if q.accepts(text) {
+            resolve(Outcome(points: attempt.hintShown ? Scoring.withHint : Scoring.withoutHint,
+                            wrongAnswer: nil, viaChoices: false, picked: nil))
+            UINotificationFeedbackGenerator().notificationOccurred(.success)
+        } else {
+            attempt.lastWrong = text
+            attempt.typed = ""
+            attempt.hintShown = true
+            attempt.wrongTries += 1
+            if attempt.wrongTries >= 2 { showChoices() }
+            UINotificationFeedbackGenerator().notificationOccurred(.warning)
+        }
+    }
+
+    private func showHint() { attempt.hintShown = true }
+
+    private func showChoices() {
+        attempt.hintShown = true
+        attempt.choicesShown = true
+        focused = false
+    }
+
+    /// Choix d'une proposition : 1 point si c'est la bonne.
     private func pick(_ k: Int) {
-        guard picked == nil, !animating else { return }
-        picked = k
-        choices.append(k)
+        guard let q = currentQuestion, attempt.outcome == nil, !animating else { return }
+        let right = k == q.answer
+        resolve(Outcome(points: right ? Scoring.withChoices : 0, wrongAnswer: right ? nil : q.options[k],
+                        viaChoices: true, picked: k))
+    }
+
+    private func resolve(_ outcome: Outcome) {
+        attempt.outcome = outcome
+        outcomes.append(outcome)
+        focused = false
     }
 
     private func next(_ quiz: DailyQuiz) {
         let total = quiz.questions.count
         if index == total - 1 {
-            History.save(date: date, quiz: quiz, picked: choices, in: context)
+            History.save(date: date, quiz: quiz, outcomes: outcomes, in: context)
             index += 1
-            picked = nil
+            attempt = Attempt()
             return
         }
-        guard !reduceMotion, quiz.questions[index + 1].link != nil, let current = picked else {
+        guard !reduceMotion, quiz.questions[index + 1].link != nil, attempt.outcome != nil else {
             index += 1
-            picked = nil
+            attempt = Attempt()
+            Task { @MainActor in focused = true }
             return
         }
         // Le fil passe : l'ancienne question reste affichée le temps du vol, la nouvelle s'installe dessous.
         let q = quiz.questions[index]
-        outgoing = (index, current)
+        outgoing = (index, attempt)
         outgoingOpacity = 1
         incomingOpacity = 0
         flightProgress = 0
@@ -234,7 +356,7 @@ struct QuizView: View {
         shownOptions = 0
         animating = true
         index += 1
-        picked = nil
+        attempt = Attempt()
         Task { await runFlight(text: q.options[q.answer]) }
     }
 
@@ -272,11 +394,12 @@ struct QuizView: View {
         outgoing = nil
         flight = nil
         animating = false
+        focused = true
     }
 }
 
 private struct OptionRow: View {
-    let letter: String
+    let letter: String?
     let text: String
     let state: OptionState
     var reportsSource = false
@@ -286,7 +409,9 @@ private struct OptionRow: View {
         let style = Self.colors(state)
         Button(action: action) {
             HStack(spacing: 14) {
-                Text(letter).font(AppFont.serif(20)).foregroundStyle(Palette.muted).frame(width: 18, alignment: .leading)
+                if let letter {
+                    Text(letter).font(AppFont.serif(20)).foregroundStyle(Palette.muted).frame(width: 18, alignment: .leading)
+                }
                 label(style.text)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 if state == .correct {
@@ -306,7 +431,7 @@ private struct OptionRow: View {
         }
         .buttonStyle(.plain)
         .allowsHitTesting(state == .idle)
-        .accessibilityLabel("\(letter). \(text)")
+        .accessibilityLabel(letter.map { "\($0). \(text)" } ?? text)
     }
 
     @ViewBuilder
@@ -326,5 +451,45 @@ private struct OptionRow: View {
         case .dim: (Palette.dimBorder, .clear, Palette.muted)
         case .idle: (Palette.border, Palette.card, Palette.ink)
         }
+    }
+}
+
+/// Indice affiché sous le champ de saisie.
+private struct HintCard: View {
+    let text: String
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            LabelText("Indice", size: 12)
+            Text(text).font(AppFont.sans(16)).foregroundStyle(Palette.ink)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Palette.card, in: RoundedRectangle(cornerRadius: 16))
+        .overlay(RoundedRectangle(cornerRadius: 16).strokeBorder(Palette.border, lineWidth: 1.5))
+        .accessibilityElement(children: .combine)
+    }
+}
+
+/// Bouton secondaire à contour, 50 pt de haut.
+private struct OutlineButton: View {
+    let title: String
+    let systemImage: String
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 8) {
+                Image(systemName: systemImage).font(.system(size: 15, weight: .medium))
+                Text(title).font(AppFont.sansSemi(16))
+            }
+            .foregroundStyle(Palette.ink)
+            .frame(maxWidth: .infinity)
+            .frame(height: 50)
+            .overlay(RoundedRectangle(cornerRadius: 16).strokeBorder(Palette.border, lineWidth: 1.5))
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(PressableStyle())
     }
 }

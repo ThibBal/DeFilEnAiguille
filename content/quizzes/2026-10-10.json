@@ -38,6 +38,9 @@
       ],
       "answer": 0,
       "short": "J. R. R. Tolkien",
+      "accept": [
+        "Tolkien"
+      ],
       "hint": "Il a inventé la Terre du Milieu.",
       "explanation": "Tolkien est né de parents anglais installés en Afrique du Sud. Il est rentré en Angleterre avec sa mère à l’âge de trois ans.",
       "link": "Bloemfontein"

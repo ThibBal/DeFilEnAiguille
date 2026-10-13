@@ -11,6 +11,9 @@
       ],
       "answer": 0,
       "short": "Le Saint-Laurent",
+      "accept": [
+        "Fleuve Saint-Laurent"
+      ],
       "hint": "Jacques Cartier l’a remonté dès 1535.",
       "explanation": "Le Saint-Laurent relie les Grands Lacs à l’océan Atlantique. Québec et Montréal se sont développées sur ses rives."
     },
@@ -24,6 +27,9 @@
       ],
       "answer": 3,
       "short": "Le lac Michigan",
+      "accept": [
+        "Michigan"
+      ],
       "hint": "Chicago est sur ses rives.",
       "explanation": "Les quatre autres sont partagés entre le Canada et les États-Unis. Le Michigan est relié au lac Huron par le détroit de Mackinac.",
       "link": "Saint-Laurent"
@@ -38,6 +44,10 @@
       ],
       "answer": 2,
       "short": "La Sears Tower",
+      "accept": [
+        "Sears",
+        "Willis Tower"
+      ],
       "hint": "Une chaîne de grands magasins lui a donné son nom.",
       "explanation": "Haute de 442 mètres, elle est rebaptisée Willis Tower en 2009. C’est aujourd’hui l’un des plus hauts bâtiments des États-Unis.",
       "link": "Michigan"
@@ -52,6 +62,9 @@
       ],
       "answer": 1,
       "short": "Le Loop",
+      "accept": [
+        "Loop"
+      ],
       "hint": "Son nom évoque une forme circulaire.",
       "explanation": "Le Loop (« la boucle ») est ceinturé par la ligne de métro aérien « L » depuis 1897.",
       "link": "Sears Tower"
@@ -66,6 +79,9 @@
       ],
       "answer": 1,
       "short": "Anish Kapoor",
+      "accept": [
+        "Kapoor"
+      ],
       "hint": "Il a présenté « Leviathan » au Grand Palais en 2011.",
       "explanation": "Cette sculpture en acier poli de 110 tonnes a été inaugurée en 2006. Anish Kapoor est un artiste britannique d’origine indienne.",
       "link": "Loop"

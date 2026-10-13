@@ -11,6 +11,10 @@
       ],
       "answer": 1,
       "short": "La Seconde Guerre mondiale",
+      "accept": [
+        "Deuxième Guerre mondiale",
+        "2nde Guerre mondiale"
+      ],
       "hint": "Le Japon y est l’un des belligérants.",
       "explanation": "Le film s’inspire du roman de Pierre Boulle et de la construction de la voie ferrée Thaïlande-Birmanie par les Japonais."
     },
@@ -24,6 +28,9 @@
       ],
       "answer": 3,
       "short": "La Birmanie",
+      "accept": [
+        "Myanmar"
+      ],
       "hint": "Elle borde le golfe du Bengale.",
       "explanation": "La « voie ferrée de la mort » reliait Bangkok à Rangoun sur environ 415 kilomètres. Des dizaines de milliers de prisonniers et de travailleurs forcés y sont morts.",
       "link": "Seconde Guerre mondiale"
@@ -38,6 +45,9 @@
       ],
       "answer": 2,
       "short": "Aung San Suu Kyi",
+      "accept": [
+        "Suu Kyi"
+      ],
       "hint": "Elle a passé une quinzaine d’années assignée à résidence.",
       "explanation": "Cheffe de la Ligue nationale pour la démocratie, elle a appris l’attribution du prix alors qu’elle était assignée à résidence.",
       "link": "Birmanie"
@@ -66,6 +76,9 @@
       ],
       "answer": 2,
       "short": "The Boat Race",
+      "accept": [
+        "Boat Race"
+      ],
       "hint": "Son nom en anglais signifie littéralement « la course de bateaux ».",
       "explanation": "Disputée depuis 1829, elle oppose les équipages des deux universités sur environ 6,8 kilomètres, entre Putney et Mortlake.",
       "link": "Oxford"

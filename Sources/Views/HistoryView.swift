@@ -68,7 +68,7 @@ struct HistoryView: View {
         HStack(spacing: 0) {
             Stat(value: "\(stats.streak)", unit: stats.streak > 1 ? "jours" : "jour", label: "Série en cours", first: true)
             Stat(value: "\(stats.played)", unit: nil, label: "Questionnaires joués", first: false)
-            Stat(value: String(format: "%.1f", stats.average).replacingOccurrences(of: ".", with: ","), unit: "/ 5", label: "Moyenne", first: false)
+            Stat(value: String(format: "%.1f", stats.average).replacingOccurrences(of: ".", with: ","), unit: "/ \(Scoring.maxPoints(questions: 5))", label: "Moyenne", first: false)
         }
         .overlay(alignment: .top) { Rectangle().fill(Palette.hair).frame(height: 1) }
         .overlay(alignment: .bottom) { Rectangle().fill(Palette.hair).frame(height: 1) }
@@ -128,7 +128,7 @@ private struct Row: View {
                 Text(todo ? "Non joué" : (entry.title ?? ""))
                     .font(AppFont.sansMedium(16)).foregroundStyle(Palette.ink)
                     .multilineTextAlignment(.leading)
-                Text(todo ? "À jouer" : "\(entry.score ?? 0) sur 5")
+                Text(todo ? "À jouer" : "\(entry.points ?? 0) sur \(Scoring.maxPoints(questions: entry.detail?.count ?? 5))")
                     .font(AppFont.sans(13)).foregroundStyle(todo ? Palette.accent : Palette.muted)
             }
             .frame(maxWidth: .infinity, alignment: .leading)
