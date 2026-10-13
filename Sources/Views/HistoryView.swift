@@ -26,7 +26,9 @@ struct HistoryView: View {
                             .font(AppFont.sans(15)).foregroundStyle(Palette.muted).padding(.top, 8)
 
                         statsRow(stats).padding(.top, 20)
-                        todayCard(played: todayPlayed).padding(.top, 24)
+                        if QuizCatalog.shared.quiz(for: DateKey.today) != nil {
+                            todayCard(played: todayPlayed).padding(.top, 24)
+                        }
 
                         ForEach(months, id: \.key) { month in
                             VStack(alignment: .leading, spacing: 0) {

@@ -20,9 +20,8 @@ struct DailyQuiz: Codable, Hashable {
 }
 
 /// Les questionnaires, embarqués dans `quizzes.json` (clés AAAA-MM-JJ).
-/// Le questionnaire de repli sert pour aujourd'hui quand la date n'y figure pas.
+/// Une date absente n'a pas de questionnaire : aujourd'hui l'écran l'indique.
 struct QuizCatalog: Decodable {
-    let fallback: DailyQuiz
     let quizzes: [String: DailyQuiz]
 
     static let shared: QuizCatalog = {
@@ -34,11 +33,11 @@ struct QuizCatalog: Decodable {
     }()
 
     func quiz(for date: String) -> DailyQuiz? {
-        quizzes[date] ?? (date == DateKey.today ? fallback : nil)
+        quizzes[date]
     }
 
-    /// Dates qui ont un questionnaire, jusqu'à aujourd'hui (toujours incluse, avec le repli au besoin).
+    /// Dates qui ont un questionnaire, jusqu'à aujourd'hui.
     var availableDates: [String] {
-        Set(quizzes.keys.filter { $0 <= DateKey.today }).union([DateKey.today]).sorted()
+        quizzes.keys.filter { $0 <= DateKey.today }.sorted()
     }
 }
