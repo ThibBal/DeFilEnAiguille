@@ -27,7 +27,7 @@ Sources/
   DeFilEnAiguilleApp.swift          point d'entrée, barre d'onglets, état partagé (AppState, Route)
   Theme.swift                       Palette (clair/sombre) et AppFont
   Model/                            Quiz (modèles), AnswerMatcher (saisie libre), QuizStore (questionnaires : embarqués + téléchargés), Play (SwiftData) + Historique, DateKey (dates en français)
-  Components/                       Thread (nœuds et fil), UI (étiquette, boutons, points de score, lien retour)
+  Components/                       Thread (nœuds et fil), UI (étiquette, boutons, points de score, lien retour), ReviewList (détail question par question, partagé par l'écran de fin et la revue)
   Views/                            RootView, TodayView, QuizView, HistoryView, ReviewView
   Resources/quizzes.json            les questionnaires (clés AAAA-MM-JJ + questionnaire de repli)
   Resources/Fonts/                  Instrument Serif et Hanken Grotesk

@@ -46,23 +46,7 @@ struct ReviewView: View {
                 }
                 .padding(.top, 16)
 
-                VStack(alignment: .leading, spacing: 0) {
-                    ForEach(Array(items.enumerated()), id: \.offset) { i, item in
-                        HStack(alignment: .top, spacing: 16) {
-                            VerticalThread(state: item.mine == nil ? .right : .wrong, last: i == items.count - 1, top: 3)
-                            VStack(alignment: .leading, spacing: 0) {
-                                LabelText("Question \(i + 1)", size: 12)
-                                Text(item.question)
-                                    .font(AppFont.serif(23)).exactLineHeight(28).foregroundStyle(Palette.ink)
-                                    .fixedSize(horizontal: false, vertical: true).padding(.top, 6)
-                                answer(item, points: i < play.pointsList.count ? play.pointsList[i] : 0).padding(.top, 10)
-                            }
-                            .padding(.bottom, 28)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        }
-                    }
-                }
-                .padding(.top, 32)
+                ReviewList(items: items, points: play.pointsList).padding(.top, 32)
             }
             .padding(.horizontal, 24)
             .padding(.top, 12)
@@ -73,27 +57,6 @@ struct ReviewView: View {
                 .buttonStyle(PressableStyle())
                 .padding(.horizontal, 24).padding(.bottom, 16)
                 .background(Palette.paper)
-        }
-    }
-
-    @ViewBuilder
-    private func answer(_ item: ReviewItem, points: Int) -> some View {
-        if let mine = item.mine {
-            VStack(alignment: .leading, spacing: 4) {
-                (Text("Votre réponse · ").font(AppFont.sans(14)).foregroundColor(Palette.muted)
-                    + Text(mine).font(AppFont.sans(16)).strikethrough().foregroundColor(Palette.wrongInk))
-                (Text("Bonne réponse · ").font(AppFont.sans(14)).foregroundColor(Palette.muted)
-                    + Text(item.right).font(AppFont.sans(16)).foregroundColor(Palette.ink))
-            }
-        } else {
-            VStack(alignment: .leading, spacing: 4) {
-                (Text(item.right).font(AppFont.sans(16)).foregroundColor(Palette.ink)
-                    + Text(" · bonne réponse").font(AppFont.sans(14)).foregroundColor(Palette.muted))
-                if let method = Scoring.method(points: points) {
-                    Text("\(points) point\(points > 1 ? "s" : "") · \(method)")
-                        .font(AppFont.sans(14)).foregroundColor(Palette.muted)
-                }
-            }
         }
     }
 }

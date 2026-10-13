@@ -253,6 +253,7 @@ struct QuizView: View {
         let total = quiz.questions.count
         let points = pointsList.reduce(0, +)
         let thread = saved?.title ?? quiz.thread
+        let items = outcomes.isEmpty ? (saved?.detail ?? []) : History.detail(quiz: quiz, outcomes: outcomes)
         return VStack(alignment: .leading, spacing: 0) {
             LabelText("Questionnaire terminé").padding(.top, 40)
             HStack(alignment: .firstTextBaseline, spacing: 10) {
@@ -262,24 +263,7 @@ struct QuizView: View {
             .padding(.top, 8)
             Text(thread).font(AppFont.serifItalic(28)).foregroundStyle(Palette.ink).padding(.top, 28)
             Text("Le fil du jour").font(AppFont.sans(15)).foregroundStyle(Palette.muted).padding(.top, 6)
-            VStack(alignment: .leading, spacing: 0) {
-                ForEach(Array(quiz.questions.enumerated()), id: \.offset) { n, item in
-                    let earned = n < pointsList.count ? pointsList[n] : 0
-                    HStack(alignment: .top, spacing: 16) {
-                        VerticalThread(state: earned > 0 ? .right : .wrong, last: n == total - 1)
-                        Text(item.short)
-                            .font(AppFont.sans(18)).foregroundStyle(Palette.ink)
-                            .padding(.bottom, 14)
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                        Text("\(earned) pt\(earned > 1 ? "s" : "")")
-                            .font(AppFont.sans(14)).foregroundStyle(Palette.muted)
-                            .padding(.top, 3)
-                    }
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("\(item.short), \(earned > 0 ? "bonne" : "mauvaise") réponse, \(earned) point\(earned > 1 ? "s" : "")")
-                }
-            }
-            .padding(.top, 24)
+            ReviewList(items: items, points: pointsList).padding(.top, 28)
         }
     }
 

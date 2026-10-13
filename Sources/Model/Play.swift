@@ -103,11 +103,16 @@ enum History {
         return (streak, played.count, played.isEmpty ? 0 : Double(total) / Double(played.count))
     }
 
+    /// Le détail d'une partie : question, bonne réponse, et réponse donnée quand elle était fausse.
+    static func detail(quiz: DailyQuiz, outcomes: [Outcome]) -> [ReviewItem] {
+        quiz.questions.enumerated().map { i, q in
+            ReviewItem(question: q.question, right: q.options[q.answer], mine: i < outcomes.count ? outcomes[i].wrongAnswer : nil)
+        }
+    }
+
     /// Enregistre (ou remplace) la partie d'une date.
     static func save(date: String, quiz: DailyQuiz, outcomes: [Outcome], in context: ModelContext) {
-        let detail = quiz.questions.enumerated().map { i, q in
-            ReviewItem(question: q.question, right: q.options[q.answer], mine: outcomes[i].wrongAnswer)
-        }
+        let detail = detail(quiz: quiz, outcomes: outcomes)
         let score = outcomes.filter(\.isRight).count
         let points = outcomes.map(\.points)
         let existing = try? context.fetch(FetchDescriptor<Play>(predicate: #Predicate { $0.date == date }))
