@@ -19,25 +19,9 @@ struct DailyQuiz: Codable, Hashable {
     let questions: [Question]
 }
 
-/// Les questionnaires, embarqués dans `quizzes.json` (clés AAAA-MM-JJ).
-/// Une date absente n'a pas de questionnaire : aujourd'hui l'écran l'indique.
-struct QuizCatalog: Decodable {
-    let quizzes: [String: DailyQuiz]
-
-    static let shared: QuizCatalog = {
-        guard let url = Bundle.main.url(forResource: "quizzes", withExtension: "json"),
-              let data = try? Data(contentsOf: url),
-              let catalog = try? JSONDecoder().decode(QuizCatalog.self, from: data)
-        else { fatalError("quizzes.json introuvable ou invalide") }
-        return catalog
-    }()
-
-    func quiz(for date: String) -> DailyQuiz? {
-        quizzes[date]
-    }
-
-    /// Dates qui ont un questionnaire, jusqu'à aujourd'hui.
-    var availableDates: [String] {
-        quizzes.keys.filter { $0 <= DateKey.today }.sorted()
+extension DailyQuiz {
+    /// Garde-fou pour les questionnaires reçus ou lus sur disque : 5 questions, 4 options, une bonne réponse valide.
+    var isValid: Bool {
+        questions.count == 5 && questions.allSatisfy { $0.options.count == 4 && $0.options.indices.contains($0.answer) }
     }
 }

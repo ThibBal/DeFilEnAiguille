@@ -20,6 +20,7 @@
 		5AC4D5286DA1C710BB521EFF /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D109075B8AE96D46A636B7EB /* QuizView.swift */; };
 		6546A9718F6C48D04C8B36BF /* InstrumentSerif_400Regular_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 13908594216797A9D87DD4D3 /* InstrumentSerif_400Regular_Italic.ttf */; };
 		70AE904AE1B6C1E0BD333F4F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374BFEBDB85C1F92F9F9E9D7 /* Theme.swift */; };
+		911A0421C433DD8782E06904 /* QuizStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7190F64E60899969EBBF1DA4 /* QuizStore.swift */; };
 		95B01B750CE9721EE6BA4FFC /* DateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2CA0F0A657D2A8B98B82F1 /* DateKey.swift */; };
 		AC6600AFDD29F1BFAB6CEEEF /* ReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE9E190F700F28EF4F4C822 /* ReviewView.swift */; };
 		B0A6C9FE75C64E0CA9E404D3 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFBED91664589793F7BF36E /* TodayView.swift */; };
@@ -39,6 +40,7 @@
 		374BFEBDB85C1F92F9F9E9D7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		3B9E7F5E65FB1FC8C193A2C6 /* QuestionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionText.swift; sourceTree = "<group>"; };
 		5F58BE65649CC5EF6AC7308E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		7190F64E60899969EBBF1DA4 /* QuizStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStore.swift; sourceTree = "<group>"; };
 		74F3398A56AAE00C542E2CD1 /* DeFilEnAiguille.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = DeFilEnAiguille.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AF3D4ABE00BD6B5FA69FCEE /* DeFilEnAiguilleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeFilEnAiguilleApp.swift; sourceTree = "<group>"; };
 		7D505143E31C80BCFE0E529E /* HankenGrotesk_500Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = HankenGrotesk_500Medium.ttf; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				0C2CA0F0A657D2A8B98B82F1 /* DateKey.swift */,
 				1DF31CE33D2CCB33BB8B869F /* Play.swift */,
 				C7CC07C1A301B0A72A8DE566 /* Quiz.swift */,
+				7190F64E60899969EBBF1DA4 /* QuizStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				547C95830F7B3753443958F7 /* Play.swift in Sources */,
 				1A5E89F05D187CFFB05AD51F /* QuestionText.swift in Sources */,
 				3F15AF2565771FB99D5D9867 /* Quiz.swift in Sources */,
+				911A0421C433DD8782E06904 /* QuizStore.swift in Sources */,
 				5AC4D5286DA1C710BB521EFF /* QuizView.swift in Sources */,
 				AC6600AFDD29F1BFAB6CEEEF /* ReviewView.swift in Sources */,
 				DC031F046F5F99012E0364AE /* RootView.swift in Sources */,

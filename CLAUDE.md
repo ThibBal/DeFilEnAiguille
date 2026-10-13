@@ -26,7 +26,7 @@ project.yml                         configuration XcodeGen (cible, réglages, po
 Sources/
   DeFilEnAiguilleApp.swift          point d'entrée, barre d'onglets, état partagé (AppState, Route)
   Theme.swift                       Palette (clair/sombre) et AppFont
-  Model/                            Quiz (questionnaires), Play (SwiftData) + Historique, DateKey (dates en français)
+  Model/                            Quiz (modèles), QuizStore (questionnaires : embarqués + téléchargés), Play (SwiftData) + Historique, DateKey (dates en français)
   Components/                       Thread (nœuds et fil), UI (étiquette, boutons, points de score, lien retour)
   Views/                            RootView, TodayView, QuizView, HistoryView, ReviewView
   Resources/quizzes.json            les questionnaires (clés AAAA-MM-JJ + questionnaire de repli)
@@ -44,7 +44,7 @@ docs/questionnaires.md              format des questionnaires et page Wikipédia
 - **Aujourd'hui** (`TodayView` → `QuizView`) : le questionnaire de la date du jour. S'il a déjà été joué, l'écran affiche directement le résultat. S'il n'est pas disponible, l'écran annonce qu'il arrive bientôt et propose de parcourir l'historique (pas de questionnaire de repli).
 - **Historique** (`HistoryView`) : tous les jours qui ont un questionnaire, par mois, jusqu'à aujourd'hui. Un jour joué ouvre sa revue (`ReviewView`, avec « Rejouer »), un jour « À jouer » ouvre le questionnaire (`QuizView` avec retour vers l'historique).
 - **Parties** : modèle SwiftData `Play`, une par date (`date` unique). Rejouer remplace la partie précédente.
-- **Questionnaires** : `QuizCatalog` lit `quizzes.json`. Une date absente n'a pas de questionnaire.
+- **Questionnaires** : `QuizStore` (injecté dans l'environnement) part de `quizzes.json` embarqué (secours hors ligne), le complète avec les fichiers du cache (`Application Support/Quizzes/`), puis `refresh()` télécharge `index.json` et `quizzes/AAAA-MM-JJ.json` depuis GitHub Pages (au lancement et au retour au premier plan) : les dates manquantes, plus celles d'aujourd'hui et à venir pour prendre en compte une correction. Une date absente n'a pas de questionnaire.
 - **Animation « le fil passe »** (`QuizView.next` / `runFlight`, `Components/QuestionText.swift`) : au passage à la question suivante, la bonne réponse devient une pastille qui suit un fil vert jusqu'au mot repris (`link`), qui s'allume puis reste souligné. Durée ≈ 1,2 s (constante `flightSpeed` pour la ralentir en test). Sans `link`, ou avec « Réduire les animations », transition simple. Les questions sont affichées mot par mot (`FlowLayout`) pour pouvoir viser le mot repris.
 - **Hauteur de ligne exacte** (`exactLineHeight`) : disponible à partir d'iOS 26, sinon interligne par défaut.
 
@@ -62,6 +62,6 @@ Direction : épuré, papier crème et encre sombre, un accent vert (bonne répon
 
 ## À faire
 
-1. Récupération à distance : les fichiers par jour sont prêts dans `content/` (publication sur GitHub Pages). Reste à faire dans l'app : télécharger `index.json` et les jours manquants, les mettre en cache, garder `quizzes.json` comme secours hors ligne.
+1. Indice : le champ `hint` est dans les questionnaires mais pas encore affiché (bouton « Indice » dans `QuizView`).
 2. Notification quotidienne (UserNotifications) et widget iOS (WidgetKit).
 3. Écran de démarrage définitif, puis distribution (TestFlight / App Store, compte Apple Developer payant).

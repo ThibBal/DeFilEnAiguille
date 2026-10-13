@@ -35,9 +35,9 @@ struct HistoryEntry: Identifiable, Hashable {
 
 enum History {
     /// Tous les jours qui ont un questionnaire ou une partie, du plus récent au plus ancien.
-    static func entries(plays: [Play]) -> [HistoryEntry] {
+    static func entries(plays: [Play], dates available: [String]) -> [HistoryEntry] {
         let byDate = Dictionary(uniqueKeysWithValues: plays.map { ($0.date, $0) })
-        let dates = Set(QuizCatalog.shared.availableDates).union(byDate.keys)
+        let dates = Set(available).union(byDate.keys)
         return dates.filter { $0 <= DateKey.today }.sorted(by: >).map { date in
             if let p = byDate[date] {
                 return HistoryEntry(id: date, title: p.title, score: p.score, detail: p.detail)

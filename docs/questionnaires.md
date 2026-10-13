@@ -1,6 +1,6 @@
 # Questionnaires
 
-Les questionnaires sont dans `content/quizzes/`, un fichier par jour (`AAAA-MM-JJ.json`). Ils sont publiés sur GitHub Pages et l'app les récupère à distance. `Sources/Resources/quizzes.json` reste embarqué dans l'app comme secours hors ligne. Il n'y a pas de questionnaire de repli : si celui du jour n'est pas là, l'onglet « Aujourd'hui » l'annonce et renvoie vers l'historique.
+Les questionnaires sont dans `content/quizzes/`, un fichier par jour (`AAAA-MM-JJ.json`). Ils sont publiés sur GitHub Pages et l'app les récupère à distance (`QuizStore`), les garde sur l'appareil, et ne dépend d'Internet que pour les nouveaux jours. `Sources/Resources/quizzes.json` reste embarqué dans l'app comme secours hors ligne. Il n'y a pas de questionnaire de repli : si celui du jour n'est pas là, l'onglet « Aujourd'hui » l'annonce et renvoie vers l'historique.
 
 ## Publication
 

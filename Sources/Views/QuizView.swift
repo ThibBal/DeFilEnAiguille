@@ -16,6 +16,7 @@ struct QuizView: View {
     let onFinish: () -> Void
 
     @Environment(\.modelContext) private var context
+    @Environment(QuizStore.self) private var store
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var quiz: DailyQuiz?
     @State private var saved: Play?
@@ -59,7 +60,7 @@ struct QuizView: View {
     /// Charge le questionnaire et la partie enregistrée, sauf si une partie est en cours dans cet écran.
     private func load() {
         guard choices.isEmpty else { return }
-        quiz = QuizCatalog.shared.quiz(for: date)
+        quiz = store.quiz(for: date)
         let existing = try? context.fetch(FetchDescriptor<Play>(predicate: #Predicate { $0.date == date }))
         saved = replay ? nil : existing?.first
         loaded = true

@@ -4,11 +4,12 @@ import SwiftUI
 /// Tous les jours, par mois : un jour joué ouvre sa revue, un jour à jouer ouvre le questionnaire.
 struct HistoryView: View {
     @Environment(AppState.self) private var app
+    @Environment(QuizStore.self) private var store
     @Query private var plays: [Play]
 
     var body: some View {
         @Bindable var app = app
-        let entries = History.entries(plays: plays)
+        let entries = History.entries(plays: plays, dates: store.availableDates)
         let stats = History.stats(entries)
         let todayPlayed = entries.first(where: { $0.id == DateKey.today })?.played ?? false
         let months = Dictionary(grouping: entries, by: { DateKey.month($0.id) })
@@ -26,7 +27,7 @@ struct HistoryView: View {
                             .font(AppFont.sans(15)).foregroundStyle(Palette.muted).padding(.top, 8)
 
                         statsRow(stats).padding(.top, 20)
-                        if QuizCatalog.shared.quiz(for: DateKey.today) != nil {
+                        if store.quiz(for: DateKey.today) != nil {
                             todayCard(played: todayPlayed).padding(.top, 24)
                         }
 
