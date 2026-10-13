@@ -1,0 +1,74 @@
+{
+  "thread": "Du Havre à la Floride de Jules Verne",
+  "questions": [
+    {
+      "question": "Édouard Philippe, Premier ministre de 2017 à 2020, est maire d’une ville portuaire de Normandie. Laquelle ?",
+      "options": [
+        "Rouen",
+        "Caen",
+        "Le Havre",
+        "Cherbourg"
+      ],
+      "answer": 2,
+      "short": "Le Havre",
+      "hint": "Son centre, reconstruit après 1945, est classé à l’Unesco.",
+      "explanation": "Il a été maire du Havre de 2010 à 2017, puis à nouveau depuis 2020. Le centre-ville a été reconstruit par Auguste Perret."
+    },
+    {
+      "question": "Le Havre a inspiré à Claude Monet, en 1872, « Impression, soleil levant ». Quel mouvement artistique a pris son nom de ce tableau ?",
+      "options": [
+        "L’impressionnisme",
+        "Le fauvisme",
+        "Le cubisme",
+        "Le surréalisme"
+      ],
+      "answer": 0,
+      "short": "L’impressionnisme",
+      "hint": "On y rattache aussi Renoir, Pissarro et Sisley.",
+      "explanation": "Le critique Louis Leroy a lancé le mot « impressionnistes » par moquerie, en 1874, à propos de ce tableau.",
+      "link": "Le Havre"
+    },
+    {
+      "question": "Les artistes du mouvement impressionniste ont tenu leur première exposition en 1874 dans l’atelier d’un photographe parisien. Lequel ?",
+      "options": [
+        "Daguerre",
+        "Nadar",
+        "Niépce",
+        "Eugène Atget"
+      ],
+      "answer": 1,
+      "short": "Nadar",
+      "hint": "Il a fait le portrait de Baudelaire et photographié Paris depuis un ballon.",
+      "explanation": "L’exposition s’est tenue boulevard des Capucines, dans les anciens ateliers de Nadar.",
+      "link": "impressionniste"
+    },
+    {
+      "question": "Jules Verne s’est inspiré de Nadar pour créer Michel Ardan, dont le nom est son anagramme. Dans quel roman de 1865 ce personnage apparaît-il ?",
+      "options": [
+        "Vingt mille lieues sous les mers",
+        "Le Tour du monde en quatre-vingts jours",
+        "De la Terre à la Lune",
+        "Voyage au centre de la Terre"
+      ],
+      "answer": 2,
+      "short": "De la Terre à la Lune",
+      "hint": "Les voyageurs partent dans un obus.",
+      "explanation": "Michel Ardan, aventurier audacieux, accompagne le président Barbicane dans un projectile tiré par un immense canon.",
+      "link": "Nadar"
+    },
+    {
+      "question": "Dans « De la Terre à la Lune », le Gun Club tire l’obus depuis un État du sud-est des États-Unis, d’où partiront plus tard les vraies fusées Apollo. Lequel ?",
+      "options": [
+        "La Floride",
+        "Le Texas",
+        "La Californie",
+        "Le Nevada"
+      ],
+      "answer": 0,
+      "short": "La Floride",
+      "hint": "Son nom signifie « pays fleuri » en espagnol.",
+      "explanation": "Jules Verne situe le site de lancement près de Tampa. Les fusées Apollo décolleront de Cap Canaveral un siècle plus tard.",
+      "link": "De la Terre à la Lune"
+    }
+  ]
+}

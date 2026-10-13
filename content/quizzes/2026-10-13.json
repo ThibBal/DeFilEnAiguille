@@ -1,0 +1,74 @@
+{
+  "thread": "Des Enfants-Rouges aux Offices",
+  "questions": [
+    {
+      "question": "Le marché des Enfants-Rouges, dans le 3e arrondissement de Paris, tire son nom d’un orphelinat dont les enfants portaient des vêtements rouges. Il fut fondé en 1534 par la sœur d’un roi. Lequel ?",
+      "options": [
+        "François Ier",
+        "Henri II",
+        "Louis XII",
+        "Henri IV"
+      ],
+      "answer": 0,
+      "short": "François Ier",
+      "hint": "Il a fait construire le château de Chambord.",
+      "explanation": "L’orphelinat a été fondé par Marguerite de Navarre, sœur de François Ier. Le marché, ouvert en 1615, est le plus ancien marché couvert de Paris encore en activité."
+    },
+    {
+      "question": "François Ier a accueilli en France, en 1516, un artiste italien qui est mort à Amboise en 1519. Qui est-il ?",
+      "options": [
+        "Michel-Ange",
+        "Raphaël",
+        "Botticelli",
+        "Léonard de Vinci"
+      ],
+      "answer": 3,
+      "short": "Léonard de Vinci",
+      "hint": "Il avait la Joconde dans ses bagages.",
+      "explanation": "Le roi l’a installé au manoir du Clos Lucé, près de son château d’Amboise. Léonard y a passé les trois dernières années de sa vie.",
+      "link": "François Ier"
+    },
+    {
+      "question": "La Joconde, de Léonard de Vinci, représente Lisa Gherardini, épouse d’un marchand de soie. De quelle ville italienne ?",
+      "options": [
+        "Venise",
+        "Milan",
+        "Florence",
+        "Rome"
+      ],
+      "answer": 2,
+      "short": "Florence",
+      "hint": "Elle est la capitale de la Toscane.",
+      "explanation": "Son mari, Francesco del Giocondo, a commandé le portrait vers 1503. En italien, le tableau s’appelle « La Gioconda ».",
+      "link": "Léonard de Vinci"
+    },
+    {
+      "question": "Florence est traversée par l’Arno, que franchit un pont médiéval couvert de boutiques d’orfèvres. Lequel ?",
+      "options": [
+        "Le Ponte Santa Trinita",
+        "Le Ponte Vecchio",
+        "Le pont du Rialto",
+        "Le pont des Soupirs"
+      ],
+      "answer": 1,
+      "short": "Le Ponte Vecchio",
+      "hint": "Son nom signifie « le vieux pont ».",
+      "explanation": "Reconstruit en 1345, c’est le seul pont de Florence qui a échappé aux destructions de 1944.",
+      "link": "Florence"
+    },
+    {
+      "question": "Un corridor surélevé, bâti en 1565 par Vasari, passe au-dessus du Ponte Vecchio pour relier le palais Pitti à un célèbre musée. Lequel ?",
+      "options": [
+        "Les Offices",
+        "Le Bargello",
+        "La galerie de l’Académie",
+        "Le musée de l’Opera del Duomo"
+      ],
+      "answer": 0,
+      "short": "Les Offices",
+      "hint": "Son nom signifie « les bureaux ».",
+      "explanation": "Le corridor de Vasari fut bâti en cinq mois pour permettre aux Médicis de circuler à l’abri des regards entre leurs bureaux et leur palais.",
+      "link": "Ponte Vecchio"
+    }
+  ]
+}

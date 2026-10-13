@@ -1,0 +1,74 @@
+{
+  "thread": "De Ronaldo à Degas",
+  "questions": [
+    {
+      "question": "Cristiano Ronaldo, né en 1985, est originaire d’une île portugaise de l’océan Atlantique. Laquelle ?",
+      "options": [
+        "Madère",
+        "Les Açores",
+        "Les Canaries",
+        "Le Cap-Vert"
+      ],
+      "answer": 0,
+      "short": "Madère",
+      "hint": "L’aéroport de l’île porte son nom depuis 2017.",
+      "explanation": "Il est né à Funchal, sur l’île de Madère, le 5 février 1985. L’aéroport de l’île s’appelle « Cristiano Ronaldo » depuis 2017."
+    },
+    {
+      "question": "Quelle est la capitale de Madère, port d’escale très fréquenté par les paquebots ?",
+      "options": [
+        "Ponta Delgada",
+        "Horta",
+        "Faro",
+        "Funchal"
+      ],
+      "answer": 3,
+      "short": "Funchal",
+      "hint": "Elle est bâtie en amphithéâtre face à l’océan.",
+      "explanation": "Funchal compte plus de 100 000 habitants et concentre l’essentiel de la population de l’île.",
+      "link": "Madère"
+    },
+    {
+      "question": "Le nom de Funchal vient du portugais « funcho », qui désigne une plante aromatique. Laquelle ?",
+      "options": [
+        "Le basilic",
+        "Le thym",
+        "Le fenouil",
+        "Le laurier"
+      ],
+      "answer": 2,
+      "short": "Le fenouil",
+      "hint": "Son bulbe a un léger goût d’anis.",
+      "explanation": "Les premiers navigateurs ont trouvé du fenouil sauvage en abondance à l’emplacement de la future ville, d’où son nom.",
+      "link": "Funchal"
+    },
+    {
+      "question": "Le fenouil entre, avec l’anis vert et une armoise, dans la recette d’une boisson alcoolisée verte, interdite en France en 1915. Laquelle ?",
+      "options": [
+        "L’absinthe",
+        "Le pastis",
+        "La chartreuse",
+        "Le génépi"
+      ],
+      "answer": 0,
+      "short": "L’absinthe",
+      "hint": "On la surnommait la « fée verte ».",
+      "explanation": "Accusée de provoquer folie et alcoolisme, l’absinthe a été interdite en France par la loi de 1915. Le terme n’a été de nouveau autorisé qu’en 2011.",
+      "link": "fenouil"
+    },
+    {
+      "question": "Un célèbre tableau de 1876, aujourd’hui au musée d’Orsay, montre deux personnages attablés devant un verre d’absinthe dans un café parisien. Quel peintre l’a réalisé ?",
+      "options": [
+        "Édouard Manet",
+        "Edgar Degas",
+        "Claude Monet",
+        "Auguste Renoir"
+      ],
+      "answer": 1,
+      "short": "Edgar Degas",
+      "hint": "Il est surtout connu pour ses danseuses.",
+      "explanation": "« Dans un café (L’Absinthe) » a été peint par Edgar Degas vers 1875-1876. Manet avait peint « Le Buveur d’absinthe » dès 1859.",
+      "link": "absinthe"
+    }
+  ]
+}

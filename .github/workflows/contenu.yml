@@ -1,0 +1,44 @@
+name: Contenu
+
+# Valide les questionnaires à chaque changement, et les publie sur GitHub Pages
+# depuis main : https://thibbal.github.io/DeFilEnAiguille/index.json
+
+on:
+  push:
+    branches: [main]
+    paths: [content/**, scripts/publier_contenu.py, .github/workflows/contenu.yml]
+  pull_request:
+    paths: [content/**, scripts/publier_contenu.py]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  valider:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/publier_contenu.py
+
+  publier:
+    if: github.event_name != 'pull_request'
+    needs: valider
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/publier_contenu.py _site
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deploy
+        uses: actions/deploy-pages@v4

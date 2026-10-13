@@ -1,0 +1,74 @@
+{
+  "thread": "De Navanethem Pillay à Wellington",
+  "questions": [
+    {
+      "question": "Navanethem Pillay, ancienne Haute-Commissaire de l’ONU aux droits de l’homme, a grandi sous l’apartheid dans quel pays ?",
+      "options": [
+        "Le Zimbabwe",
+        "L’Afrique du Sud",
+        "La Namibie",
+        "Le Kenya"
+      ],
+      "answer": 1,
+      "short": "L’Afrique du Sud",
+      "hint": "C’est le pays de Nelson Mandela.",
+      "explanation": "Née à Durban en 1941, elle fut la première femme non blanche avocate du Natal avant de présider le Tribunal pénal international pour le Rwanda."
+    },
+    {
+      "question": "L’Afrique du Sud compte trois capitales : Pretoria (exécutive), Le Cap (législative) et une troisième, siège de la Cour suprême d’appel. Laquelle ?",
+      "options": [
+        "Johannesburg",
+        "Durban",
+        "Bloemfontein",
+        "Port Elizabeth"
+      ],
+      "answer": 2,
+      "short": "Bloemfontein",
+      "hint": "Son nom signifie « fontaine des fleurs » en afrikaans.",
+      "explanation": "Johannesburg, la plus grande ville du pays, n’est la capitale d’aucun des trois pouvoirs.",
+      "link": "Afrique du Sud"
+    },
+    {
+      "question": "Quel écrivain britannique est né à Bloemfontein en 1892 ?",
+      "options": [
+        "J. R. R. Tolkien",
+        "C. S. Lewis",
+        "Roald Dahl",
+        "Rudyard Kipling"
+      ],
+      "answer": 0,
+      "short": "J. R. R. Tolkien",
+      "hint": "Il a inventé la Terre du Milieu.",
+      "explanation": "Tolkien est né de parents anglais installés en Afrique du Sud. Il est rentré en Angleterre avec sa mère à l’âge de trois ans.",
+      "link": "Bloemfontein"
+    },
+    {
+      "question": "« Le Seigneur des anneaux », de Tolkien, a été adapté au cinéma par Peter Jackson. Dans quel pays la trilogie a-t-elle été tournée ?",
+      "options": [
+        "Le Canada",
+        "L’Irlande",
+        "L’Islande",
+        "La Nouvelle-Zélande"
+      ],
+      "answer": 3,
+      "short": "La Nouvelle-Zélande",
+      "hint": "L’oiseau emblème de ce pays est le kiwi.",
+      "explanation": "Peter Jackson, né en Nouvelle-Zélande, a tourné les trois films (2001-2003) dans son pays natal.",
+      "link": "Tolkien"
+    },
+    {
+      "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+      "options": [
+        "Auckland",
+        "Christchurch",
+        "Hamilton",
+        "Wellington"
+      ],
+      "answer": 3,
+      "short": "Wellington",
+      "hint": "Elle se trouve à la pointe sud de l’île du Nord.",
+      "explanation": "Auckland, plus grande ville du pays, fut la capitale jusqu’en 1865. Wellington, plus centrale, l’a remplacée.",
+      "link": "Nouvelle-Zélande"
+    }
+  ]
+}

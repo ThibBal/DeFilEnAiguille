@@ -1,0 +1,74 @@
+{
+  "thread": "Du Québec à Anish Kapoor",
+  "questions": [
+    {
+      "question": "Le Parti québécois, fondé en 1968 par René Lévesque, défend la souveraineté du Québec. Quel grand fleuve baigne Québec et Montréal ?",
+      "options": [
+        "Le Saint-Laurent",
+        "Le Mackenzie",
+        "La Columbia",
+        "L’Hudson"
+      ],
+      "answer": 0,
+      "short": "Le Saint-Laurent",
+      "hint": "Jacques Cartier l’a remonté dès 1535.",
+      "explanation": "Le Saint-Laurent relie les Grands Lacs à l’océan Atlantique. Québec et Montréal se sont développées sur ses rives."
+    },
+    {
+      "question": "Le Saint-Laurent relie l’Atlantique aux Grands Lacs. Lequel des cinq Grands Lacs se trouve entièrement aux États-Unis ?",
+      "options": [
+        "Le lac Supérieur",
+        "Le lac Huron",
+        "Le lac Érié",
+        "Le lac Michigan"
+      ],
+      "answer": 3,
+      "short": "Le lac Michigan",
+      "hint": "Chicago est sur ses rives.",
+      "explanation": "Les quatre autres sont partagés entre le Canada et les États-Unis. Le Michigan est relié au lac Huron par le détroit de Mackinac.",
+      "link": "Saint-Laurent"
+    },
+    {
+      "question": "Chicago, sur les rives du lac Michigan, a possédé de 1973 à 1998 le plus haut gratte-ciel du monde. Quel était son nom d’origine ?",
+      "options": [
+        "L’Empire State Building",
+        "La Trump Tower",
+        "La Sears Tower",
+        "Le John Hancock Center"
+      ],
+      "answer": 2,
+      "short": "La Sears Tower",
+      "hint": "Une chaîne de grands magasins lui a donné son nom.",
+      "explanation": "Haute de 442 mètres, elle est rebaptisée Willis Tower en 2009. C’est aujourd’hui l’un des plus hauts bâtiments des États-Unis.",
+      "link": "Michigan"
+    },
+    {
+      "question": "La Sears Tower se dresse au cœur du quartier d’affaires de Chicago, que ceint une boucle de voies ferrées surélevées. Quel est son nom ?",
+      "options": [
+        "Le Magnificent Mile",
+        "Le Loop",
+        "Navy Pier",
+        "Hyde Park"
+      ],
+      "answer": 1,
+      "short": "Le Loop",
+      "hint": "Son nom évoque une forme circulaire.",
+      "explanation": "Le Loop (« la boucle ») est ceinturé par la ligne de métro aérien « L » depuis 1897.",
+      "link": "Sears Tower"
+    },
+    {
+      "question": "Dans le Loop, le Millennium Park abrite « Cloud Gate », surnommée « The Bean » (le haricot). Quel sculpteur britannique d’origine indienne en est l’auteur ?",
+      "options": [
+        "Jeff Koons",
+        "Anish Kapoor",
+        "Richard Serra",
+        "Antony Gormley"
+      ],
+      "answer": 1,
+      "short": "Anish Kapoor",
+      "hint": "Il a présenté « Leviathan » au Grand Palais en 2011.",
+      "explanation": "Cette sculpture en acier poli de 110 tonnes a été inaugurée en 2006. Anish Kapoor est un artiste britannique d’origine indienne.",
+      "link": "Loop"
+    }
+  ]
+}

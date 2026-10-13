@@ -1,0 +1,74 @@
+{
+  "thread": "D’Amanda Lear à Berlin",
+  "questions": [
+    {
+      "question": "Amanda Lear, chanteuse de « Follow Me » à la fin des années 1970, fut la muse d’un peintre surréaliste à la moustache célèbre. Lequel ?",
+      "options": [
+        "Pablo Picasso",
+        "Joan Miró",
+        "Salvador Dalí",
+        "René Magritte"
+      ],
+      "answer": 2,
+      "short": "Salvador Dalí",
+      "hint": "Il a peint des montres molles.",
+      "explanation": "Amanda Lear a fréquenté Salvador Dalí dès les années 1960 et fut l’une de ses muses. Il est l’auteur de « La Persistance de la mémoire »."
+    },
+    {
+      "question": "Salvador Dalí est né à Figueres, dans quelle région du nord-est de l’Espagne ?",
+      "options": [
+        "La Catalogne",
+        "L’Andalousie",
+        "La Galice",
+        "L’Aragon"
+      ],
+      "answer": 0,
+      "short": "La Catalogne",
+      "hint": "Barcelone en est la capitale.",
+      "explanation": "Figueres abrite le théâtre-musée Dalí, que l’artiste a conçu lui-même et où il est enterré.",
+      "link": "Salvador Dalí"
+    },
+    {
+      "question": "La Catalogne abrite la Sagrada Família, à Barcelone. Quel architecte catalan l’a conçue ?",
+      "options": [
+        "Santiago Calatrava",
+        "Antoni Gaudí",
+        "Ricardo Bofill",
+        "Josep Puig i Cadafalch"
+      ],
+      "answer": 1,
+      "short": "Antoni Gaudí",
+      "hint": "Il a aussi dessiné le parc Güell.",
+      "explanation": "Gaudí a repris le chantier de la Sagrada Família en 1883 et y a consacré la fin de sa vie. Elle n’est toujours pas terminée.",
+      "link": "Catalogne"
+    },
+    {
+      "question": "Antoni Gaudí est mort en 1926 à Barcelone, renversé par un véhicule. Lequel ?",
+      "options": [
+        "Un tramway",
+        "Une voiture",
+        "Une charrette",
+        "Un autobus"
+      ],
+      "answer": 0,
+      "short": "Un tramway",
+      "hint": "Il roulait sur des rails.",
+      "explanation": "Gaudí, vêtu simplement, ne fut pas reconnu tout de suite par les passants. Il est mort trois jours plus tard, le 10 juin 1926.",
+      "link": "Gaudí"
+    },
+    {
+      "question": "Le premier tramway électrique du monde à transporter des voyageurs, mis en service en 1881 par Werner von Siemens, circulait dans la banlieue de quelle capitale ?",
+      "options": [
+        "Berlin",
+        "Londres",
+        "Paris",
+        "Vienne"
+      ],
+      "answer": 0,
+      "short": "Berlin",
+      "hint": "Siemens est une entreprise allemande, née dans cette ville en 1847.",
+      "explanation": "La ligne de Groß-Lichterfelde, au sud-ouest de Berlin, a ouvert en mai 1881. Elle mesurait 2,5 kilomètres.",
+      "link": "tramway"
+    }
+  ]
+}

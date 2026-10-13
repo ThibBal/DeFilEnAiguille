@@ -1,0 +1,74 @@
+{
+  "thread": "De la rivière Kwaï à la Boat Race",
+  "questions": [
+    {
+      "question": "Le Pont de la rivière Kwaï, film de David Lean sorti en 1957, se déroule en 1943 dans un camp de prisonniers. Pendant quel conflit ?",
+      "options": [
+        "La Première Guerre mondiale",
+        "La Seconde Guerre mondiale",
+        "La guerre de Corée",
+        "La guerre du Vietnam"
+      ],
+      "answer": 1,
+      "short": "La Seconde Guerre mondiale",
+      "hint": "Le Japon y est l’un des belligérants.",
+      "explanation": "Le film s’inspire du roman de Pierre Boulle et de la construction de la voie ferrée Thaïlande-Birmanie par les Japonais."
+    },
+    {
+      "question": "Pendant la Seconde Guerre mondiale, les Japonais ont fait construire par des prisonniers une voie ferrée allant de la Thaïlande vers l’ouest. Vers quel pays voisin ?",
+      "options": [
+        "Le Laos",
+        "Le Cambodge",
+        "La Malaisie",
+        "La Birmanie"
+      ],
+      "answer": 3,
+      "short": "La Birmanie",
+      "hint": "Elle borde le golfe du Bengale.",
+      "explanation": "La « voie ferrée de la mort » reliait Bangkok à Rangoun sur environ 415 kilomètres. Des dizaines de milliers de prisonniers et de travailleurs forcés y sont morts.",
+      "link": "Seconde Guerre mondiale"
+    },
+    {
+      "question": "Quelle opposante à la junte de Birmanie a reçu le prix Nobel de la paix en 1991 ?",
+      "options": [
+        "Benazir Bhutto",
+        "Corazon Aquino",
+        "Aung San Suu Kyi",
+        "Sirimavo Bandaranaike"
+      ],
+      "answer": 2,
+      "short": "Aung San Suu Kyi",
+      "hint": "Elle a passé une quinzaine d’années assignée à résidence.",
+      "explanation": "Cheffe de la Ligue nationale pour la démocratie, elle a appris l’attribution du prix alors qu’elle était assignée à résidence.",
+      "link": "Birmanie"
+    },
+    {
+      "question": "Aung San Suu Kyi a étudié la philosophie, la politique et l’économie dans une célèbre université britannique. Laquelle ?",
+      "options": [
+        "Oxford",
+        "Cambridge",
+        "Édimbourg",
+        "Durham"
+      ],
+      "answer": 0,
+      "short": "Oxford",
+      "hint": "Elle y a étudié au St Hugh’s College.",
+      "explanation": "Elle y a obtenu son diplôme en 1967, avant de travailler aux Nations unies à New York.",
+      "link": "Aung San Suu Kyi"
+    },
+    {
+      "question": "Chaque printemps, Oxford affronte Cambridge sur la Tamise, à Londres, dans une célèbre course d’aviron. Comment s’appelle-t-elle ?",
+      "options": [
+        "La Henley Royal Regatta",
+        "La Cowes Week",
+        "The Boat Race",
+        "L’America’s Cup"
+      ],
+      "answer": 2,
+      "short": "The Boat Race",
+      "hint": "Son nom en anglais signifie littéralement « la course de bateaux ».",
+      "explanation": "Disputée depuis 1829, elle oppose les équipages des deux universités sur environ 6,8 kilomètres, entre Putney et Mortlake.",
+      "link": "Oxford"
+    }
+  ]
+}

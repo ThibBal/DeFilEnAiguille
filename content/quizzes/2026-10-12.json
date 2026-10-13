@@ -1,0 +1,74 @@
+{
+  "thread": "De Shutter Island à Moctezuma",
+  "questions": [
+    {
+      "question": "Dans « Shutter Island », film de Martin Scorsese sorti en 2010, un marshal fédéral enquête sur une île-prison psychiatrique. Quel acteur l’incarne ?",
+      "options": [
+        "Brad Pitt",
+        "Leonardo DiCaprio",
+        "Matt Damon",
+        "Tom Hanks"
+      ],
+      "answer": 1,
+      "short": "Leonardo DiCaprio",
+      "hint": "Il a joué Jack dans « Titanic ».",
+      "explanation": "Leonardo DiCaprio tient le rôle de Teddy Daniels. C’est la quatrième collaboration avec Martin Scorsese, après « Gangs of New York », « Aviator » et « Les Infiltrés »."
+    },
+    {
+      "question": "Leonardo DiCaprio a reçu l’Oscar du meilleur acteur en 2016 pour un film tourné dans la nature hostile du Far West. Lequel ?",
+      "options": [
+        "Le Loup de Wall Street",
+        "Inception",
+        "The Revenant",
+        "Django Unchained"
+      ],
+      "answer": 2,
+      "short": "The Revenant",
+      "hint": "Il y affronte un ours.",
+      "explanation": "Dans « The Revenant », il joue le trappeur Hugh Glass, laissé pour mort après l’attaque d’un grizzly. C’était son premier Oscar après quatre nominations.",
+      "link": "Leonardo DiCaprio"
+    },
+    {
+      "question": "« The Revenant » a valu à son réalisateur mexicain un deuxième Oscar de la mise en scène d’affilée. Qui est-il ?",
+      "options": [
+        "Alejandro González Iñárritu",
+        "Guillermo del Toro",
+        "Alfonso Cuarón",
+        "Carlos Reygadas"
+      ],
+      "answer": 0,
+      "short": "Alejandro González Iñárritu",
+      "hint": "Il a aussi réalisé « Birdman ».",
+      "explanation": "Il avait obtenu le même Oscar l’année précédente pour « Birdman ».",
+      "link": "The Revenant"
+    },
+    {
+      "question": "Le réalisateur Alejandro González Iñárritu est né à Mexico, bâtie sur les ruines de l’ancienne capitale des Aztèques. Comment s’appelait-elle ?",
+      "options": [
+        "Teotihuacan",
+        "Tenochtitlan",
+        "Chichén Itzá",
+        "Tula"
+      ],
+      "answer": 1,
+      "short": "Tenochtitlan",
+      "hint": "Elle fut fondée en 1325 sur une île d’un lac.",
+      "explanation": "Tenochtitlan était construite sur une île du lac Texcoco. Teotihuacan, bien plus ancienne, se trouve à une cinquantaine de kilomètres.",
+      "link": "Alejandro González Iñárritu"
+    },
+    {
+      "question": "Quand Hernán Cortés arrive à Tenochtitlan en 1519, quel empereur aztèque le reçoit ?",
+      "options": [
+        "Moctezuma II",
+        "Cuauhtémoc",
+        "Atahualpa",
+        "Pachacútec"
+      ],
+      "answer": 0,
+      "short": "Moctezuma II",
+      "hint": "Il est mort en 1520, pendant l’occupation espagnole de la ville.",
+      "explanation": "Moctezuma II accueille Cortés en novembre 1519 et meurt en juin 1520. Cuauhtémoc lui succède puis capitule en 1521.",
+      "link": "Tenochtitlan"
+    }
+  ]
+}

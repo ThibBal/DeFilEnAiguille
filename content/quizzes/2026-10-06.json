@@ -1,0 +1,74 @@
+{
+  "thread": "D’Orléans à l’île de la Cité",
+  "questions": [
+    {
+      "question": "Police Python 357, film d’Alain Corneau sorti en 1976 avec Yves Montand, se déroule dans une ville de la Loire. Laquelle ?",
+      "options": [
+        "Orléans",
+        "Tours",
+        "Blois",
+        "Nantes"
+      ],
+      "answer": 0,
+      "short": "Orléans",
+      "hint": "Jeanne d’Arc l’a délivrée en 1429.",
+      "explanation": "Le film a été tourné à Orléans, où il met en scène un inspecteur de police aux prises avec sa maîtresse."
+    },
+    {
+      "question": "En 1429, après avoir délivré Orléans, Jeanne d’Arc conduit Charles VII se faire sacrer. Dans quelle ville ?",
+      "options": [
+        "Reims",
+        "Paris",
+        "Chartres",
+        "Saint-Denis"
+      ],
+      "answer": 0,
+      "short": "Reims",
+      "hint": "Sa cathédrale a vu sacrer la plupart des rois de France.",
+      "explanation": "Le sacre eut lieu le 17 juillet 1429. Paris était alors aux mains des Anglais et des Bourguignons.",
+      "link": "Orléans"
+    },
+    {
+      "question": "À Reims, à la fin du Ve siècle, l’évêque Remi baptise un roi des Francs. Lequel ?",
+      "options": [
+        "Charlemagne",
+        "Clovis",
+        "Dagobert",
+        "Childéric"
+      ],
+      "answer": 1,
+      "short": "Clovis",
+      "hint": "Il a été roi des Francs de 481 à 511.",
+      "explanation": "Le baptême de Clovis, dont la date exacte reste débattue, marque le ralliement des Francs au catholicisme.",
+      "link": "Reims"
+    },
+    {
+      "question": "En 508, Clovis choisit une ville de la Seine pour capitale de son royaume. Laquelle ?",
+      "options": [
+        "Paris",
+        "Soissons",
+        "Tours",
+        "Metz"
+      ],
+      "answer": 0,
+      "short": "Paris",
+      "hint": "Il y a fait bâtir une basilique où il sera enterré.",
+      "explanation": "Clovis s’installe à Paris vers 508. Soissons, sur l’Aisne, avait été sa première capitale.",
+      "link": "Clovis"
+    },
+    {
+      "question": "Paris est née sur une île de la Seine, où se dresse aujourd’hui la cathédrale Notre-Dame. Laquelle ?",
+      "options": [
+        "L’île Saint-Louis",
+        "L’île de la Cité",
+        "L’île aux Cygnes",
+        "L’île Seguin"
+      ],
+      "answer": 1,
+      "short": "L’île de la Cité",
+      "hint": "Son nom évoque le noyau d’une ville ancienne.",
+      "explanation": "Les Parisii s’y étaient établis avant les Romains. La construction de Notre-Dame y commence en 1163.",
+      "link": "Paris"
+    }
+  ]
+}

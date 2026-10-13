@@ -1,0 +1,74 @@
+{
+  "thread": "De Charles X à Lépante",
+  "questions": [
+    {
+      "question": "Charles X, roi de France de 1824 à 1830, a succédé à son frère aîné. Lequel ?",
+      "options": [
+        "Louis XVIII",
+        "Louis XVI",
+        "Louis XVII",
+        "Louis-Philippe"
+      ],
+      "answer": 0,
+      "short": "Louis XVIII",
+      "hint": "Il est monté sur le trône en 1814, après la chute de l’Empire.",
+      "explanation": "Louis XVIII a régné de 1814 à 1824, avec une interruption pendant les Cent-Jours. Charles X, son frère cadet, lui succède."
+    },
+    {
+      "question": "En mars 1815, devant le retour de Napoléon, Louis XVIII se réfugie dans une ville de ce qui est aujourd’hui la Belgique. Laquelle ?",
+      "options": [
+        "Bruges",
+        "Anvers",
+        "Gand",
+        "Liège"
+      ],
+      "answer": 2,
+      "short": "Gand",
+      "hint": "Elle est le chef-lieu de la Flandre-Orientale.",
+      "explanation": "Le roi y installe une cour en exil jusqu’à la défaite de Napoléon à Waterloo, en juin 1815.",
+      "link": "Louis XVIII"
+    },
+    {
+      "question": "Gand est la ville natale d’un souverain né en 1500, maître d’un empire « où le soleil ne se couchait jamais ». Lequel ?",
+      "options": [
+        "Philippe II",
+        "Charles Quint",
+        "Maximilien Ier",
+        "Louis XIV"
+      ],
+      "answer": 1,
+      "short": "Charles Quint",
+      "hint": "Il partage son prénom avec Charles X.",
+      "explanation": "Charles Quint est né à Gand le 24 février 1500. Il hérite des Pays-Bas, de l’Espagne et de ses colonies, puis de l’Empire.",
+      "link": "Gand"
+    },
+    {
+      "question": "En 1556, Charles Quint abdique et laisse l’Espagne à son fils. Quel roi devient-il ?",
+      "options": [
+        "Philippe II",
+        "Philippe V",
+        "Charles II",
+        "Ferdinand VII"
+      ],
+      "answer": 0,
+      "short": "Philippe II",
+      "hint": "Il a fait bâtir l’Escurial, près de Madrid.",
+      "explanation": "Charles Quint cède les Pays-Bas puis l’Espagne à son fils en 1555-1556, et le titre impérial à son frère Ferdinand.",
+      "link": "Charles Quint"
+    },
+    {
+      "question": "Sous Philippe II, la flotte de la Sainte Ligue bat les Ottomans en 1571 lors d’une grande bataille navale. Laquelle ?",
+      "options": [
+        "Lépante",
+        "Trafalgar",
+        "Actium",
+        "Salamine"
+      ],
+      "answer": 0,
+      "short": "Lépante",
+      "hint": "L’écrivain Cervantes y fut blessé à la main.",
+      "explanation": "Lépante, au large de la Grèce, a stoppé l’avancée navale ottomane. Don Juan d’Autriche, demi-frère de Philippe II, commandait la flotte.",
+      "link": "Philippe II"
+    }
+  ]
+}

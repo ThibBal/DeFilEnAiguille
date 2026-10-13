@@ -1,0 +1,74 @@
+{
+  "thread": "De Monsieur Hire à Bastogne",
+  "questions": [
+    {
+      "question": "Monsieur Hire, film de Patrice Leconte sorti en 1989, est adapté d’un roman de quel écrivain, créateur du commissaire Maigret ?",
+      "options": [
+        "Agatha Christie",
+        "Georges Simenon",
+        "Maurice Leblanc",
+        "Boileau-Narcejac"
+      ],
+      "answer": 1,
+      "short": "Georges Simenon",
+      "hint": "Son commissaire fume la pipe.",
+      "explanation": "Le film adapte « Les Fiançailles de M. Hire » (1933). Georges Simenon a écrit 75 romans mettant en scène Maigret."
+    },
+    {
+      "question": "Georges Simenon est né en 1903 dans quelle ville de Belgique ?",
+      "options": [
+        "Liège",
+        "Bruxelles",
+        "Anvers",
+        "Charleroi"
+      ],
+      "answer": 0,
+      "short": "Liège",
+      "hint": "Elle est surnommée la Cité ardente.",
+      "explanation": "Simenon est né à Liège le 13 février 1903. Il y a passé sa jeunesse avant de partir pour Paris en 1922.",
+      "link": "Georges Simenon"
+    },
+    {
+      "question": "Liège donne son nom à une classique cycliste de printemps, surnommée « la Doyenne ». Laquelle ?",
+      "options": [
+        "La Flèche wallonne",
+        "Paris-Roubaix",
+        "Liège-Bastogne-Liège",
+        "Gand-Wevelgem"
+      ],
+      "answer": 2,
+      "short": "Liège-Bastogne-Liège",
+      "hint": "Elle part et arrive dans la même ville.",
+      "explanation": "Créée en 1892, c’est la plus ancienne des classiques encore courues. Elle se dispute en avril dans les Ardennes.",
+      "link": "Liège"
+    },
+    {
+      "question": "La course Liège-Bastogne-Liège passe par Bastogne, assiégée par les Allemands en décembre 1944. De quelle bataille ce siège fait-il partie ?",
+      "options": [
+        "La bataille des Ardennes",
+        "La bataille de Normandie",
+        "La bataille de Stalingrad",
+        "La bataille d’Angleterre"
+      ],
+      "answer": 0,
+      "short": "La bataille des Ardennes",
+      "hint": "Hitler y a lancé sa dernière grande offensive à l’ouest.",
+      "explanation": "L’offensive allemande de décembre 1944 visait à atteindre le port d’Anvers. Bastogne, nœud routier, fut encerclée pendant plusieurs jours.",
+      "link": "Liège-Bastogne-Liège"
+    },
+    {
+      "question": "Lors de la bataille des Ardennes, un général américain assiégé à Bastogne a répondu « Nuts ! » à l’ultimatum allemand. Qui est-il ?",
+      "options": [
+        "George Patton",
+        "Omar Bradley",
+        "Dwight Eisenhower",
+        "Anthony McAuliffe"
+      ],
+      "answer": 3,
+      "short": "Anthony McAuliffe",
+      "hint": "Ce n’est pas Patton, qui est venu le délivrer.",
+      "explanation": "Le général McAuliffe commandait par intérim la 101e division aéroportée. « Nuts ! » (« des noix ! ») fut sa réponse à la demande de reddition.",
+      "link": "bataille des Ardennes"
+    }
+  ]
+}

@@ -1,286 +1,306 @@
 {
-  "fallback": {
-    "thread": "De l'obélisque à l'Etna",
-    "questions": [
-      {
-        "question": "L'obélisque de la place de la Concorde, à Paris, vient d'une ville d'Égypte. Laquelle ?",
-        "options": [
-          "Louxor",
-          "Alexandrie",
-          "Assouan",
-          "Gizeh"
-        ],
-        "answer": 0,
-        "short": "Louxor",
-        "explanation": "Offert à la France par l'Égypte, il se dressait à l'entrée du temple de Louxor. Il a été érigé à Paris en 1836."
-      },
-      {
-        "question": "Louxor est bâtie sur les rives de quel fleuve ?",
-        "options": [
-          "Le Tigre",
-          "Le Nil",
-          "Le Niger",
-          "Le Congo"
-        ],
-        "answer": 1,
-        "short": "Le Nil",
-        "explanation": "Le Nil traverse l'Égypte du sud au nord. Louxor se trouve sur sa rive orientale.",
-        "link": "Louxor"
-      },
-      {
-        "question": "Dans quelle mer le Nil se jette-t-il ?",
-        "options": [
-          "La mer Rouge",
-          "La mer Noire",
-          "La Méditerranée",
-          "La mer Caspienne"
-        ],
-        "answer": 2,
-        "short": "La Méditerranée",
-        "explanation": "Il forme un vaste delta avant de rejoindre la Méditerranée.",
-        "link": "Nil"
-      },
-      {
-        "question": "Quelle est la plus grande île de la Méditerranée ?",
-        "options": [
-          "La Crète",
-          "La Sardaigne",
-          "Chypre",
-          "La Sicile"
-        ],
-        "answer": 3,
-        "short": "La Sicile",
-        "explanation": "La Sicile devance la Sardaigne. Elle est séparée de l'Italie continentale par le détroit de Messine.",
-        "link": "Méditerranée"
-      },
-      {
-        "question": "Quel volcan domine l'est de la Sicile ?",
-        "options": [
-          "L'Etna",
-          "Le Vésuve",
-          "Le Stromboli",
-          "Santorin"
-        ],
-        "answer": 0,
-        "short": "L'Etna",
-        "explanation": "L'Etna est l'un des volcans les plus actifs du monde.",
-        "link": "Sicile"
-      }
-    ]
-  },
   "quizzes": {
     "2026-10-01": {
-      "thread": "De Ronaldo au Greco",
+      "thread": "De Lizzie Borden à Yale",
       "questions": [
         {
-          "question": "Cristiano Ronaldo, capitaine de sa sélection depuis 2008, joue pour quel pays ?",
+          "question": "Lizzie Borden, accusée en 1892 d’avoir tué son père et sa belle-mère à coups de hache, a été jugée dans quel pays ?",
           "options": [
-            "Le Portugal",
-            "L'Espagne",
-            "Le Brésil",
-            "L'Argentine"
+            "Les États-Unis",
+            "Le Royaume-Uni",
+            "Le Canada",
+            "L’Australie"
           ],
           "answer": 0,
-          "short": "Le Portugal",
-          "explanation": "Il est né à Funchal, sur l’île de Madère, et capitaine de la sélection portugaise depuis 2008."
+          "short": "Les États-Unis",
+          "hint": "Une comptine américaine raconte son histoire.",
+          "explanation": "Elle a été jugée en 1893 et acquittée. L’affaire est restée l’un des faits divers les plus célèbres du pays."
         },
         {
-          "question": "Quelle est la capitale du Portugal ?",
+          "question": "Aux États-Unis, Lizzie Borden vivait à Fall River, sur la côte est. Dans quel État ?",
           "options": [
-            "Porto",
-            "Lisbonne",
-            "Faro",
-            "Coimbra"
+            "La Californie",
+            "Le Massachusetts",
+            "Le Texas",
+            "L’Arizona"
           ],
           "answer": 1,
-          "short": "Lisbonne",
-          "explanation": "Lisbonne est la capitale et la plus grande ville du pays, au bord de l’océan Atlantique.",
-          "link": "Portugal"
+          "short": "Le Massachusetts",
+          "hint": "Les Pères pèlerins du Mayflower y ont fondé Plymouth.",
+          "explanation": "Fall River est une ville industrielle du sud du Massachusetts. Les meurtres ont eu lieu le 4 août 1892.",
+          "link": "États-Unis"
         },
         {
-          "question": "Lisbonne est bâtie sur l’estuaire de quel fleuve ?",
+          "question": "Quelle est la capitale du Massachusetts, dont le port a vu des colons jeter des caisses de thé à la mer en 1773 ?",
           "options": [
-            "Le Tage",
-            "Le Douro",
-            "L'Èbre",
-            "Le Guadiana"
+            "Philadelphie",
+            "Boston",
+            "New York",
+            "Baltimore"
+          ],
+          "answer": 1,
+          "short": "Boston",
+          "hint": "C’est la plus grande ville de Nouvelle-Angleterre.",
+          "explanation": "La « Boston Tea Party » de décembre 1773 est l’un des événements qui ont mené à la guerre d’indépendance américaine.",
+          "link": "Massachusetts"
+        },
+        {
+          "question": "Cambridge, dans l’agglomération de Boston, abrite la plus ancienne université des États-Unis, fondée en 1636. Laquelle ?",
+          "options": [
+            "Harvard",
+            "Yale",
+            "Princeton",
+            "Columbia"
           ],
           "answer": 0,
-          "short": "Le Tage",
-          "explanation": "Le Tage, le plus long fleuve de la péninsule Ibérique, se jette dans l’Atlantique à Lisbonne.",
-          "link": "Lisbonne"
+          "short": "Harvard",
+          "hint": "Elle porte le nom d’un pasteur qui lui a légué sa bibliothèque.",
+          "explanation": "Harvard doit son nom à John Harvard, pasteur mort en 1638 qui lui a légué sa bibliothèque et la moitié de sa fortune.",
+          "link": "Boston"
         },
         {
-          "question": "En Espagne, le Tage contourne une ville perchée sur un éperon rocheux, ancienne capitale royale. Laquelle ?",
+          "question": "Harvard affronte chaque automne son éternelle rivale lors d’un match de football américain surnommé « The Game ». Quelle université ?",
           "options": [
-            "Séville",
-            "Salamanque",
-            "Grenade",
-            "Tolède"
+            "Princeton",
+            "Columbia",
+            "Cornell",
+            "Yale"
           ],
           "answer": 3,
-          "short": "Tolède",
-          "explanation": "Tolède est enserrée dans un méandre du Tage. Elle fut le siège de la cour royale jusqu’en 1561.",
-          "link": "Tage"
-        },
-        {
-          "question": "Tolède a inspiré le peintre le Greco, auteur d’une célèbre « Vue de Tolède ». Sur quelle île est-il né ?",
-          "options": [
-            "Chypre",
-            "Rhodes",
-            "La Crète",
-            "Corfou"
-          ],
-          "answer": 2,
-          "short": "La Crète",
-          "explanation": "Domínikos Theotokópoulos, dit le Greco, est né à Candie (Héraklion), en Crète, vers 1541.",
-          "link": "Tolède"
+          "short": "Yale",
+          "hint": "Elle a été fondée en 1701 dans le Connecticut.",
+          "explanation": "« The Game » oppose Harvard à Yale depuis 1875. Yale est installée à New Haven, dans le Connecticut.",
+          "link": "Harvard"
         }
       ]
     },
     "2026-10-02": {
-      "thread": "De Zidane à Thulé",
+      "thread": "De Ronaldo à Degas",
       "questions": [
         {
-          "question": "Dans quelle ville est né Zinédine Zidane, en 1972 ?",
+          "question": "Cristiano Ronaldo, né en 1985, est originaire d’une île portugaise de l’océan Atlantique. Laquelle ?",
           "options": [
-            "Cannes",
-            "Bordeaux",
-            "Marseille",
-            "Toulon"
-          ],
-          "answer": 2,
-          "short": "Marseille",
-          "explanation": "Il a grandi dans les quartiers nord de Marseille avant de faire ses débuts à l’AS Cannes."
-        },
-        {
-          "question": "Quel nom les Grecs ont-ils donné à Marseille lors de sa fondation ?",
-          "options": [
-            "Nikaia",
-            "Massalia",
-            "Antipolis",
-            "Narbo"
-          ],
-          "answer": 1,
-          "short": "Massalia",
-          "explanation": "Massalia est fondée vers 600 av. J.-C., ce qui fait de Marseille la plus ancienne ville de France.",
-          "link": "Marseille"
-        },
-        {
-          "question": "Les fondateurs de Massalia venaient de Phocée. Dans quel pays actuel se trouvait cette cité grecque ?",
-          "options": [
-            "L’Italie",
-            "La Grèce",
-            "Chypre",
-            "La Turquie"
-          ],
-          "answer": 3,
-          "short": "La Turquie",
-          "explanation": "Phocée était sur la côte d’Asie Mineure, en Turquie actuelle. D’où le surnom de « cité phocéenne ».",
-          "link": "Massalia"
-        },
-        {
-          "question": "Les Phocéens, venus d’une cité de Turquie actuelle, ont fondé Marseille. Quel navigateur marseillais est parti explorer l’Atlantique nord vers 325 av. J.-C. ?",
-          "options": [
-            "Pythéas",
-            "Hannon",
-            "Hérodote",
-            "Néarque"
+            "Madère",
+            "Les Açores",
+            "Les Canaries",
+            "Le Cap-Vert"
           ],
           "answer": 0,
-          "short": "Pythéas",
-          "explanation": "Pythéas de Marseille a longé les côtes de l’Europe de l’Ouest et atteint les îles Britanniques.",
-          "link": "Turquie"
+          "short": "Madère",
+          "hint": "L’aéroport de l’île porte son nom depuis 2017.",
+          "explanation": "Il est né à Funchal, sur l’île de Madère, le 5 février 1985. L’aéroport de l’île s’appelle « Cristiano Ronaldo » depuis 2017."
         },
         {
-          "question": "Pythéas rapporte l’existence d’une terre à six jours de navigation au nord de la Bretagne, où le soleil se couche à peine. Son nom ?",
+          "question": "Quelle est la capitale de Madère, port d’escale très fréquenté par les paquebots ?",
           "options": [
-            "L’Atlantide",
-            "Thulé",
-            "Ogygie",
-            "L’Hyperborée"
+            "Ponta Delgada",
+            "Horta",
+            "Faro",
+            "Funchal"
+          ],
+          "answer": 3,
+          "short": "Funchal",
+          "hint": "Elle est bâtie en amphithéâtre face à l’océan.",
+          "explanation": "Funchal compte plus de 100 000 habitants et concentre l’essentiel de la population de l’île.",
+          "link": "Madère"
+        },
+        {
+          "question": "Le nom de Funchal vient du portugais « funcho », qui désigne une plante aromatique. Laquelle ?",
+          "options": [
+            "Le basilic",
+            "Le thym",
+            "Le fenouil",
+            "Le laurier"
+          ],
+          "answer": 2,
+          "short": "Le fenouil",
+          "hint": "Son bulbe a un léger goût d’anis.",
+          "explanation": "Les premiers navigateurs ont trouvé du fenouil sauvage en abondance à l’emplacement de la future ville, d’où son nom.",
+          "link": "Funchal"
+        },
+        {
+          "question": "Le fenouil entre, avec l’anis vert et une armoise, dans la recette d’une boisson alcoolisée verte, interdite en France en 1915. Laquelle ?",
+          "options": [
+            "L’absinthe",
+            "Le pastis",
+            "La chartreuse",
+            "Le génépi"
+          ],
+          "answer": 0,
+          "short": "L’absinthe",
+          "hint": "On la surnommait la « fée verte ».",
+          "explanation": "Accusée de provoquer folie et alcoolisme, l’absinthe a été interdite en France par la loi de 1915. Le terme n’a été de nouveau autorisé qu’en 2011.",
+          "link": "fenouil"
+        },
+        {
+          "question": "Un célèbre tableau de 1876, aujourd’hui au musée d’Orsay, montre deux personnages attablés devant un verre d’absinthe dans un café parisien. Quel peintre l’a réalisé ?",
+          "options": [
+            "Édouard Manet",
+            "Edgar Degas",
+            "Claude Monet",
+            "Auguste Renoir"
           ],
           "answer": 1,
-          "short": "Thulé",
-          "explanation": "Thulé, « la plus septentrionale des terres », a nourri l’imaginaire pendant des siècles.",
-          "link": "Pythéas"
+          "short": "Edgar Degas",
+          "hint": "Il est surtout connu pour ses danseuses.",
+          "explanation": "« Dans un café (L’Absinthe) » a été peint par Edgar Degas vers 1875-1876. Manet avait peint « Le Buveur d’absinthe » dès 1859.",
+          "link": "absinthe"
         }
       ]
     },
     "2026-10-03": {
-      "thread": "De Usual Suspects au Masque de fer",
+      "thread": "De Monsieur Hire à Bastogne",
       "questions": [
         {
-          "question": "Usual Suspects, film policier de Bryan Singer, est sorti en quelle année ?",
+          "question": "Monsieur Hire, film de Patrice Leconte sorti en 1989, est adapté d’un roman de quel écrivain, créateur du commissaire Maigret ?",
           "options": [
-            "1985",
-            "1995",
-            "2005",
-            "1975"
+            "Agatha Christie",
+            "Georges Simenon",
+            "Maurice Leblanc",
+            "Boileau-Narcejac"
           ],
           "answer": 1,
-          "short": "1995",
-          "explanation": "Sorti en 1995, il met en scène la légende du criminel Keyser Söze."
+          "short": "Georges Simenon",
+          "hint": "Son commissaire fume la pipe.",
+          "explanation": "Le film adapte « Les Fiançailles de M. Hire » (1933). Georges Simenon a écrit 75 romans mettant en scène Maigret."
         },
         {
-          "question": "En 1995, le film a été présenté hors compétition dans quel festival ?",
+          "question": "Georges Simenon est né en 1903 dans quelle ville de Belgique ?",
           "options": [
-            "Venise",
-            "Berlin",
-            "Deauville",
-            "Cannes"
-          ],
-          "answer": 3,
-          "short": "Cannes",
-          "explanation": "Il a été montré hors compétition au festival de Cannes en 1995.",
-          "link": "1995"
-        },
-        {
-          "question": "Dans quel département se trouve Cannes ?",
-          "options": [
-            "Les Alpes-Maritimes",
-            "Le Var",
-            "L’Hérault",
-            "Les Bouches-du-Rhône"
+            "Liège",
+            "Bruxelles",
+            "Anvers",
+            "Charleroi"
           ],
           "answer": 0,
-          "short": "Alpes-Maritimes",
-          "explanation": "Cannes est une commune des Alpes-Maritimes, sur la Côte d’Azur.",
-          "link": "Cannes"
+          "short": "Liège",
+          "hint": "Elle est surnommée la Cité ardente.",
+          "explanation": "Simenon est né à Liège le 13 février 1903. Il y a passé sa jeunesse avant de partir pour Paris en 1922.",
+          "link": "Georges Simenon"
         },
         {
-          "question": "Dans les Alpes-Maritimes, au large de Cannes, quelle île abrite le fort où fut enfermé le célèbre Masque de fer ?",
+          "question": "Liège donne son nom à une classique cycliste de printemps, surnommée « la Doyenne ». Laquelle ?",
           "options": [
-            "L’île d’If",
-            "Porquerolles",
-            "Sainte-Marguerite",
-            "Saint-Honorat"
+            "La Flèche wallonne",
+            "Paris-Roubaix",
+            "Liège-Bastogne-Liège",
+            "Gand-Wevelgem"
           ],
           "answer": 2,
-          "short": "Sainte-Marguerite",
-          "explanation": "Le prisonnier masqué a été détenu au fort Royal de l’île Sainte-Marguerite de 1687 à 1698.",
-          "link": "Alpes-Maritimes"
+          "short": "Liège-Bastogne-Liège",
+          "hint": "Elle part et arrive dans la même ville.",
+          "explanation": "Créée en 1892, c’est la plus ancienne des classiques encore courues. Elle se dispute en avril dans les Ardennes.",
+          "link": "Liège"
         },
         {
-          "question": "Détenu à Sainte-Marguerite de 1687 à 1698, le Masque de fer a fait couler beaucoup d’encre. Quel philosophe a rendu public son mystère dans un ouvrage de 1751 ?",
+          "question": "La course Liège-Bastogne-Liège passe par Bastogne, assiégée par les Allemands en décembre 1944. De quelle bataille ce siège fait-il partie ?",
           "options": [
-            "Diderot",
-            "Montesquieu",
-            "Rousseau",
-            "Voltaire"
+            "La bataille des Ardennes",
+            "La bataille de Normandie",
+            "La bataille de Stalingrad",
+            "La bataille d’Angleterre"
+          ],
+          "answer": 0,
+          "short": "La bataille des Ardennes",
+          "hint": "Hitler y a lancé sa dernière grande offensive à l’ouest.",
+          "explanation": "L’offensive allemande de décembre 1944 visait à atteindre le port d’Anvers. Bastogne, nœud routier, fut encerclée pendant plusieurs jours.",
+          "link": "Liège-Bastogne-Liège"
+        },
+        {
+          "question": "Lors de la bataille des Ardennes, un général américain assiégé à Bastogne a répondu « Nuts ! » à l’ultimatum allemand. Qui est-il ?",
+          "options": [
+            "George Patton",
+            "Omar Bradley",
+            "Dwight Eisenhower",
+            "Anthony McAuliffe"
           ],
           "answer": 3,
-          "short": "Voltaire",
-          "explanation": "Voltaire en parle dans « Le Siècle de Louis XIV » (1751) et a lancé les spéculations sur son identité.",
-          "link": "Sainte-Marguerite"
+          "short": "Anthony McAuliffe",
+          "hint": "Ce n’est pas Patton, qui est venu le délivrer.",
+          "explanation": "Le général McAuliffe commandait par intérim la 101e division aéroportée. « Nuts ! » (« des noix ! ») fut sa réponse à la demande de reddition.",
+          "link": "bataille des Ardennes"
         }
       ]
     },
     "2026-10-04": {
-      "thread": "De la rivière Kwaï à la Planète des singes",
+      "thread": "D’Amanda Lear à Berlin",
       "questions": [
         {
-          "question": "Le Pont de la rivière Kwaï, film de David Lean (1957), se déroule pendant quelle guerre ?",
+          "question": "Amanda Lear, chanteuse de « Follow Me » à la fin des années 1970, fut la muse d’un peintre surréaliste à la moustache célèbre. Lequel ?",
+          "options": [
+            "Pablo Picasso",
+            "Joan Miró",
+            "Salvador Dalí",
+            "René Magritte"
+          ],
+          "answer": 2,
+          "short": "Salvador Dalí",
+          "hint": "Il a peint des montres molles.",
+          "explanation": "Amanda Lear a fréquenté Salvador Dalí dès les années 1960 et fut l’une de ses muses. Il est l’auteur de « La Persistance de la mémoire »."
+        },
+        {
+          "question": "Salvador Dalí est né à Figueres, dans quelle région du nord-est de l’Espagne ?",
+          "options": [
+            "La Catalogne",
+            "L’Andalousie",
+            "La Galice",
+            "L’Aragon"
+          ],
+          "answer": 0,
+          "short": "La Catalogne",
+          "hint": "Barcelone en est la capitale.",
+          "explanation": "Figueres abrite le théâtre-musée Dalí, que l’artiste a conçu lui-même et où il est enterré.",
+          "link": "Salvador Dalí"
+        },
+        {
+          "question": "La Catalogne abrite la Sagrada Família, à Barcelone. Quel architecte catalan l’a conçue ?",
+          "options": [
+            "Santiago Calatrava",
+            "Antoni Gaudí",
+            "Ricardo Bofill",
+            "Josep Puig i Cadafalch"
+          ],
+          "answer": 1,
+          "short": "Antoni Gaudí",
+          "hint": "Il a aussi dessiné le parc Güell.",
+          "explanation": "Gaudí a repris le chantier de la Sagrada Família en 1883 et y a consacré la fin de sa vie. Elle n’est toujours pas terminée.",
+          "link": "Catalogne"
+        },
+        {
+          "question": "Antoni Gaudí est mort en 1926 à Barcelone, renversé par un véhicule. Lequel ?",
+          "options": [
+            "Un tramway",
+            "Une voiture",
+            "Une charrette",
+            "Un autobus"
+          ],
+          "answer": 0,
+          "short": "Un tramway",
+          "hint": "Il roulait sur des rails.",
+          "explanation": "Gaudí, vêtu simplement, ne fut pas reconnu tout de suite par les passants. Il est mort trois jours plus tard, le 10 juin 1926.",
+          "link": "Gaudí"
+        },
+        {
+          "question": "Le premier tramway électrique du monde à transporter des voyageurs, mis en service en 1881 par Werner von Siemens, circulait dans la banlieue de quelle capitale ?",
+          "options": [
+            "Berlin",
+            "Londres",
+            "Paris",
+            "Vienne"
+          ],
+          "answer": 0,
+          "short": "Berlin",
+          "hint": "Siemens est une entreprise allemande, née dans cette ville en 1847.",
+          "explanation": "La ligne de Groß-Lichterfelde, au sud-ouest de Berlin, a ouvert en mai 1881. Elle mesurait 2,5 kilomètres.",
+          "link": "tramway"
+        }
+      ]
+    },
+    "2026-10-05": {
+      "thread": "De la rivière Kwaï à la Boat Race",
+      "questions": [
+        {
+          "question": "Le Pont de la rivière Kwaï, film de David Lean sorti en 1957, se déroule en 1943 dans un camp de prisonniers. Pendant quel conflit ?",
           "options": [
             "La Première Guerre mondiale",
             "La Seconde Guerre mondiale",
@@ -289,23 +309,11 @@
           ],
           "answer": 1,
           "short": "La Seconde Guerre mondiale",
-          "explanation": "L’histoire se passe dans un camp japonais de prisonniers de guerre britanniques pendant la Seconde Guerre mondiale."
+          "hint": "Le Japon y est l’un des belligérants.",
+          "explanation": "Le film s’inspire du roman de Pierre Boulle et de la construction de la voie ferrée Thaïlande-Birmanie par les Japonais."
         },
         {
-          "question": "Pendant la Seconde Guerre mondiale, dans quel pays se trouve le camp de prisonniers du film ?",
-          "options": [
-            "La Thaïlande",
-            "Le Vietnam",
-            "Les Philippines",
-            "L’Inde"
-          ],
-          "answer": 0,
-          "short": "La Thaïlande",
-          "explanation": "Le pont est construit au-dessus de la rivière Kwaï, en pleine jungle thaïlandaise.",
-          "link": "Seconde Guerre mondiale"
-        },
-        {
-          "question": "La voie ferrée construite en Thaïlande par les prisonniers relie Bangkok à Rangoun, ville de quel pays ?",
+          "question": "Pendant la Seconde Guerre mondiale, les Japonais ont fait construire par des prisonniers une voie ferrée allant de la Thaïlande vers l’ouest. Vers quel pays voisin ?",
           "options": [
             "Le Laos",
             "Le Cambodge",
@@ -314,517 +322,717 @@
           ],
           "answer": 3,
           "short": "La Birmanie",
-          "explanation": "Rangoun (aujourd’hui Yangon) est en Birmanie. Cette ligne est surnommée la « voie ferrée de la mort ».",
-          "link": "Thaïlande"
+          "hint": "Elle borde le golfe du Bengale.",
+          "explanation": "La « voie ferrée de la mort » reliait Bangkok à Rangoun sur environ 415 kilomètres. Des dizaines de milliers de prisonniers et de travailleurs forcés y sont morts.",
+          "link": "Seconde Guerre mondiale"
         },
         {
-          "question": "La voie ferrée entre la Thaïlande et la Birmanie est le décor d’un roman de 1952, adapté au cinéma. Quel écrivain français l’a signé ?",
+          "question": "Quelle opposante à la junte de Birmanie a reçu le prix Nobel de la paix en 1991 ?",
           "options": [
-            "Romain Gary",
-            "Pierre Boulle",
-            "Joseph Kessel",
-            "Henri Troyat"
+            "Benazir Bhutto",
+            "Corazon Aquino",
+            "Aung San Suu Kyi",
+            "Sirimavo Bandaranaike"
           ],
-          "answer": 1,
-          "short": "Pierre Boulle",
-          "explanation": "Pierre Boulle a écrit « Le Pont de la rivière Kwaï » en 1952, à partir de son expérience en Asie du Sud-Est.",
+          "answer": 2,
+          "short": "Aung San Suu Kyi",
+          "hint": "Elle a passé une quinzaine d’années assignée à résidence.",
+          "explanation": "Cheffe de la Ligue nationale pour la démocratie, elle a appris l’attribution du prix alors qu’elle était assignée à résidence.",
           "link": "Birmanie"
         },
         {
-          "question": "Quel autre roman de Pierre Boulle, paru en 1963, a été adapté au cinéma en 1968 ?",
+          "question": "Aung San Suu Kyi a étudié la philosophie, la politique et l’économie dans une célèbre université britannique. Laquelle ?",
           "options": [
-            "La Planète des singes",
-            "Fahrenheit 451",
-            "Le Meilleur des mondes",
-            "Soleil vert"
+            "Oxford",
+            "Cambridge",
+            "Édimbourg",
+            "Durham"
           ],
           "answer": 0,
-          "short": "La Planète des singes",
-          "explanation": "Le film de 1968 avec Charlton Heston est tiré du roman de Pierre Boulle, qui a aussi inspiré toute une saga.",
-          "link": "Pierre Boulle"
-        }
-      ]
-    },
-    "2026-10-05": {
-      "thread": "D’Orléans à Castillon",
-      "questions": [
+          "short": "Oxford",
+          "hint": "Elle y a étudié au St Hugh’s College.",
+          "explanation": "Elle y a obtenu son diplôme en 1967, avant de travailler aux Nations unies à New York.",
+          "link": "Aung San Suu Kyi"
+        },
         {
-          "question": "Dans quelle ville française se déroule l’intrigue de Police Python 357, film d’Alain Corneau (1976) ?",
+          "question": "Chaque printemps, Oxford affronte Cambridge sur la Tamise, à Londres, dans une célèbre course d’aviron. Comment s’appelle-t-elle ?",
           "options": [
-            "Lille",
-            "Lyon",
-            "Orléans",
-            "Nantes"
+            "La Henley Royal Regatta",
+            "La Cowes Week",
+            "The Boat Race",
+            "L’America’s Cup"
           ],
           "answer": 2,
-          "short": "Orléans",
-          "explanation": "Le film suit l’inspecteur Ferrot (Yves Montand) dans la police d’Orléans, en 1975."
-        },
-        {
-          "question": "Orléans a été libérée des Anglais en 1429 par quelle héroïne ?",
-          "options": [
-            "Jeanne d’Arc",
-            "Aliénor d’Aquitaine",
-            "Catherine de Médicis",
-            "Blanche de Castille"
-          ],
-          "answer": 0,
-          "short": "Jeanne d’Arc",
-          "explanation": "Jeanne d’Arc lève le siège d’Orléans en mai 1429 : on la surnomme « la Pucelle d’Orléans ».",
-          "link": "Orléans"
-        },
-        {
-          "question": "Dans quelle ville Jeanne d’Arc a-t-elle été brûlée vive en 1431 ?",
-          "options": [
-            "Reims",
-            "Rouen",
-            "Compiègne",
-            "Domrémy"
-          ],
-          "answer": 1,
-          "short": "Rouen",
-          "explanation": "Condamnée par un tribunal d’Église, elle est brûlée sur la place du Vieux-Marché, à Rouen.",
-          "link": "Jeanne d’Arc"
-        },
-        {
-          "question": "Jeanne d’Arc est brûlée à Rouen en 1431, deux ans après avoir fait sacrer un roi à Reims. Lequel ?",
-          "options": [
-            "Charles V",
-            "Louis XI",
-            "Charles VI",
-            "Charles VII"
-          ],
-          "answer": 3,
-          "short": "Charles VII",
-          "explanation": "Le dauphin Charles est sacré roi de France à Reims, ce qui renforce sa légitimité face aux Anglais.",
-          "link": "Rouen"
-        },
-        {
-          "question": "Sous Charles VII, la guerre de Cent Ans s’achève en 1453 par la victoire française dans quelle bataille ?",
-          "options": [
-            "Azincourt",
-            "Poitiers",
-            "Castillon",
-            "Formigny"
-          ],
-          "answer": 2,
-          "short": "Castillon",
-          "explanation": "La bataille de Castillon, en Guyenne, le 17 juillet 1453, met fin aux combats de la guerre de Cent Ans.",
-          "link": "Charles VII"
+          "short": "The Boat Race",
+          "hint": "Son nom en anglais signifie littéralement « la course de bateaux ».",
+          "explanation": "Disputée depuis 1829, elle oppose les équipages des deux universités sur environ 6,8 kilomètres, entre Putney et Mortlake.",
+          "link": "Oxford"
         }
       ]
     },
     "2026-10-06": {
-      "thread": "Du Québec au lac Michigan",
+      "thread": "D’Orléans à l’île de la Cité",
       "questions": [
         {
-          "question": "Le Parti québécois défend l’indépendance du Québec. De quel pays le Québec est-il aujourd’hui une province ?",
+          "question": "Police Python 357, film d’Alain Corneau sorti en 1976 avec Yves Montand, se déroule dans une ville de la Loire. Laquelle ?",
           "options": [
-            "Des États-Unis",
-            "Du Canada",
-            "De la France",
-            "De la Belgique"
+            "Orléans",
+            "Tours",
+            "Blois",
+            "Nantes"
+          ],
+          "answer": 0,
+          "short": "Orléans",
+          "hint": "Jeanne d’Arc l’a délivrée en 1429.",
+          "explanation": "Le film a été tourné à Orléans, où il met en scène un inspecteur de police aux prises avec sa maîtresse."
+        },
+        {
+          "question": "En 1429, après avoir délivré Orléans, Jeanne d’Arc conduit Charles VII se faire sacrer. Dans quelle ville ?",
+          "options": [
+            "Reims",
+            "Paris",
+            "Chartres",
+            "Saint-Denis"
+          ],
+          "answer": 0,
+          "short": "Reims",
+          "hint": "Sa cathédrale a vu sacrer la plupart des rois de France.",
+          "explanation": "Le sacre eut lieu le 17 juillet 1429. Paris était alors aux mains des Anglais et des Bourguignons.",
+          "link": "Orléans"
+        },
+        {
+          "question": "À Reims, à la fin du Ve siècle, l’évêque Remi baptise un roi des Francs. Lequel ?",
+          "options": [
+            "Charlemagne",
+            "Clovis",
+            "Dagobert",
+            "Childéric"
           ],
           "answer": 1,
-          "short": "Le Canada",
-          "explanation": "Le Québec est l’une des dix provinces du Canada. Le PQ a été fondé en 1968 par René Lévesque."
+          "short": "Clovis",
+          "hint": "Il a été roi des Francs de 481 à 511.",
+          "explanation": "Le baptême de Clovis, dont la date exacte reste débattue, marque le ralliement des Francs au catholicisme.",
+          "link": "Reims"
         },
         {
-          "question": "Au Canada, quelle ville, dominée par le château Frontenac, est la capitale de la seule province francophone ?",
+          "question": "En 508, Clovis choisit une ville de la Seine pour capitale de son royaume. Laquelle ?",
           "options": [
-            "Montréal",
-            "Ottawa",
-            "Québec",
-            "Trois-Rivières"
-          ],
-          "answer": 2,
-          "short": "Québec",
-          "explanation": "Montréal est la plus grande ville, mais la capitale est Québec. Ottawa est la capitale du Canada.",
-          "link": "Canada"
-        },
-        {
-          "question": "La ville de Québec domine un grand fleuve. Lequel ?",
-          "options": [
-            "Le Saint-Laurent",
-            "Le Mississippi",
-            "L’Hudson",
-            "Le Columbia"
+            "Paris",
+            "Soissons",
+            "Tours",
+            "Metz"
           ],
           "answer": 0,
-          "short": "Le Saint-Laurent",
-          "explanation": "Le Saint-Laurent traverse le Québec jusqu’à l’océan Atlantique.",
-          "link": "Québec"
+          "short": "Paris",
+          "hint": "Il y a fait bâtir une basilique où il sera enterré.",
+          "explanation": "Clovis s’installe à Paris vers 508. Soissons, sur l’Aisne, avait été sa première capitale.",
+          "link": "Clovis"
         },
         {
-          "question": "Le Saint-Laurent est l’exutoire des Grands Lacs. Lequel est le plus étendu par sa superficie ?",
+          "question": "Paris est née sur une île de la Seine, où se dresse aujourd’hui la cathédrale Notre-Dame. Laquelle ?",
           "options": [
-            "Le lac Huron",
-            "Le lac Michigan",
-            "Le lac Érié",
-            "Le lac Supérieur"
+            "L’île Saint-Louis",
+            "L’île de la Cité",
+            "L’île aux Cygnes",
+            "L’île Seguin"
           ],
-          "answer": 3,
-          "short": "Le lac Supérieur",
-          "explanation": "Avec plus de 80 000 km², le lac Supérieur est le plus grand lac d’eau douce du monde par sa surface.",
-          "link": "Saint-Laurent"
-        },
-        {
-          "question": "Le lac Supérieur est partagé entre le Canada et les États-Unis. Lequel des cinq Grands Lacs se trouve, lui, entièrement aux États-Unis ?",
-          "options": [
-            "Le lac Michigan",
-            "Le lac Ontario",
-            "Le lac Érié",
-            "Le lac Huron"
-          ],
-          "answer": 0,
-          "short": "Le lac Michigan",
-          "explanation": "Les quatre autres sont partagés entre le Canada et les États-Unis. Le Michigan baigne Chicago.",
-          "link": "lac Supérieur"
+          "answer": 1,
+          "short": "L’île de la Cité",
+          "hint": "Son nom évoque le noyau d’une ville ancienne.",
+          "explanation": "Les Parisii s’y étaient établis avant les Romains. La construction de Notre-Dame y commence en 1163.",
+          "link": "Paris"
         }
       ]
     },
     "2026-10-07": {
-      "thread": "De Charles X à Guernesey",
+      "thread": "Du Québec à Anish Kapoor",
       "questions": [
         {
-          "question": "Charles X est le frère de deux rois de France. Lequel a été guillotiné en 1793 ?",
+          "question": "Le Parti québécois, fondé en 1968 par René Lévesque, défend la souveraineté du Québec. Quel grand fleuve baigne Québec et Montréal ?",
           "options": [
-            "Louis XVI",
-            "Louis XVIII",
-            "Louis XV",
-            "Louis XIV"
+            "Le Saint-Laurent",
+            "Le Mackenzie",
+            "La Columbia",
+            "L’Hudson"
           ],
           "answer": 0,
-          "short": "Louis XVI",
-          "explanation": "Louis XVI est exécuté en 1793. Charles X est le dernier frère à régner, de 1824 à 1830."
+          "short": "Le Saint-Laurent",
+          "hint": "Jacques Cartier l’a remonté dès 1535.",
+          "explanation": "Le Saint-Laurent relie les Grands Lacs à l’océan Atlantique. Québec et Montréal se sont développées sur ses rives."
         },
         {
-          "question": "Frère de Louis XVI, Charles X est renversé en juillet 1830 par une révolution. Comment l’appelle-t-on ?",
+          "question": "Le Saint-Laurent relie l’Atlantique aux Grands Lacs. Lequel des cinq Grands Lacs se trouve entièrement aux États-Unis ?",
           "options": [
-            "Les Cent-Jours",
-            "La Semaine sanglante",
-            "Les Trois Glorieuses",
-            "La Fronde"
-          ],
-          "answer": 2,
-          "short": "Les Trois Glorieuses",
-          "explanation": "Les journées des 27, 28 et 29 juillet 1830 mènent à l’abdication de Charles X.",
-          "link": "Louis XVI"
-        },
-        {
-          "question": "Les Trois Glorieuses de 1830 ont inspiré « La Liberté guidant le peuple ». Quel peintre l’a réalisé ?",
-          "options": [
-            "Géricault",
-            "Delacroix",
-            "Ingres",
-            "David"
-          ],
-          "answer": 1,
-          "short": "Delacroix",
-          "explanation": "Eugène Delacroix a peint ce tableau en 1830. Il est conservé au musée du Louvre.",
-          "link": "Trois Glorieuses"
-        },
-        {
-          "question": "Dans « La Liberté guidant le peuple », Delacroix peint un jeune garçon armé de pistolets, qui passe pour avoir inspiré quel personnage de roman ?",
-          "options": [
-            "Cosette",
-            "Quasimodo",
-            "Jean Valjean",
-            "Gavroche"
+            "Le lac Supérieur",
+            "Le lac Huron",
+            "Le lac Érié",
+            "Le lac Michigan"
           ],
           "answer": 3,
-          "short": "Gavroche",
-          "explanation": "On le rapproche de Gavroche, le gamin de Paris des « Misérables » de Victor Hugo.",
-          "link": "Delacroix"
+          "short": "Le lac Michigan",
+          "hint": "Chicago est sur ses rives.",
+          "explanation": "Les quatre autres sont partagés entre le Canada et les États-Unis. Le Michigan est relié au lac Huron par le détroit de Mackinac.",
+          "link": "Saint-Laurent"
         },
         {
-          "question": "Gavroche vit dans « Les Misérables ». Pendant son exil, Victor Hugo, qui l’a créé, a vécu quinze ans sur une île anglo-normande, à Hauteville House. Laquelle ?",
+          "question": "Chicago, sur les rives du lac Michigan, a possédé de 1973 à 1998 le plus haut gratte-ciel du monde. Quel était son nom d’origine ?",
           "options": [
-            "Guernesey",
-            "Jersey",
-            "Aurigny",
-            "Sercq"
+            "L’Empire State Building",
+            "La Trump Tower",
+            "La Sears Tower",
+            "Le John Hancock Center"
           ],
-          "answer": 0,
-          "short": "Guernesey",
-          "explanation": "Après un premier séjour à Jersey, Hugo s’installe à Guernesey en 1855 et y écrit « Les Misérables ».",
-          "link": "Gavroche"
+          "answer": 2,
+          "short": "La Sears Tower",
+          "hint": "Une chaîne de grands magasins lui a donné son nom.",
+          "explanation": "Haute de 442 mètres, elle est rebaptisée Willis Tower en 2009. C’est aujourd’hui l’un des plus hauts bâtiments des États-Unis.",
+          "link": "Michigan"
+        },
+        {
+          "question": "La Sears Tower se dresse au cœur du quartier d’affaires de Chicago, que ceint une boucle de voies ferrées surélevées. Quel est son nom ?",
+          "options": [
+            "Le Magnificent Mile",
+            "Le Loop",
+            "Navy Pier",
+            "Hyde Park"
+          ],
+          "answer": 1,
+          "short": "Le Loop",
+          "hint": "Son nom évoque une forme circulaire.",
+          "explanation": "Le Loop (« la boucle ») est ceinturé par la ligne de métro aérien « L » depuis 1897.",
+          "link": "Sears Tower"
+        },
+        {
+          "question": "Dans le Loop, le Millennium Park abrite « Cloud Gate », surnommée « The Bean » (le haricot). Quel sculpteur britannique d’origine indienne en est l’auteur ?",
+          "options": [
+            "Jeff Koons",
+            "Anish Kapoor",
+            "Richard Serra",
+            "Antony Gormley"
+          ],
+          "answer": 1,
+          "short": "Anish Kapoor",
+          "hint": "Il a présenté « Leviathan » au Grand Palais en 2011.",
+          "explanation": "Cette sculpture en acier poli de 110 tonnes a été inaugurée en 2006. Anish Kapoor est un artiste britannique d’origine indienne.",
+          "link": "Loop"
         }
       ]
     },
     "2026-10-08": {
-      "thread": "Du Havre à Nadar",
+      "thread": "De Charles X à Lépante",
       "questions": [
         {
-          "question": "Édouard Philippe a été élu maire en 2010 de quelle ville portuaire normande ?",
+          "question": "Charles X, roi de France de 1824 à 1830, a succédé à son frère aîné. Lequel ?",
           "options": [
-            "Rouen",
-            "Cherbourg",
-            "Dieppe",
-            "Le Havre"
-          ],
-          "answer": 3,
-          "short": "Le Havre",
-          "explanation": "Il est maire du Havre de 2010 à 2017, puis à nouveau à partir de 2020."
-        },
-        {
-          "question": "Le centre du Havre, reconstruit après 1945 et classé à l’UNESCO en 2005, est l’œuvre de quel architecte ?",
-          "options": [
-            "Le Corbusier",
-            "Auguste Perret",
-            "Haussmann",
-            "Mansart"
-          ],
-          "answer": 1,
-          "short": "Auguste Perret",
-          "explanation": "Auguste Perret a dirigé la reconstruction de la ville en béton armé.",
-          "link": "Havre"
-        },
-        {
-          "question": "Auguste Perret a reconstruit la ville du Havre, où Monet peint en 1872 « Impression, soleil levant ». Quel mouvement artistique en tire son nom ?",
-          "options": [
-            "Le fauvisme",
-            "Le cubisme",
-            "L’impressionnisme",
-            "Le symbolisme"
-          ],
-          "answer": 2,
-          "short": "L’impressionnisme",
-          "explanation": "Le tableau de 1872 donne son nom au mouvement, d’après une critique moqueuse parue en 1874.",
-          "link": "Auguste Perret"
-        },
-        {
-          "question": "Le nom de l’impressionnisme vient de ce tableau de Monet. Dans quel musée parisien est conservé « Impression, soleil levant » ?",
-          "options": [
-            "Le musée Marmottan Monet",
-            "Le musée d’Orsay",
-            "L’Orangerie",
-            "Le Petit Palais"
+            "Louis XVIII",
+            "Louis XVI",
+            "Louis XVII",
+            "Louis-Philippe"
           ],
           "answer": 0,
-          "short": "Marmottan Monet",
-          "explanation": "Le tableau est au musée Marmottan Monet, à Paris, qui possède la plus grande collection de Monet.",
-          "link": "impressionnisme"
+          "short": "Louis XVIII",
+          "hint": "Il est monté sur le trône en 1814, après la chute de l’Empire.",
+          "explanation": "Louis XVIII a régné de 1814 à 1824, avec une interruption pendant les Cent-Jours. Charles X, son frère cadet, lui succède."
         },
         {
-          "question": "Le musée Marmottan Monet conserve « Impression, soleil levant ». En 1874, la première exposition impressionniste s’est tenue dans l’atelier de quel photographe ?",
+          "question": "En mars 1815, devant le retour de Napoléon, Louis XVIII se réfugie dans une ville de ce qui est aujourd’hui la Belgique. Laquelle ?",
           "options": [
-            "Niépce",
-            "Atget",
-            "Daguerre",
-            "Nadar"
+            "Bruges",
+            "Anvers",
+            "Gand",
+            "Liège"
           ],
-          "answer": 3,
-          "short": "Nadar",
-          "explanation": "Nadar prête ses anciens ateliers du boulevard des Capucines, à Paris, aux artistes refusés au Salon.",
-          "link": "musée Marmottan Monet"
+          "answer": 2,
+          "short": "Gand",
+          "hint": "Elle est le chef-lieu de la Flandre-Orientale.",
+          "explanation": "Le roi y installe une cour en exil jusqu’à la défaite de Napoléon à Waterloo, en juin 1815.",
+          "link": "Louis XVIII"
+        },
+        {
+          "question": "Gand est la ville natale d’un souverain né en 1500, maître d’un empire « où le soleil ne se couchait jamais ». Lequel ?",
+          "options": [
+            "Philippe II",
+            "Charles Quint",
+            "Maximilien Ier",
+            "Louis XIV"
+          ],
+          "answer": 1,
+          "short": "Charles Quint",
+          "hint": "Il partage son prénom avec Charles X.",
+          "explanation": "Charles Quint est né à Gand le 24 février 1500. Il hérite des Pays-Bas, de l’Espagne et de ses colonies, puis de l’Empire.",
+          "link": "Gand"
+        },
+        {
+          "question": "En 1556, Charles Quint abdique et laisse l’Espagne à son fils. Quel roi devient-il ?",
+          "options": [
+            "Philippe II",
+            "Philippe V",
+            "Charles II",
+            "Ferdinand VII"
+          ],
+          "answer": 0,
+          "short": "Philippe II",
+          "hint": "Il a fait bâtir l’Escurial, près de Madrid.",
+          "explanation": "Charles Quint cède les Pays-Bas puis l’Espagne à son fils en 1555-1556, et le titre impérial à son frère Ferdinand.",
+          "link": "Charles Quint"
+        },
+        {
+          "question": "Sous Philippe II, la flotte de la Sainte Ligue bat les Ottomans en 1571 lors d’une grande bataille navale. Laquelle ?",
+          "options": [
+            "Lépante",
+            "Trafalgar",
+            "Actium",
+            "Salamine"
+          ],
+          "answer": 0,
+          "short": "Lépante",
+          "hint": "L’écrivain Cervantes y fut blessé à la main.",
+          "explanation": "Lépante, au large de la Grèce, a stoppé l’avancée navale ottomane. Don Juan d’Autriche, demi-frère de Philippe II, commandait la flotte.",
+          "link": "Philippe II"
         }
       ]
     },
     "2026-10-09": {
-      "thread": "De Rosario à Montevideo",
+      "thread": "Du Havre à la Floride de Jules Verne",
       "questions": [
         {
-          "question": "Lionel Messi est né à Rosario, ville argentine bâtie au bord de quel fleuve ?",
+          "question": "Édouard Philippe, Premier ministre de 2017 à 2020, est maire d’une ville portuaire de Normandie. Laquelle ?",
           "options": [
-            "L’Orénoque",
-            "L’Amazone",
-            "Le Paraná",
-            "Le Magdalena"
+            "Rouen",
+            "Caen",
+            "Le Havre",
+            "Cherbourg"
           ],
           "answer": 2,
-          "short": "Le Paraná",
-          "explanation": "Rosario s’étend sur la rive ouest du Paraná, l’un des plus grands fleuves d’Amérique du Sud."
+          "short": "Le Havre",
+          "hint": "Son centre, reconstruit après 1945, est classé à l’Unesco.",
+          "explanation": "Il a été maire du Havre de 2010 à 2017, puis à nouveau depuis 2020. Le centre-ville a été reconstruit par Auguste Perret."
         },
         {
-          "question": "Le Paraná et l’Uruguay forment ensemble un vaste estuaire. Lequel ?",
+          "question": "Le Havre a inspiré à Claude Monet, en 1872, « Impression, soleil levant ». Quel mouvement artistique a pris son nom de ce tableau ?",
           "options": [
-            "Le Río de la Plata",
-            "Le Río Grande",
-            "Le Río Negro",
-            "Le Río Colorado"
+            "L’impressionnisme",
+            "Le fauvisme",
+            "Le cubisme",
+            "Le surréalisme"
           ],
           "answer": 0,
-          "short": "Le Río de la Plata",
-          "explanation": "Le Río de la Plata sépare l’Argentine de l’Uruguay et s’ouvre sur l’océan Atlantique.",
-          "link": "Paraná"
+          "short": "L’impressionnisme",
+          "hint": "On y rattache aussi Renoir, Pissarro et Sisley.",
+          "explanation": "Le critique Louis Leroy a lancé le mot « impressionnistes » par moquerie, en 1874, à propos de ce tableau.",
+          "link": "Le Havre"
         },
         {
-          "question": "Sur la rive nord du Río de la Plata se trouve la capitale de l’Uruguay. Laquelle ?",
+          "question": "Les artistes du mouvement impressionniste ont tenu leur première exposition en 1874 dans l’atelier d’un photographe parisien. Lequel ?",
           "options": [
-            "Asunción",
-            "Montevideo",
-            "La Paz",
-            "Santiago"
+            "Daguerre",
+            "Nadar",
+            "Niépce",
+            "Eugène Atget"
           ],
           "answer": 1,
-          "short": "Montevideo",
-          "explanation": "Montevideo est la capitale de l’Uruguay et son principal port.",
-          "link": "Río de la Plata"
+          "short": "Nadar",
+          "hint": "Il a fait le portrait de Baudelaire et photographié Paris depuis un ballon.",
+          "explanation": "L’exposition s’est tenue boulevard des Capucines, dans les anciens ateliers de Nadar.",
+          "link": "impressionniste"
         },
         {
-          "question": "Quel pays a remporté en 1930, à Montevideo, la première Coupe du monde de football ?",
+          "question": "Jules Verne s’est inspiré de Nadar pour créer Michel Ardan, dont le nom est son anagramme. Dans quel roman de 1865 ce personnage apparaît-il ?",
           "options": [
-            "L’Argentine",
-            "Le Brésil",
-            "L’Italie",
-            "L’Uruguay"
+            "Vingt mille lieues sous les mers",
+            "Le Tour du monde en quatre-vingts jours",
+            "De la Terre à la Lune",
+            "Voyage au centre de la Terre"
           ],
-          "answer": 3,
-          "short": "L’Uruguay",
-          "explanation": "L’Uruguay, pays organisateur, bat l’Argentine 4 à 2 en finale.",
-          "link": "Montevideo"
+          "answer": 2,
+          "short": "De la Terre à la Lune",
+          "hint": "Les voyageurs partent dans un obus.",
+          "explanation": "Michel Ardan, aventurier audacieux, accompagne le président Barbicane dans un projectile tiré par un immense canon.",
+          "link": "Nadar"
         },
         {
-          "question": "L’Uruguay a organisé et remporté la Coupe du monde de 1930. Quel stade de Montevideo a accueilli la finale ?",
+          "question": "Dans « De la Terre à la Lune », le Gun Club tire l’obus depuis un État du sud-est des États-Unis, d’où partiront plus tard les vraies fusées Apollo. Lequel ?",
           "options": [
-            "Le Maracanã",
-            "L’Estadio Centenario",
-            "La Bombonera",
-            "Le Monumental"
+            "La Floride",
+            "Le Texas",
+            "La Californie",
+            "Le Nevada"
           ],
-          "answer": 1,
-          "short": "L’Estadio Centenario",
-          "explanation": "Inauguré pour la compétition, il a été construit pour le centenaire de la Constitution uruguayenne de 1830.",
-          "link": "L’Uruguay"
+          "answer": 0,
+          "short": "La Floride",
+          "hint": "Son nom signifie « pays fleuri » en espagnol.",
+          "explanation": "Jules Verne situe le site de lancement près de Tampa. Les fusées Apollo décolleront de Cap Canaveral un siècle plus tard.",
+          "link": "De la Terre à la Lune"
         }
       ]
     },
     "2026-10-10": {
-      "thread": "De la Suède à la dynamite",
+      "thread": "De Navanethem Pillay à Wellington",
       "questions": [
         {
-          "question": "Le groupe de hard rock Europe, auteur de « The Final Countdown », est originaire de quel pays ?",
+          "question": "Navanethem Pillay, ancienne Haute-Commissaire de l’ONU aux droits de l’homme, a grandi sous l’apartheid dans quel pays ?",
           "options": [
-            "De Norvège",
-            "De Finlande",
-            "De Suède",
-            "Du Danemark"
-          ],
-          "answer": 2,
-          "short": "La Suède",
-          "explanation": "Europe est né en 1979 à Upplands Väsby, en Suède."
-        },
-        {
-          "question": "Quelle est la capitale de la Suède ?",
-          "options": [
-            "Stockholm",
-            "Göteborg",
-            "Malmö",
-            "Uppsala"
-          ],
-          "answer": 0,
-          "short": "Stockholm",
-          "explanation": "Stockholm est la capitale et la plus grande ville de Suède.",
-          "link": "Suède"
-        },
-        {
-          "question": "Chaque 10 décembre, quel prestigieux prix est remis à Stockholm (sauf celui de la paix, remis à Oslo) ?",
-          "options": [
-            "Le prix Pulitzer",
-            "La Palme d’or",
-            "Le prix Turner",
-            "Le prix Nobel"
-          ],
-          "answer": 3,
-          "short": "Le prix Nobel",
-          "explanation": "La cérémonie a lieu le 10 décembre, jour anniversaire de la mort d’Alfred Nobel, en 1896.",
-          "link": "Stockholm"
-        },
-        {
-          "question": "Le prix Nobel est financé par la fortune d’Alfred Nobel, qui l’a faite en inventant quel explosif ?",
-          "options": [
-            "La poudre noire",
-            "La dynamite",
-            "La mélinite",
-            "Le napalm"
+            "Le Zimbabwe",
+            "L’Afrique du Sud",
+            "La Namibie",
+            "Le Kenya"
           ],
           "answer": 1,
-          "short": "La dynamite",
-          "explanation": "Il a breveté la dynamite en 1867 : une manière plus sûre de manier la nitroglycérine.",
-          "link": "prix Nobel"
+          "short": "L’Afrique du Sud",
+          "hint": "C’est le pays de Nelson Mandela.",
+          "explanation": "Née à Durban en 1941, elle fut la première femme non blanche avocate du Natal avant de présider le Tribunal pénal international pour le Rwanda."
         },
         {
-          "question": "La dynamite est de la nitroglycérine stabilisée par quelle substance absorbante ?",
+          "question": "L’Afrique du Sud compte trois capitales : Pretoria (exécutive), Le Cap (législative) et une troisième, siège de la Cour suprême d’appel. Laquelle ?",
           "options": [
-            "La craie",
-            "Le sable fin",
-            "La kieselguhr",
-            "La cendre"
+            "Johannesburg",
+            "Durban",
+            "Bloemfontein",
+            "Port Elizabeth"
           ],
           "answer": 2,
-          "short": "La kieselguhr",
-          "explanation": "La kieselguhr, ou terre de diatomées, absorbe la nitroglycérine et la rend bien moins instable.",
-          "link": "dynamite"
+          "short": "Bloemfontein",
+          "hint": "Son nom signifie « fontaine des fleurs » en afrikaans.",
+          "explanation": "Johannesburg, la plus grande ville du pays, n’est la capitale d’aucun des trois pouvoirs.",
+          "link": "Afrique du Sud"
+        },
+        {
+          "question": "Quel écrivain britannique est né à Bloemfontein en 1892 ?",
+          "options": [
+            "J. R. R. Tolkien",
+            "C. S. Lewis",
+            "Roald Dahl",
+            "Rudyard Kipling"
+          ],
+          "answer": 0,
+          "short": "J. R. R. Tolkien",
+          "hint": "Il a inventé la Terre du Milieu.",
+          "explanation": "Tolkien est né de parents anglais installés en Afrique du Sud. Il est rentré en Angleterre avec sa mère à l’âge de trois ans.",
+          "link": "Bloemfontein"
+        },
+        {
+          "question": "« Le Seigneur des anneaux », de Tolkien, a été adapté au cinéma par Peter Jackson. Dans quel pays la trilogie a-t-elle été tournée ?",
+          "options": [
+            "Le Canada",
+            "L’Irlande",
+            "L’Islande",
+            "La Nouvelle-Zélande"
+          ],
+          "answer": 3,
+          "short": "La Nouvelle-Zélande",
+          "hint": "L’oiseau emblème de ce pays est le kiwi.",
+          "explanation": "Peter Jackson, né en Nouvelle-Zélande, a tourné les trois films (2001-2003) dans son pays natal.",
+          "link": "Tolkien"
+        },
+        {
+          "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+          "options": [
+            "Auckland",
+            "Christchurch",
+            "Hamilton",
+            "Wellington"
+          ],
+          "answer": 3,
+          "short": "Wellington",
+          "hint": "Elle se trouve à la pointe sud de l’île du Nord.",
+          "explanation": "Auckland, plus grande ville du pays, fut la capitale jusqu’en 1865. Wellington, plus centrale, l’a remplacée.",
+          "link": "Nouvelle-Zélande"
         }
       ]
     },
     "2026-10-11": {
-      "thread": "De l'obélisque à l'Etna",
+      "thread": "D’Europe au chat de Schrödinger",
       "questions": [
         {
-          "question": "L'obélisque de la place de la Concorde, à Paris, vient d'une ville d'Égypte. Laquelle ?",
+          "question": "Europe, groupe de hard rock célèbre pour « The Final Countdown » (1986), est originaire de quel pays ?",
           "options": [
-            "Louxor",
-            "Alexandrie",
-            "Assouan",
-            "Gizeh"
-          ],
-          "answer": 0,
-          "short": "Louxor",
-          "explanation": "Offert à la France par l'Égypte, il se dressait à l'entrée du temple de Louxor. Il a été érigé à Paris en 1836."
-        },
-        {
-          "question": "Louxor est bâtie sur les rives de quel fleuve ?",
-          "options": [
-            "Le Tigre",
-            "Le Nil",
-            "Le Niger",
-            "Le Congo"
-          ],
-          "answer": 1,
-          "short": "Le Nil",
-          "explanation": "Le Nil traverse l'Égypte du sud au nord. Louxor se trouve sur sa rive orientale.",
-          "link": "Louxor"
-        },
-        {
-          "question": "Dans quelle mer le Nil se jette-t-il ?",
-          "options": [
-            "La mer Rouge",
-            "La mer Noire",
-            "La Méditerranée",
-            "La mer Caspienne"
-          ],
-          "answer": 2,
-          "short": "La Méditerranée",
-          "explanation": "Il forme un vaste delta avant de rejoindre la Méditerranée.",
-          "link": "Nil"
-        },
-        {
-          "question": "Quelle est la plus grande île de la Méditerranée ?",
-          "options": [
-            "La Crète",
-            "La Sardaigne",
-            "Chypre",
-            "La Sicile"
+            "La Norvège",
+            "La Finlande",
+            "Le Danemark",
+            "La Suède"
           ],
           "answer": 3,
-          "short": "La Sicile",
-          "explanation": "La Sicile devance la Sardaigne. Elle est séparée de l'Italie continentale par le détroit de Messine.",
-          "link": "Méditerranée"
+          "short": "La Suède",
+          "hint": "C’est aussi le pays d’ABBA.",
+          "explanation": "Le groupe est né à Upplands Väsby, près de Stockholm, en 1979. Son chanteur est Joey Tempest."
         },
         {
-          "question": "Quel volcan domine l'est de la Sicile ?",
+          "question": "La Suède est reliée au Danemark par un pont-tunnel de 16 kilomètres inauguré en 2000. Il relie la ville suédoise de Malmö à quelle capitale ?",
           "options": [
-            "L'Etna",
-            "Le Vésuve",
-            "Le Stromboli",
-            "Santorin"
+            "Copenhague",
+            "Oslo",
+            "Helsinki",
+            "Reykjavik"
           ],
           "answer": 0,
-          "short": "L'Etna",
-          "explanation": "L'Etna est l'un des volcans les plus actifs du monde.",
-          "link": "Sicile"
+          "short": "Copenhague",
+          "hint": "Une série policière scandinave s’appelle « Le Pont » à cause de lui.",
+          "explanation": "Le pont de l’Øresund traverse le détroit du même nom. Il a inspiré la série « Bron/Broen ».",
+          "link": "Suède"
+        },
+        {
+          "question": "Copenhague est la ville natale d’un physicien, prix Nobel 1922 pour son modèle de l’atome. Qui est-il ?",
+          "options": [
+            "Max Planck",
+            "Ernest Rutherford",
+            "Niels Bohr",
+            "Enrico Fermi"
+          ],
+          "answer": 2,
+          "short": "Niels Bohr",
+          "hint": "Un élément chimique lui rend hommage.",
+          "explanation": "Niels Bohr a dirigé à Copenhague un institut de physique théorique qui a attiré les plus grands noms de la mécanique quantique.",
+          "link": "Copenhague"
+        },
+        {
+          "question": "La pièce « Copenhague » (1998), de Michael Frayn, imagine la rencontre de Niels Bohr avec un physicien allemand en 1941. Lequel ?",
+          "options": [
+            "Wolfgang Pauli",
+            "Max Born",
+            "Otto Hahn",
+            "Werner Heisenberg"
+          ],
+          "answer": 3,
+          "short": "Werner Heisenberg",
+          "hint": "Son nom est lié à un principe d’incertitude.",
+          "explanation": "Heisenberg dirigeait alors le programme nucléaire allemand. La pièce explore ce qui a été dit lors de cette visite, restée mystérieuse.",
+          "link": "Niels Bohr"
+        },
+        {
+          "question": "Heisenberg est l’un des fondateurs de la mécanique quantique. Quel physicien autrichien a imaginé en 1935 l’expérience du chat à la fois mort et vivant ?",
+          "options": [
+            "Erwin Schrödinger",
+            "Albert Einstein",
+            "Niels Bohr",
+            "Max Planck"
+          ],
+          "answer": 0,
+          "short": "Erwin Schrödinger",
+          "hint": "Il a reçu le prix Nobel de physique en 1933.",
+          "explanation": "Le chat de Schrödinger est une expérience de pensée qui visait à critiquer l’interprétation de Copenhague défendue par Bohr.",
+          "link": "Heisenberg"
+        }
+      ]
+    },
+    "2026-10-12": {
+      "thread": "De Shutter Island à Moctezuma",
+      "questions": [
+        {
+          "question": "Dans « Shutter Island », film de Martin Scorsese sorti en 2010, un marshal fédéral enquête sur une île-prison psychiatrique. Quel acteur l’incarne ?",
+          "options": [
+            "Brad Pitt",
+            "Leonardo DiCaprio",
+            "Matt Damon",
+            "Tom Hanks"
+          ],
+          "answer": 1,
+          "short": "Leonardo DiCaprio",
+          "hint": "Il a joué Jack dans « Titanic ».",
+          "explanation": "Leonardo DiCaprio tient le rôle de Teddy Daniels. C’est la quatrième collaboration avec Martin Scorsese, après « Gangs of New York », « Aviator » et « Les Infiltrés »."
+        },
+        {
+          "question": "Leonardo DiCaprio a reçu l’Oscar du meilleur acteur en 2016 pour un film tourné dans la nature hostile du Far West. Lequel ?",
+          "options": [
+            "Le Loup de Wall Street",
+            "Inception",
+            "The Revenant",
+            "Django Unchained"
+          ],
+          "answer": 2,
+          "short": "The Revenant",
+          "hint": "Il y affronte un ours.",
+          "explanation": "Dans « The Revenant », il joue le trappeur Hugh Glass, laissé pour mort après l’attaque d’un grizzly. C’était son premier Oscar après quatre nominations.",
+          "link": "Leonardo DiCaprio"
+        },
+        {
+          "question": "« The Revenant » a valu à son réalisateur mexicain un deuxième Oscar de la mise en scène d’affilée. Qui est-il ?",
+          "options": [
+            "Alejandro González Iñárritu",
+            "Guillermo del Toro",
+            "Alfonso Cuarón",
+            "Carlos Reygadas"
+          ],
+          "answer": 0,
+          "short": "Alejandro González Iñárritu",
+          "hint": "Il a aussi réalisé « Birdman ».",
+          "explanation": "Il avait obtenu le même Oscar l’année précédente pour « Birdman ».",
+          "link": "The Revenant"
+        },
+        {
+          "question": "Le réalisateur Alejandro González Iñárritu est né à Mexico, bâtie sur les ruines de l’ancienne capitale des Aztèques. Comment s’appelait-elle ?",
+          "options": [
+            "Teotihuacan",
+            "Tenochtitlan",
+            "Chichén Itzá",
+            "Tula"
+          ],
+          "answer": 1,
+          "short": "Tenochtitlan",
+          "hint": "Elle fut fondée en 1325 sur une île d’un lac.",
+          "explanation": "Tenochtitlan était construite sur une île du lac Texcoco. Teotihuacan, bien plus ancienne, se trouve à une cinquantaine de kilomètres.",
+          "link": "Alejandro González Iñárritu"
+        },
+        {
+          "question": "Quand Hernán Cortés arrive à Tenochtitlan en 1519, quel empereur aztèque le reçoit ?",
+          "options": [
+            "Moctezuma II",
+            "Cuauhtémoc",
+            "Atahualpa",
+            "Pachacútec"
+          ],
+          "answer": 0,
+          "short": "Moctezuma II",
+          "hint": "Il est mort en 1520, pendant l’occupation espagnole de la ville.",
+          "explanation": "Moctezuma II accueille Cortés en novembre 1519 et meurt en juin 1520. Cuauhtémoc lui succède puis capitule en 1521.",
+          "link": "Tenochtitlan"
+        }
+      ]
+    },
+    "2026-10-13": {
+      "thread": "Des Enfants-Rouges aux Offices",
+      "questions": [
+        {
+          "question": "Le marché des Enfants-Rouges, dans le 3e arrondissement de Paris, tire son nom d’un orphelinat dont les enfants portaient des vêtements rouges. Il fut fondé en 1534 par la sœur d’un roi. Lequel ?",
+          "options": [
+            "François Ier",
+            "Henri II",
+            "Louis XII",
+            "Henri IV"
+          ],
+          "answer": 0,
+          "short": "François Ier",
+          "hint": "Il a fait construire le château de Chambord.",
+          "explanation": "L’orphelinat a été fondé par Marguerite de Navarre, sœur de François Ier. Le marché, ouvert en 1615, est le plus ancien marché couvert de Paris encore en activité."
+        },
+        {
+          "question": "François Ier a accueilli en France, en 1516, un artiste italien qui est mort à Amboise en 1519. Qui est-il ?",
+          "options": [
+            "Michel-Ange",
+            "Raphaël",
+            "Botticelli",
+            "Léonard de Vinci"
+          ],
+          "answer": 3,
+          "short": "Léonard de Vinci",
+          "hint": "Il avait la Joconde dans ses bagages.",
+          "explanation": "Le roi l’a installé au manoir du Clos Lucé, près de son château d’Amboise. Léonard y a passé les trois dernières années de sa vie.",
+          "link": "François Ier"
+        },
+        {
+          "question": "La Joconde, de Léonard de Vinci, représente Lisa Gherardini, épouse d’un marchand de soie. De quelle ville italienne ?",
+          "options": [
+            "Venise",
+            "Milan",
+            "Florence",
+            "Rome"
+          ],
+          "answer": 2,
+          "short": "Florence",
+          "hint": "Elle est la capitale de la Toscane.",
+          "explanation": "Son mari, Francesco del Giocondo, a commandé le portrait vers 1503. En italien, le tableau s’appelle « La Gioconda ».",
+          "link": "Léonard de Vinci"
+        },
+        {
+          "question": "Florence est traversée par l’Arno, que franchit un pont médiéval couvert de boutiques d’orfèvres. Lequel ?",
+          "options": [
+            "Le Ponte Santa Trinita",
+            "Le Ponte Vecchio",
+            "Le pont du Rialto",
+            "Le pont des Soupirs"
+          ],
+          "answer": 1,
+          "short": "Le Ponte Vecchio",
+          "hint": "Son nom signifie « le vieux pont ».",
+          "explanation": "Reconstruit en 1345, c’est le seul pont de Florence qui a échappé aux destructions de 1944.",
+          "link": "Florence"
+        },
+        {
+          "question": "Un corridor surélevé, bâti en 1565 par Vasari, passe au-dessus du Ponte Vecchio pour relier le palais Pitti à un célèbre musée. Lequel ?",
+          "options": [
+            "Les Offices",
+            "Le Bargello",
+            "La galerie de l’Académie",
+            "Le musée de l’Opera del Duomo"
+          ],
+          "answer": 0,
+          "short": "Les Offices",
+          "hint": "Son nom signifie « les bureaux ».",
+          "explanation": "Le corridor de Vasari fut bâti en cinq mois pour permettre aux Médicis de circuler à l’abri des regards entre leurs bureaux et leur palais.",
+          "link": "Ponte Vecchio"
+        }
+      ]
+    },
+    "2026-10-14": {
+      "thread": "De RJ Mitte à Princeton",
+      "questions": [
+        {
+          "question": "RJ Mitte est connu pour le rôle de Walter Jr. dans une série américaine diffusée de 2008 à 2013. Laquelle ?",
+          "options": [
+            "The Wire",
+            "Les Soprano",
+            "Breaking Bad",
+            "Mad Men"
+          ],
+          "answer": 2,
+          "short": "Breaking Bad",
+          "hint": "Son héros est un professeur de chimie.",
+          "explanation": "Walter Jr. est le fils de Walter White, professeur de chimie devenu fabricant de méthamphétamine. RJ Mitte, atteint d’une paralysie cérébrale légère, joue un personnage qui l’est aussi."
+        },
+        {
+          "question": "« Breaking Bad » se déroule à Albuquerque, dans quel État du sud-ouest des États-Unis ?",
+          "options": [
+            "Le Nouveau-Mexique",
+            "L’Arizona",
+            "Le Texas",
+            "Le Nevada"
+          ],
+          "answer": 0,
+          "short": "Le Nouveau-Mexique",
+          "hint": "Sa capitale est Santa Fe.",
+          "explanation": "La série a été tournée sur place, ce qui a profité à l’économie d’Albuquerque.",
+          "link": "Breaking Bad"
+        },
+        {
+          "question": "Dans le désert du Nouveau-Mexique a eu lieu, en juillet 1945, le premier essai d’une bombe atomique. Quel nom de code portait-il ?",
+          "options": [
+            "Manhattan",
+            "Overlord",
+            "Neptune",
+            "Trinity"
+          ],
+          "answer": 3,
+          "short": "Trinity",
+          "hint": "Son nom évoque un dogme chrétien.",
+          "explanation": "L’essai Trinity s’est déroulé le 16 juillet 1945 près d’Alamogordo. « Manhattan » désignait l’ensemble du projet.",
+          "link": "Nouveau-Mexique"
+        },
+        {
+          "question": "Le nom Trinity aurait été choisi par le directeur scientifique de Los Alamos, en référence à un poème de John Donne. Qui est-il ?",
+          "options": [
+            "Enrico Fermi",
+            "Edward Teller",
+            "Robert Oppenheimer",
+            "Richard Feynman"
+          ],
+          "answer": 2,
+          "short": "Robert Oppenheimer",
+          "hint": "Un film de Christopher Nolan, sorti en 2023, porte son nom.",
+          "explanation": "Oppenheimer l’a rapporté lui-même longtemps après, en évoquant un sonnet de John Donne où figure un « Dieu en trois personnes ».",
+          "link": "Trinity"
+        },
+        {
+          "question": "Après la guerre, Oppenheimer dirige l’Institute for Advanced Study, où travaille aussi Einstein. Dans quelle ville du New Jersey est-il installé ?",
+          "options": [
+            "Princeton",
+            "Newark",
+            "Trenton",
+            "Atlantic City"
+          ],
+          "answer": 0,
+          "short": "Princeton",
+          "hint": "Sa célèbre université appartient à l’Ivy League.",
+          "explanation": "Oppenheimer a dirigé l’Institut de 1947 à 1966. Einstein y a travaillé de 1933 à sa mort, en 1955.",
+          "link": "Oppenheimer"
         }
       ]
     }

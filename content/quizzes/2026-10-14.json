@@ -1,0 +1,74 @@
+{
+  "thread": "De RJ Mitte à Princeton",
+  "questions": [
+    {
+      "question": "RJ Mitte est connu pour le rôle de Walter Jr. dans une série américaine diffusée de 2008 à 2013. Laquelle ?",
+      "options": [
+        "The Wire",
+        "Les Soprano",
+        "Breaking Bad",
+        "Mad Men"
+      ],
+      "answer": 2,
+      "short": "Breaking Bad",
+      "hint": "Son héros est un professeur de chimie.",
+      "explanation": "Walter Jr. est le fils de Walter White, professeur de chimie devenu fabricant de méthamphétamine. RJ Mitte, atteint d’une paralysie cérébrale légère, joue un personnage qui l’est aussi."
+    },
+    {
+      "question": "« Breaking Bad » se déroule à Albuquerque, dans quel État du sud-ouest des États-Unis ?",
+      "options": [
+        "Le Nouveau-Mexique",
+        "L’Arizona",
+        "Le Texas",
+        "Le Nevada"
+      ],
+      "answer": 0,
+      "short": "Le Nouveau-Mexique",
+      "hint": "Sa capitale est Santa Fe.",
+      "explanation": "La série a été tournée sur place, ce qui a profité à l’économie d’Albuquerque.",
+      "link": "Breaking Bad"
+    },
+    {
+      "question": "Dans le désert du Nouveau-Mexique a eu lieu, en juillet 1945, le premier essai d’une bombe atomique. Quel nom de code portait-il ?",
+      "options": [
+        "Manhattan",
+        "Overlord",
+        "Neptune",
+        "Trinity"
+      ],
+      "answer": 3,
+      "short": "Trinity",
+      "hint": "Son nom évoque un dogme chrétien.",
+      "explanation": "L’essai Trinity s’est déroulé le 16 juillet 1945 près d’Alamogordo. « Manhattan » désignait l’ensemble du projet.",
+      "link": "Nouveau-Mexique"
+    },
+    {
+      "question": "Le nom Trinity aurait été choisi par le directeur scientifique de Los Alamos, en référence à un poème de John Donne. Qui est-il ?",
+      "options": [
+        "Enrico Fermi",
+        "Edward Teller",
+        "Robert Oppenheimer",
+        "Richard Feynman"
+      ],
+      "answer": 2,
+      "short": "Robert Oppenheimer",
+      "hint": "Un film de Christopher Nolan, sorti en 2023, porte son nom.",
+      "explanation": "Oppenheimer l’a rapporté lui-même longtemps après, en évoquant un sonnet de John Donne où figure un « Dieu en trois personnes ».",
+      "link": "Trinity"
+    },
+    {
+      "question": "Après la guerre, Oppenheimer dirige l’Institute for Advanced Study, où travaille aussi Einstein. Dans quelle ville du New Jersey est-il installé ?",
+      "options": [
+        "Princeton",
+        "Newark",
+        "Trenton",
+        "Atlantic City"
+      ],
+      "answer": 0,
+      "short": "Princeton",
+      "hint": "Sa célèbre université appartient à l’Ivy League.",
+      "explanation": "Oppenheimer a dirigé l’Institut de 1947 à 1966. Einstein y a travaillé de 1933 à sa mort, en 1955.",
+      "link": "Oppenheimer"
+    }
+  ]
+}

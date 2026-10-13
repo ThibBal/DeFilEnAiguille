@@ -32,16 +32,19 @@ Sources/
   Resources/quizzes.json            les questionnaires (clés AAAA-MM-JJ + questionnaire de repli)
   Resources/Fonts/                  Instrument Serif et Hanken Grotesk
   Assets.xcassets/                  icône de l'app (aiguille et fil vert)
+content/quizzes/                    un questionnaire par jour (AAAA-MM-JJ.json), publié sur GitHub Pages
+scripts/publier_contenu.py          valide les questionnaires et prépare le site (index.json)
+.github/workflows/contenu.yml       validation sur PR, publication Pages sur main
 design/                             maquettes d'origine (.dc.html) et source SVG de l'icône, pour référence
 docs/questionnaires.md              format des questionnaires et page Wikipédia de chaque jour
 ```
 
 ## Fonctionnement
 
-- **Aujourd'hui** (`TodayView` → `QuizView`) : le questionnaire de la date du jour. S'il a déjà été joué, l'écran affiche directement le résultat.
+- **Aujourd'hui** (`TodayView` → `QuizView`) : le questionnaire de la date du jour. S'il a déjà été joué, l'écran affiche directement le résultat. S'il n'est pas disponible, l'écran annonce qu'il arrive bientôt et propose de parcourir l'historique (pas de questionnaire de repli).
 - **Historique** (`HistoryView`) : tous les jours qui ont un questionnaire, par mois, jusqu'à aujourd'hui. Un jour joué ouvre sa revue (`ReviewView`, avec « Rejouer »), un jour « À jouer » ouvre le questionnaire (`QuizView` avec retour vers l'historique).
 - **Parties** : modèle SwiftData `Play`, une par date (`date` unique). Rejouer remplace la partie précédente.
-- **Questionnaires** : `QuizCatalog` lit `quizzes.json`. Pour une date absente, seul aujourd'hui reçoit le questionnaire de repli.
+- **Questionnaires** : `QuizCatalog` lit `quizzes.json`. Une date absente n'a pas de questionnaire.
 - **Animation « le fil passe »** (`QuizView.next` / `runFlight`, `Components/QuestionText.swift`) : au passage à la question suivante, la bonne réponse devient une pastille qui suit un fil vert jusqu'au mot repris (`link`), qui s'allume puis reste souligné. Durée ≈ 1,2 s (constante `flightSpeed` pour la ralentir en test). Sans `link`, ou avec « Réduire les animations », transition simple. Les questions sont affichées mot par mot (`FlowLayout`) pour pouvoir viser le mot repris.
 - **Hauteur de ligne exacte** (`exactLineHeight`) : disponible à partir d'iOS 26, sinon interligne par défaut.
 
@@ -59,6 +62,6 @@ Direction : épuré, papier crème et encre sombre, un accent vert (bonne répon
 
 ## À faire
 
-1. Choisir la source des questionnaires (API, fichier par jour, back-office) à la place de `quizzes.json`, qui ne couvre que les 1er au 11 octobre 2026.
+1. Récupération à distance : les fichiers par jour sont prêts dans `content/` (publication sur GitHub Pages). Reste à faire dans l'app : télécharger `index.json` et les jours manquants, les mettre en cache, garder `quizzes.json` comme secours hors ligne.
 2. Notification quotidienne (UserNotifications) et widget iOS (WidgetKit).
 3. Écran de démarrage définitif, puis distribution (TestFlight / App Store, compte Apple Developer payant).

@@ -1,0 +1,74 @@
+{
+  "thread": "De Lizzie Borden à Yale",
+  "questions": [
+    {
+      "question": "Lizzie Borden, accusée en 1892 d’avoir tué son père et sa belle-mère à coups de hache, a été jugée dans quel pays ?",
+      "options": [
+        "Les États-Unis",
+        "Le Royaume-Uni",
+        "Le Canada",
+        "L’Australie"
+      ],
+      "answer": 0,
+      "short": "Les États-Unis",
+      "hint": "Une comptine américaine raconte son histoire.",
+      "explanation": "Elle a été jugée en 1893 et acquittée. L’affaire est restée l’un des faits divers les plus célèbres du pays."
+    },
+    {
+      "question": "Aux États-Unis, Lizzie Borden vivait à Fall River, sur la côte est. Dans quel État ?",
+      "options": [
+        "La Californie",
+        "Le Massachusetts",
+        "Le Texas",
+        "L’Arizona"
+      ],
+      "answer": 1,
+      "short": "Le Massachusetts",
+      "hint": "Les Pères pèlerins du Mayflower y ont fondé Plymouth.",
+      "explanation": "Fall River est une ville industrielle du sud du Massachusetts. Les meurtres ont eu lieu le 4 août 1892.",
+      "link": "États-Unis"
+    },
+    {
+      "question": "Quelle est la capitale du Massachusetts, dont le port a vu des colons jeter des caisses de thé à la mer en 1773 ?",
+      "options": [
+        "Philadelphie",
+        "Boston",
+        "New York",
+        "Baltimore"
+      ],
+      "answer": 1,
+      "short": "Boston",
+      "hint": "C’est la plus grande ville de Nouvelle-Angleterre.",
+      "explanation": "La « Boston Tea Party » de décembre 1773 est l’un des événements qui ont mené à la guerre d’indépendance américaine.",
+      "link": "Massachusetts"
+    },
+    {
+      "question": "Cambridge, dans l’agglomération de Boston, abrite la plus ancienne université des États-Unis, fondée en 1636. Laquelle ?",
+      "options": [
+        "Harvard",
+        "Yale",
+        "Princeton",
+        "Columbia"
+      ],
+      "answer": 0,
+      "short": "Harvard",
+      "hint": "Elle porte le nom d’un pasteur qui lui a légué sa bibliothèque.",
+      "explanation": "Harvard doit son nom à John Harvard, pasteur mort en 1638 qui lui a légué sa bibliothèque et la moitié de sa fortune.",
+      "link": "Boston"
+    },
+    {
+      "question": "Harvard affronte chaque automne son éternelle rivale lors d’un match de football américain surnommé « The Game ». Quelle université ?",
+      "options": [
+        "Princeton",
+        "Columbia",
+        "Cornell",
+        "Yale"
+      ],
+      "answer": 3,
+      "short": "Yale",
+      "hint": "Elle a été fondée en 1701 dans le Connecticut.",
+      "explanation": "« The Game » oppose Harvard à Yale depuis 1875. Yale est installée à New Haven, dans le Connecticut.",
+      "link": "Harvard"
+    }
+  ]
+}
