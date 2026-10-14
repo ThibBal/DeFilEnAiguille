@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		15736C1C4DE65C852BB9E169 /* HankenGrotesk_600SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF16EE773A2A5BAED45EB79 /* HankenGrotesk_600SemiBold.ttf */; };
 		1A5E89F05D187CFFB05AD51F /* QuestionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E7F5E65FB1FC8C193A2C6 /* QuestionText.swift */; };
+		276FA9C0D730B662DFBE48CD /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5E1429669D23C943955FEEDD /* PrivacyInfo.xcprivacy */; };
 		297D17676FDDFA4A297E00E9 /* DeFilEnAiguilleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF3D4ABE00BD6B5FA69FCEE /* DeFilEnAiguilleApp.swift */; };
 		2FD7A06F86406B35305178B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3184CAC4CBDD77794E503F31 /* Assets.xcassets */; };
 		3C486B4ABD386682894F926B /* HankenGrotesk_400Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B7201EB22A96EA267A388461 /* HankenGrotesk_400Regular.ttf */; };
@@ -41,6 +42,7 @@
 		3184CAC4CBDD77794E503F31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		374BFEBDB85C1F92F9F9E9D7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		3B9E7F5E65FB1FC8C193A2C6 /* QuestionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionText.swift; sourceTree = "<group>"; };
+		5E1429669D23C943955FEEDD /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5F58BE65649CC5EF6AC7308E /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		7190F64E60899969EBBF1DA4 /* QuizStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizStore.swift; sourceTree = "<group>"; };
 		733CF66962CB3BD622330BC6 /* ReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				3184CAC4CBDD77794E503F31 /* Assets.xcassets */,
 				7AF3D4ABE00BD6B5FA69FCEE /* DeFilEnAiguilleApp.swift */,
 				F97EB959011DA5F272ACF5F4 /* Info.plist */,
+				5E1429669D23C943955FEEDD /* PrivacyInfo.xcprivacy */,
 				374BFEBDB85C1F92F9F9E9D7 /* Theme.swift */,
 				84CF5F29D5BFEA02B49042E5 /* Components */,
 				A37BC5CCDBF0A2F3C034BF0A /* Model */,
@@ -214,6 +217,7 @@
 				15736C1C4DE65C852BB9E169 /* HankenGrotesk_600SemiBold.ttf in Resources */,
 				E65605198A23B2E8E10EE044 /* InstrumentSerif_400Regular.ttf in Resources */,
 				6546A9718F6C48D04C8B36BF /* InstrumentSerif_400Regular_Italic.ttf in Resources */,
+				276FA9C0D730B662DFBE48CD /* PrivacyInfo.xcprivacy in Resources */,
 				EEA2668FDAED3B4CFEE25845 /* quizzes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
