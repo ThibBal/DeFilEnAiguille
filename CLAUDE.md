@@ -33,6 +33,7 @@ Sources/
   Resources/Fonts/                  Instrument Serif et Hanken Grotesk
   Assets.xcassets/                  icône de l'app (aiguille et fil vert)
 content/quizzes/                    un questionnaire par jour (AAAA-MM-JJ.json), publié sur GitHub Pages
+content/site/                       pages publiques pour l'App Store : confidentialite/ et assistance/ (mêmes URL sur GitHub Pages)
 scripts/publier_contenu.py          valide les questionnaires et prépare le site (index.json)
 scripts/tester_reponses.sh          vérifie la saisie libre sur tous les questionnaires (variantes, fautes, mauvaises propositions)
 .github/workflows/contenu.yml       validation sur PR, publication Pages sur main

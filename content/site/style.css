@@ -1,0 +1,29 @@
+/* Pages publiques de l'app (confidentialité, assistance). Mêmes couleurs que Palette (Theme.swift). */
+@font-face { font-family: "Instrument Serif"; src: url("fonts/InstrumentSerif_400Regular.ttf"); }
+@font-face { font-family: "Instrument Serif"; font-style: italic; src: url("fonts/InstrumentSerif_400Regular_Italic.ttf"); }
+@font-face { font-family: "Hanken Grotesk"; src: url("fonts/HankenGrotesk_400Regular.ttf"); }
+@font-face { font-family: "Hanken Grotesk"; font-weight: 600; src: url("fonts/HankenGrotesk_600SemiBold.ttf"); }
+
+:root {
+  --paper: #F6F3EC; --ink: #1D1B18; --body: #3A372F; --muted: #6B665C;
+  --hair: #E2DCCF; --accent: #2F7D4F;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #171612; --ink: #F2EEE5; --body: #D8D3C7; --muted: #A39D90; --hair: #2B2923; --accent: #5FBF84; }
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--paper); color: var(--body);
+  font: 17px/1.6 "Hanken Grotesk", sans-serif;
+}
+main { max-width: 640px; margin: 0 auto; padding: 48px 20px 64px; }
+.signature { font: italic 20px "Instrument Serif", serif; color: var(--accent); margin: 0; }
+h1 { font: 44px/1.1 "Instrument Serif", serif; color: var(--ink); margin: 8px 0 8px; }
+h2 { font: 26px/1.2 "Instrument Serif", serif; color: var(--ink); margin: 40px 0 8px; }
+.maj { color: var(--muted); font-size: 15px; margin: 0 0 32px; }
+a { color: var(--accent); }
+strong { color: var(--ink); font-weight: 600; }
+nav { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--hair); font-size: 15px; }
+nav a { margin-right: 20px; }

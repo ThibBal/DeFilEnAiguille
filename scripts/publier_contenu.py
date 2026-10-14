@@ -4,7 +4,8 @@
 Usage : python3 scripts/publier_contenu.py [dossier_de_sortie] [--embarquer]
 
 Sans option, valide seulement. Avec un dossier, y copie les questionnaires et
-écrit index.json (liste triée des dates disponibles). Avec --embarquer,
+écrit index.json (liste triée des dates disponibles), plus les pages de
+content/site/ (confidentialité, assistance) et les polices qu'elles utilisent. Avec --embarquer,
 régénère Sources/Resources/quizzes.json (le secours embarqué dans l'app) à
 partir de content/. Code de sortie 1 si un questionnaire est invalide.
 """
@@ -17,6 +18,8 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parent.parent
 QUIZZES = RACINE / "content" / "quizzes"
+SITE = RACINE / "content" / "site"
+POLICES = RACINE / "Sources" / "Resources" / "Fonts"
 EMBARQUE = RACINE / "Sources" / "Resources" / "quizzes.json"
 
 
@@ -99,6 +102,10 @@ def main():
             shutil.copy(f, sortie / "quizzes" / f.name)
         (sortie / "index.json").write_text(
             json.dumps({"dates": dates}, indent=2) + "\n", encoding="utf-8")
+        shutil.copytree(SITE, sortie, dirs_exist_ok=True)
+        (sortie / "fonts").mkdir(exist_ok=True)
+        for police in POLICES.glob("*.ttf"):
+            shutil.copy(police, sortie / "fonts" / police.name)
         print(f"Site écrit dans {sortie}")
     if embarquer:
         catalogue = {"quizzes": {

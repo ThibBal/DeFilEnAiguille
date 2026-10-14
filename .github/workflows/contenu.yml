@@ -1,12 +1,13 @@
 name: Contenu
 
 # Valide les questionnaires à chaque changement, et les publie sur GitHub Pages
-# depuis main : https://thibbal.github.io/DeFilEnAiguille/index.json
+# depuis main : https://thibbal.github.io/DeFilEnAiguille/index.json, avec les pages
+# https://thibbal.github.io/DeFilEnAiguille/confidentialite/ et .../assistance/
 
 on:
   push:
     branches: [main]
-    paths: [content/**, scripts/publier_contenu.py, .github/workflows/contenu.yml]
+    paths: [content/**, Sources/Resources/Fonts/**, scripts/publier_contenu.py, .github/workflows/contenu.yml]
   pull_request:
     paths: [content/**, scripts/publier_contenu.py]
   workflow_dispatch:
