@@ -40,6 +40,7 @@ targets:
           - HankenGrotesk_500Medium.ttf
           - HankenGrotesk_600SemiBold.ttf
         CFBundleDisplayName: De fil en aiguille
+        ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
